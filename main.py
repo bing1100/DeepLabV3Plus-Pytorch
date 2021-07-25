@@ -7,7 +7,7 @@ import argparse
 import numpy as np
 
 from torch.utils import data
-from datasets import VOCSegmentation, Cityscapes
+from datasets import VOCSegmentation, Cityscapes, Oilwell
 from utils import ext_transforms as et
 from metrics import StreamSegMetrics
 
@@ -19,15 +19,14 @@ from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
 
-
 def get_argparser():
     parser = argparse.ArgumentParser()
 
     # Datset Options
     parser.add_argument("--data_root", type=str, default='./datasets/data',
                         help="path to Dataset")
-    parser.add_argument("--dataset", type=str, default='voc',
-                        choices=['voc', 'cityscapes'], help='Name of dataset')
+    parser.add_argument("--dataset", type=str, default='oilwell',
+                        choices=['voc', 'cityscapes', 'oilwell'], help='Name of dataset')
     parser.add_argument("--num_classes", type=int, default=None,
                         help="num classes (default: None)")
 
@@ -44,8 +43,8 @@ def get_argparser():
     parser.add_argument("--test_only", action='store_true', default=False)
     parser.add_argument("--save_val_results", action='store_true', default=False,
                         help="save segmentation results to \"./results\"")
-    parser.add_argument("--total_itrs", type=int, default=30e3,
-                        help="epoch number (default: 30k)")
+    parser.add_argument("--total_itrs", type=int, default=60e3,
+                        help="epoch number (default: 60k)")
     parser.add_argument("--lr", type=float, default=0.01,
                         help="learning rate (default: 0.01)")
     parser.add_argument("--lr_policy", type=str, default='poly', choices=['poly', 'step'],
@@ -53,17 +52,17 @@ def get_argparser():
     parser.add_argument("--step_size", type=int, default=10000)
     parser.add_argument("--crop_val", action='store_true', default=False,
                         help='crop validation (default: False)')
-    parser.add_argument("--batch_size", type=int, default=16,
-                        help='batch size (default: 16)')
-    parser.add_argument("--val_batch_size", type=int, default=4,
+    parser.add_argument("--batch_size", type=int, default=32,
+                        help='batch size (default: 24)')
+    parser.add_argument("--val_batch_size", type=int, default=8,
                         help='batch size for validation (default: 4)')
-    parser.add_argument("--crop_size", type=int, default=513)
+    parser.add_argument("--crop_size", type=int, default=500)
     
     parser.add_argument("--ckpt", default=None, type=str,
                         help="restore from checkpoint")
     parser.add_argument("--continue_training", action='store_true', default=False)
 
-    parser.add_argument("--loss_type", type=str, default='cross_entropy',
+    parser.add_argument("--loss_type", type=str, default='focal_loss',
                         choices=['cross_entropy', 'focal_loss'], help="loss type (default: False)")
     parser.add_argument("--gpu_id", type=str, default='0',
                         help="GPU ID")
@@ -73,11 +72,28 @@ def get_argparser():
                         help="random seed (default: 1)")
     parser.add_argument("--print_interval", type=int, default=10,
                         help="print interval of loss (default: 10)")
-    parser.add_argument("--val_interval", type=int, default=100,
+    parser.add_argument("--val_interval", type=int, default=200,
                         help="epoch interval for eval (default: 100)")
     parser.add_argument("--download", action='store_true', default=False,
                         help="download datasets")
-
+    
+    # Oilwell
+    parser.add_argument("--oilwell_type", type=str, default='RO', choices=['RO', 'R', 'O'],
+                        help='Type of labels to use for oilwell dataset')
+    parser.add_argument("--oilwell_splits", type=str, default='B', choices=['B', 'F', 'R'],
+                        help='Whether to train using farm areas, rural areas, or both')
+    parser.add_argument("--oilwell_color", type=str, default='RGB', choices=['RGB', 'IF'],
+                        help='Whether to use RGB or infrared color scheme')
+    parser.add_argument("--no_update", dest='update_labels', action='store_false',
+                        help='No update to labels')
+    parser.add_argument("--update", dest='update_labels', action='store_true',
+                        help='Make updates to labels')
+    parser.set_defaults(update_labels=False)
+    parser.add_argument("--update_interval", type=int, default=400,
+                        help="update interval for discovery (default: 1000)")
+    parser.add_argument("--update_min_interval", type=int, default=10e3,
+                        help="update interval for discovery (default: 1000)")
+    
     # PASCAL VOC Options
     parser.add_argument("--year", type=str, default='2012',
                         choices=['2012_aug', '2012', '2011', '2009', '2008', '2007'], help='year of VOC')
@@ -93,10 +109,85 @@ def get_argparser():
                         help='number of samples for visualization (default: 8)')
     return parser
 
+def updateLabels(opts, model, loader, device):
+    """Do validation and return specified samples"""
+    
+    def _fast_hist(label_true, label_pred):
+        mask = (label_true >= 0) & (label_true < opts.num_classes)
+        hist = np.bincount(
+            opts.num_classes * label_true[mask].astype(int) + label_pred[mask],
+            minlength=opts.num_classes ** 2,
+        ).reshape(opts.num_classes, opts.num_classes)
+        return hist
+    
+    mean = [37.25768717, 50.53054942, 41.82911744]
+    std = [28.74567631, 34.12372886, 31.84100706]
+    if opts.oilwell_color == "IF":
+        mean = [37.25768717, 73.06358305, 105.06015209]
+        std = [28.74567631, 37.23757292, 40.10277116]
+    
+    denorm = utils.Denormalize(mean=mean,
+                                std=std)
 
+    with torch.no_grad():
+        for i, (images, labels, imgnames, tarnames) in tqdm(enumerate(loader)):
+            
+            images = images.to(device, dtype=torch.float32)
+            labels = labels.to(device, dtype=torch.long)
+
+            outputs = model(images)
+            preds = outputs.detach().max(dim=1)[1].cpu().numpy()
+            targets = labels.cpu().numpy()
+
+            confusion_matrix = np.zeros((opts.num_classes, opts.num_classes))
+            for lt, lp in zip(targets, preds):
+                confusion_matrix += _fast_hist( lt.flatten(), lp.flatten() )
+            
+            hist = confusion_matrix
+            iu = np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0) - np.diag(hist))
+            cls_iu = dict(zip(range(opts.num_classes), iu))
+            cutoff0 = cls_iu[0]
+            cutoff1 = cls_iu[1]
+
+            for i in range(len(images)):
+                image = images[i].detach().cpu().numpy()
+                target = targets[i]
+                pred = preds[i]
+
+                image = (denorm(image) * 255).transpose(1, 2, 0).astype(np.uint8)
+                target = loader.dataset.decode_target(target).astype(np.uint8)
+                pred = loader.dataset.decode_target(pred).astype(np.uint8)
+                
+                xaxis = len(target)
+                yaxis = len(target[0])
+                save = False
+                
+                for x in range(xaxis):
+                    for y in range(yaxis):
+                        predVal = pred[x][y]
+                        tarVal = target[x][y]
+                        
+                        if predVal[0] != tarVal[0]:
+                            if random.randint(0,100) < (cls_iu[1]*75):
+                                save = True
+                                target[x][y] = predVal
+                
+                if save:
+                    img = Image.fromarray(target)
+                    gray = img.convert('L')
+                    bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
+                    bw.save(tarnames[i])
+
+            
 def get_dataset(opts):
     """ Dataset And Augmentation
     """
+    mean = [37.25768717, 50.53054942, 41.82911744]
+    std = [28.74567631, 34.12372886, 31.84100706]
+    if opts.oilwell_color == "IF":
+        mean = [ 37.25768717,  73.06358305, 105.06015209]
+        std = [28.74567631, 37.23757292, 40.10277116]
+    
     if opts.dataset == 'voc':
         train_transform = et.ExtCompose([
             #et.ExtResize(size=opts.crop_size),
@@ -124,7 +215,7 @@ def get_dataset(opts):
         train_dst = VOCSegmentation(root=opts.data_root, year=opts.year,
                                     image_set='train', download=opts.download, transform=train_transform)
         val_dst = VOCSegmentation(root=opts.data_root, year=opts.year,
-                                  image_set='val', download=False, transform=val_transform)
+                                    image_set='val', download=False, transform=val_transform)
 
     if opts.dataset == 'cityscapes':
         train_transform = et.ExtCompose([
@@ -147,23 +238,63 @@ def get_dataset(opts):
         train_dst = Cityscapes(root=opts.data_root,
                                split='train', transform=train_transform)
         val_dst = Cityscapes(root=opts.data_root,
-                             split='val', transform=val_transform)
+                               split='val', transform=val_transform)
+        
+    if opts.dataset == 'oilwell':
+        train_transform = et.ExtCompose([
+            #et.ExtResize( 512 ),
+            et.ExtRandomCrop(size=(opts.crop_size, opts.crop_size)),
+            et.ExtColorJitter( brightness=0.5, contrast=0.5, saturation=0.5 ),
+            et.ExtRandomHorizontalFlip(),
+            et.ExtToTensor(),
+            et.ExtNormalize(mean=mean,
+                            std=std),
+        ])
+
+        val_transform = et.ExtCompose([
+            #et.ExtResize( 512 ),
+            et.ExtToTensor(),
+            et.ExtNormalize(mean=mean,
+                            std=std),
+        ])
+
+        train_dst = Oilwell(root=opts.data_root,
+                            image_set='train', 
+                            type=opts.oilwell_type, 
+                            splits=opts.oilwell_splits,
+                            color=opts.oilwell_color,
+                            update=opts.update_labels,
+                            transform=train_transform)
+        val_dst = Oilwell(root=opts.data_root,
+                          image_set='val', 
+                          type=opts.oilwell_type, 
+                          splits=opts.oilwell_splits,
+                          color=opts.oilwell_color,
+                          update=opts.update_labels,
+                          transform=val_transform)
+    
     return train_dst, val_dst
 
 
 def validate(opts, model, loader, device, metrics, ret_samples_ids=None):
     """Do validation and return specified samples"""
+    mean = [37.25768717, 50.53054942, 41.82911744]
+    std = [28.74567631, 34.12372886, 31.84100706]
+    if opts.oilwell_color == "IF":
+        mean = [ 37.25768717, 73.06358305, 105.06015209]
+        std = [28.74567631, 37.23757292, 40.10277116]
+    
     metrics.reset()
     ret_samples = []
     if opts.save_val_results:
         if not os.path.exists('results'):
             os.mkdir('results')
-        denorm = utils.Denormalize(mean=[0.485, 0.456, 0.406], 
-                                   std=[0.229, 0.224, 0.225])
+        denorm = utils.Denormalize(mean=mean,
+                                   std=std)
         img_id = 0
 
     with torch.no_grad():
-        for i, (images, labels) in tqdm(enumerate(loader)):
+        for i, (images, labels, imgnames, tarnames) in tqdm(enumerate(loader)):
             
             images = images.to(device, dtype=torch.float32)
             labels = labels.to(device, dtype=torch.long)
@@ -212,7 +343,18 @@ def main():
         opts.num_classes = 21
     elif opts.dataset.lower() == 'cityscapes':
         opts.num_classes = 19
+    elif opts.dataset.lower() == 'oilwell':
+        opts.num_classes = 2
+        
+    mean = [37.25768717, 50.53054942, 41.82911744]
+    std = [28.74567631, 34.12372886, 31.84100706]
+    if opts.oilwell_color == "IF":
+        mean = [ 37.25768717, 73.06358305, 105.06015209]
+        std = [28.74567631, 37.23757292, 40.10277116]
 
+    print(torch.version.cuda)
+    torch.backends.cudnn.enabled = False 
+    
     # Setup visualization
     vis = Visualizer(port=opts.vis_port,
                      env=opts.vis_env) if opts.enable_vis else None
@@ -316,7 +458,8 @@ def main():
     #==========   Train Loop   ==========#
     vis_sample_id = np.random.randint(0, len(val_loader), opts.vis_num_samples,
                                       np.int32) if opts.enable_vis else None  # sample idxs for visualization
-    denorm = utils.Denormalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])  # denormalization for ori images
+    denorm = utils.Denormalize(mean=mean,
+                               std=std)  # denormalization for ori images
 
     if opts.test_only:
         model.eval()
@@ -330,7 +473,7 @@ def main():
         # =====  Train  =====
         model.train()
         cur_epochs += 1
-        for (images, labels) in train_loader:
+        for (images, labels, imgnames, tarnames) in train_loader:
             cur_itrs += 1
 
             images = images.to(device, dtype=torch.float32)
@@ -353,9 +496,13 @@ def main():
                       (cur_epochs, cur_itrs, opts.total_itrs, interval_loss))
                 interval_loss = 0.0
 
+            if opts.update_labels and (cur_itrs) % opts.update_interval == 0:
+                print("Updating Labels...")
+                updateLabels(
+                    opts=opts, model=model, loader=train_loader, device=device)
             if (cur_itrs) % opts.val_interval == 0:
-                save_ckpt('checkpoints/latest_%s_%s_os%d.pth' %
-                          (opts.model, opts.dataset, opts.output_stride))
+                save_ckpt('checkpoints/latest_%s_%s_%s_%s_os%d.pth' %
+                          (opts.model, opts.dataset, opts.oilwell_type, opts.oilwell_splits, opts.output_stride))
                 print("validation...")
                 model.eval()
                 val_score, ret_samples = validate(
@@ -363,8 +510,8 @@ def main():
                 print(metrics.to_str(val_score))
                 if val_score['Mean IoU'] > best_score:  # save best model
                     best_score = val_score['Mean IoU']
-                    save_ckpt('checkpoints/best_%s_%s_os%d.pth' %
-                              (opts.model, opts.dataset,opts.output_stride))
+                    save_ckpt('checkpoints/best_%s_%s_%s_%s_os%d.pth' %
+                              (opts.model, opts.dataset, opts.oilwell_type, opts.oilwell_splits, opts.output_stride))
 
                 if vis is not None:  # visualize validation score and samples
                     vis.vis_scalar("[Val] Overall Acc", cur_itrs, val_score['Overall Acc'])

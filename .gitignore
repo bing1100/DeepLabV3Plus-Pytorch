@@ -8,3 +8,4 @@ results
 checkpoints_bak
 cityscapes
 test_results
+datasets/data/VOCtrainval_11-May-2012.tar
