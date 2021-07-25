@@ -1,0 +1,11 @@
+Setting up a new session...
+11.1
+Device: cuda
+Dataset: oilwell, Train set: 480, Val set: 60
+[!] Retrain
+Epoch 1, Itrs 10/50000, Loss=0.046081
+Epoch 2, Itrs 20/50000, Loss=0.020682
+Epoch 2, Itrs 30/50000, Loss=0.021319
+Epoch 3, Itrs 40/50000, Loss=0.016917
+Epoch 4, Itrs 50/50000, Loss=0.014256
+Epoch 4, Itrs 60/50000, Loss=0.013729

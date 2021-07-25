@@ -43,7 +43,7 @@ def get_argparser():
     parser.add_argument("--test_only", action='store_true', default=False)
     parser.add_argument("--save_val_results", action='store_true', default=False,
                         help="save segmentation results to \"./results\"")
-    parser.add_argument("--total_itrs", type=int, default=60e3,
+    parser.add_argument("--total_itrs", type=int, default=50e3,
                         help="epoch number (default: 60k)")
     parser.add_argument("--lr", type=float, default=0.01,
                         help="learning rate (default: 0.01)")
@@ -168,7 +168,7 @@ def updateLabels(opts, model, loader, device):
                         tarVal = target[x][y]
                         
                         if predVal[0] != tarVal[0]:
-                            if random.randint(0,100) < (cls_iu[1]*75):
+                            if random.randint(0,100) < (cls_iu[1]*50):
                                 save = True
                                 target[x][y] = predVal
                 
@@ -501,8 +501,14 @@ def main():
                 updateLabels(
                     opts=opts, model=model, loader=train_loader, device=device)
             if (cur_itrs) % opts.val_interval == 0:
-                save_ckpt('checkpoints/latest_%s_%s_%s_%s_os%d.pth' %
-                          (opts.model, opts.dataset, opts.oilwell_type, opts.oilwell_splits, opts.output_stride))
+                save_ckpt('checkpoints/latest_%s_%s_%s_%s_%s_%s_os%d.pth' %
+                          (opts.model, 
+                           opts.dataset, 
+                           opts.oilwell_type, 
+                           opts.oilwell_splits, 
+                           opts.oilwell_color, 
+                           opts.update_labels,
+                           opts.output_stride))
                 print("validation...")
                 model.eval()
                 val_score, ret_samples = validate(
@@ -510,8 +516,14 @@ def main():
                 print(metrics.to_str(val_score))
                 if val_score['Mean IoU'] > best_score:  # save best model
                     best_score = val_score['Mean IoU']
-                    save_ckpt('checkpoints/best_%s_%s_%s_%s_os%d.pth' %
-                              (opts.model, opts.dataset, opts.oilwell_type, opts.oilwell_splits, opts.output_stride))
+                    save_ckpt('checkpoints/best_%s_%s_%s_%s_%s_%s_os%d.pth' %
+                              (opts.model, 
+                           opts.dataset, 
+                           opts.oilwell_type, 
+                           opts.oilwell_splits, 
+                           opts.oilwell_color, 
+                           opts.update_labels,
+                           opts.output_stride))
 
                 if vis is not None:  # visualize validation score and samples
                     vis.vis_scalar("[Val] Overall Acc", cur_itrs, val_score['Overall Acc'])
