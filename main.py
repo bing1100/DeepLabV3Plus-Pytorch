@@ -43,7 +43,7 @@ def get_argparser():
     parser.add_argument("--test_only", action='store_true', default=False)
     parser.add_argument("--save_val_results", action='store_true', default=False,
                         help="save segmentation results to \"./results\"")
-    parser.add_argument("--total_itrs", type=int, default=50e3,
+    parser.add_argument("--total_itrs", type=int, default=35e3,
                         help="epoch number (default: 60k)")
     parser.add_argument("--lr", type=float, default=0.01,
                         help="learning rate (default: 0.01)")
@@ -72,7 +72,7 @@ def get_argparser():
                         help="random seed (default: 1)")
     parser.add_argument("--print_interval", type=int, default=10,
                         help="print interval of loss (default: 10)")
-    parser.add_argument("--val_interval", type=int, default=200,
+    parser.add_argument("--val_interval", type=int, default=100,
                         help="epoch interval for eval (default: 100)")
     parser.add_argument("--download", action='store_true', default=False,
                         help="download datasets")
@@ -89,9 +89,9 @@ def get_argparser():
     parser.add_argument("--update", dest='update_labels', action='store_true',
                         help='Make updates to labels')
     parser.set_defaults(update_labels=False)
-    parser.add_argument("--update_interval", type=int, default=400,
+    parser.add_argument("--update_interval", type=int, default=100,
                         help="update interval for discovery (default: 1000)")
-    parser.add_argument("--update_min_interval", type=int, default=10e3,
+    parser.add_argument("--update_min_interval", type=int, default=200,
                         help="update interval for discovery (default: 1000)")
     
     # PASCAL VOC Options
@@ -109,7 +109,7 @@ def get_argparser():
                         help='number of samples for visualization (default: 8)')
     return parser
 
-def updateLabels(opts, model, loader, device):
+def updateLabels(opts, model, loader, device, best):
     """Do validation and return specified samples"""
     
     def _fast_hist(label_true, label_pred):
@@ -168,17 +168,24 @@ def updateLabels(opts, model, loader, device):
                         tarVal = target[x][y]
                         
                         if predVal[0] != tarVal[0]:
-                            if random.randint(0,100) < (cls_iu[1]*50):
-                                save = True
-                                target[x][y] = predVal
+                            if predVal[0] != 0:
+                                if random.randint(0,100*100) < (cls_iu[1]**2 * 100*100):
+                                    save = True
+                                    target[x][y] = predVal
+                            # else:
+                            #     if random.randint(0,100) < (cls_iu[1]**2 * 50):
+                            #         save = True
+                            #         target[x][y] = predVal
                 
-                if save:
-                    img = Image.fromarray(target)
-                    gray = img.convert('L')
-                    bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
-                    bw.save(tarnames[i])
+                #if save:
+                img = Image.fromarray(target)
+                gray = img.convert('L')
+                bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
+                bw.save(tarnames[i])
+                
+                if best:
+                    bw.save(tarnames[i] + "_best.png")
 
-            
 def get_dataset(opts):
     """ Dataset And Augmentation
     """
@@ -187,6 +194,10 @@ def get_dataset(opts):
     if opts.oilwell_color == "IF":
         mean = [ 37.25768717,  73.06358305, 105.06015209]
         std = [28.74567631, 37.23757292, 40.10277116]
+    
+    if opts.dataset == 'voc':
+        mean = [0.485, 0.456, 0.406]
+        std = [0.229, 0.224, 0.225]
     
     if opts.dataset == 'voc':
         train_transform = et.ExtCompose([
@@ -216,6 +227,8 @@ def get_dataset(opts):
                                     image_set='train', download=opts.download, transform=train_transform)
         val_dst = VOCSegmentation(root=opts.data_root, year=opts.year,
                                     image_set='val', download=False, transform=val_transform)
+        update_dst = VOCSegmentation(root=opts.data_root, year=opts.year,
+                                    image_set='train', download=False, transform=val_transform)
 
     if opts.dataset == 'cityscapes':
         train_transform = et.ExtCompose([
@@ -239,6 +252,8 @@ def get_dataset(opts):
                                split='train', transform=train_transform)
         val_dst = Cityscapes(root=opts.data_root,
                                split='val', transform=val_transform)
+        update_dst = Cityscapes(root=opts.data_root,
+                               split='train', transform=val_transform)
         
     if opts.dataset == 'oilwell':
         train_transform = et.ExtCompose([
@@ -272,8 +287,15 @@ def get_dataset(opts):
                           color=opts.oilwell_color,
                           update=opts.update_labels,
                           transform=val_transform)
+        update_dst = Oilwell(root=opts.data_root,
+                             image_set='train', 
+                             type=opts.oilwell_type, 
+                             splits=opts.oilwell_splits,
+                             color=opts.oilwell_color,
+                             update=opts.update_labels,
+                             transform=val_transform)
     
-    return train_dst, val_dst
+    return train_dst, val_dst, update_dst
 
 
 def validate(opts, model, loader, device, metrics, ret_samples_ids=None):
@@ -283,6 +305,10 @@ def validate(opts, model, loader, device, metrics, ret_samples_ids=None):
     if opts.oilwell_color == "IF":
         mean = [ 37.25768717, 73.06358305, 105.06015209]
         std = [28.74567631, 37.23757292, 40.10277116]
+        
+    if opts.dataset == 'voc':
+        mean = [0.485, 0.456, 0.406]
+        std = [0.229, 0.224, 0.225]
     
     metrics.reset()
     ret_samples = []
@@ -351,6 +377,10 @@ def main():
     if opts.oilwell_color == "IF":
         mean = [ 37.25768717, 73.06358305, 105.06015209]
         std = [28.74567631, 37.23757292, 40.10277116]
+        
+    if opts.dataset == 'voc':
+        mean = [0.485, 0.456, 0.406]
+        std = [0.229, 0.224, 0.225]
 
     print(torch.version.cuda)
     torch.backends.cudnn.enabled = False 
@@ -374,11 +404,13 @@ def main():
     if opts.dataset=='voc' and not opts.crop_val:
         opts.val_batch_size = 1
     
-    train_dst, val_dst = get_dataset(opts)
+    train_dst, val_dst, update_dst = get_dataset(opts)
     train_loader = data.DataLoader(
-        train_dst, batch_size=opts.batch_size, shuffle=True, num_workers=2)
+        train_dst, batch_size=opts.batch_size, shuffle=True, num_workers=16)
     val_loader = data.DataLoader(
-        val_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=2)
+        val_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=16)
+    update_loader = data.DataLoader(
+        update_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=16)
     print("Dataset: %s, Train set: %d, Val set: %d" %
           (opts.dataset, len(train_dst), len(val_dst)))
 
@@ -496,10 +528,7 @@ def main():
                       (cur_epochs, cur_itrs, opts.total_itrs, interval_loss))
                 interval_loss = 0.0
 
-            if opts.update_labels and (cur_itrs) % opts.update_interval == 0:
-                print("Updating Labels...")
-                updateLabels(
-                    opts=opts, model=model, loader=train_loader, device=device)
+            
             if (cur_itrs) % opts.val_interval == 0:
                 save_ckpt('checkpoints/latest_%s_%s_%s_%s_%s_%s_os%d.pth' %
                           (opts.model, 
@@ -524,6 +553,13 @@ def main():
                            opts.oilwell_color, 
                            opts.update_labels,
                            opts.output_stride))
+                
+                if opts.update_labels and (cur_itrs) % opts.update_interval == 0:
+                    print("Updating Labels...")
+                    save = False
+                    if val_score['Mean IoU'] == best_score:
+                        save = True
+                    updateLabels(opts=opts, model=model, loader=update_loader, device=device, best=save)
 
                 if vis is not None:  # visualize validation score and samples
                     vis.vis_scalar("[Val] Overall Acc", cur_itrs, val_score['Overall Acc'])

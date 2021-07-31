@@ -21,10 +21,11 @@ from multiprocessing import Pool
 # [37.25768717, 73.06358305, 105.06015209] [28.74567631, 37.23757292, 40.10277116]
 ROADS = "/media/bhux/ssd/oilwell/deeplab_data/"
 SAVE_LOC = "/media/bhux/ssd/oilwell/deeplab_data/"
-FILELOCATION = '/media/bhux/ssd/oilwell/images/'
+FILELOCATION = '/media/bhux/ssd/oilwell/deeplab_data/'
 LABELLOCATION = '/media/bhux/ssd/oilwell/labels/all/'
 CENTERLOCATION = '/media/bhux/ssd/oilwell/labels/converted/'
 SAVELOCATION = '/media/bhux/ssd/oilwell/deeplab_data/'
+CITY = '/home/bhux/workplace/Sat2Graph/data/20cities/'
 
 SAT = False
 GT = True
@@ -80,12 +81,34 @@ def sd2(i):
             np.sum((src1.read(2)-avg[1])**2)/PXL, 
             np.sum((src1.read(3)-avg[2])**2)/PXL]
 
-with Pool(20) as p:
-    vals = p.map(sum, range(600))
+def count(i):
+    oilName = FILELOCATION + "region_" + str(i) + "_O_gt.png"
+    roadName = FILELOCATION + "region_" + str(i) + "_R_gt.png"
+    oilsrc = rasterio.open(oilName)
+    roadsrc = rasterio.open(roadName)
     
-    avg = np.sum(vals, axis=0) / 600
+    return [np.sum(oilsrc.read(1)), np.sum(roadsrc.read(1))]
+
+def count2(i):
+    fileName = CITY + "region_" + str(i) + "_gt.png"
+    file = rasterio.open(fileName)
+    return [np.sum(file.read(1))]
+
+with Pool(12) as p:
+    # vals = p.map(sum, range(600))
     
-    vals = p.map(sd2, range(600))
+    # avg = np.sum(vals, axis=0) / 600
     
-    sd = np.sqrt(np.sum(vals, axis=0) / 600)
-    print(avg, sd)
+    # vals = p.map(sd2, range(600))
+    
+    # sd = np.sqrt(np.sum(vals, axis=0) / 600)
+    # print(avg, sd)
+    print("herlo")
+    vals = p.map(count, range(600))
+
+    print(np.sum(vals, axis=0))
+    
+    
+    vals = p.map(count2, range(6))
+
+    print(np.sum(vals, axis=0))

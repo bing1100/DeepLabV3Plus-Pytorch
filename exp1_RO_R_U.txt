@@ -1,0 +1,3446 @@
+Setting up a new session...
+11.1
+Device: cuda
+Dataset: oilwell, Train set: 360, Val set: 40
+[!] Retrain
+Epoch 1, Itrs 10/30000, Loss=0.047535
+Epoch 2, Itrs 20/30000, Loss=0.021415
+Epoch 3, Itrs 30/30000, Loss=0.021709
+Epoch 4, Itrs 40/30000, Loss=0.017504
+Epoch 5, Itrs 50/30000, Loss=0.015942
+Epoch 5, Itrs 60/30000, Loss=0.014753
+Epoch 6, Itrs 70/30000, Loss=0.013751
+Epoch 7, Itrs 80/30000, Loss=0.013463
+Epoch 8, Itrs 90/30000, Loss=0.013406
+Epoch 9, Itrs 100/30000, Loss=0.012398
+Epoch 10, Itrs 110/30000, Loss=0.012011
+Epoch 10, Itrs 120/30000, Loss=0.012472
+Epoch 11, Itrs 130/30000, Loss=0.012035
+Epoch 12, Itrs 140/30000, Loss=0.012045
+Epoch 13, Itrs 150/30000, Loss=0.011541
+Epoch 14, Itrs 160/30000, Loss=0.011429
+Epoch 15, Itrs 170/30000, Loss=0.011494
+Epoch 15, Itrs 180/30000, Loss=0.011245
+Epoch 16, Itrs 190/30000, Loss=0.011422
+Epoch 17, Itrs 200/30000, Loss=0.011115
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.90it/s]
+Overall Acc: 0.963483
+Mean Acc: 0.500000
+FreqW Acc: 0.928300
+Mean IoU: 0.481742
+Class IoU:
+	class 0: 0.963483
+	class 1: 0.000000
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:22,  1.83s/it]
+Epoch 18, Itrs 210/30000, Loss=0.010989
+Epoch 19, Itrs 220/30000, Loss=0.010734
+Epoch 20, Itrs 230/30000, Loss=0.010755
+Epoch 20, Itrs 240/30000, Loss=0.010678
+Epoch 21, Itrs 250/30000, Loss=0.010705
+Epoch 22, Itrs 260/30000, Loss=0.010631
+Epoch 23, Itrs 270/30000, Loss=0.010148
+Epoch 24, Itrs 280/30000, Loss=0.011608
+Epoch 25, Itrs 290/30000, Loss=0.010866
+Epoch 25, Itrs 300/30000, Loss=0.010341
+Epoch 26, Itrs 310/30000, Loss=0.010783
+Epoch 27, Itrs 320/30000, Loss=0.010009
+Epoch 28, Itrs 330/30000, Loss=0.010498
+Epoch 29, Itrs 340/30000, Loss=0.010327
+Epoch 30, Itrs 350/30000, Loss=0.009821
+Epoch 30, Itrs 360/30000, Loss=0.010212
+Epoch 31, Itrs 370/30000, Loss=0.010080
+Epoch 32, Itrs 380/30000, Loss=0.010456
+Epoch 33, Itrs 390/30000, Loss=0.010186
+Epoch 34, Itrs 400/30000, Loss=0.010011
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.31it/s]
+Overall Acc: 0.963483
+Mean Acc: 0.500000
+FreqW Acc: 0.928300
+Mean IoU: 0.481742
+Class IoU:
+	class 0: 0.963483
+	class 1: 0.000000
+
+Updating Labels...
+
+45it [01:19,  1.77s/it]
+Epoch 35, Itrs 410/30000, Loss=0.010455
+Epoch 35, Itrs 420/30000, Loss=0.010096
+Epoch 36, Itrs 430/30000, Loss=0.010070
+Epoch 37, Itrs 440/30000, Loss=0.010219
+Epoch 38, Itrs 450/30000, Loss=0.009593
+Epoch 39, Itrs 460/30000, Loss=0.010373
+Epoch 40, Itrs 470/30000, Loss=0.009997
+Epoch 40, Itrs 480/30000, Loss=0.009540
+Epoch 41, Itrs 490/30000, Loss=0.009970
+Epoch 42, Itrs 500/30000, Loss=0.009745
+Epoch 43, Itrs 510/30000, Loss=0.010022
+Epoch 44, Itrs 520/30000, Loss=0.009931
+Epoch 45, Itrs 530/30000, Loss=0.010080
+Epoch 45, Itrs 540/30000, Loss=0.010247
+Epoch 46, Itrs 550/30000, Loss=0.009609
+Epoch 47, Itrs 560/30000, Loss=0.010161
+Epoch 48, Itrs 570/30000, Loss=0.009634
+Epoch 49, Itrs 580/30000, Loss=0.009898
+Epoch 50, Itrs 590/30000, Loss=0.009695
+Epoch 50, Itrs 600/30000, Loss=0.009952
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.11it/s]
+Overall Acc: 0.963429
+Mean Acc: 0.499989
+FreqW Acc: 0.928249
+Mean IoU: 0.481732
+Class IoU:
+	class 0: 0.963429
+	class 1: 0.000036
+
+Updating Labels...
+
+45it [01:20,  1.79s/it]
+Epoch 51, Itrs 610/30000, Loss=0.009768
+Epoch 52, Itrs 620/30000, Loss=0.009506
+Epoch 53, Itrs 630/30000, Loss=0.010104
+Epoch 54, Itrs 640/30000, Loss=0.009420
+Epoch 55, Itrs 650/30000, Loss=0.009671
+Epoch 55, Itrs 660/30000, Loss=0.009698
+Epoch 56, Itrs 670/30000, Loss=0.009559
+Epoch 57, Itrs 680/30000, Loss=0.009535
+Epoch 58, Itrs 690/30000, Loss=0.009456
+Epoch 59, Itrs 700/30000, Loss=0.009381
+Epoch 60, Itrs 710/30000, Loss=0.009722
+Epoch 60, Itrs 720/30000, Loss=0.009325
+Epoch 61, Itrs 730/30000, Loss=0.009549
+Epoch 62, Itrs 740/30000, Loss=0.009194
+Epoch 63, Itrs 750/30000, Loss=0.009579
+Epoch 64, Itrs 760/30000, Loss=0.009629
+Epoch 65, Itrs 770/30000, Loss=0.009212
+Epoch 65, Itrs 780/30000, Loss=0.009721
+Epoch 66, Itrs 790/30000, Loss=0.009420
+Epoch 67, Itrs 800/30000, Loss=0.009210
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.92it/s]
+Overall Acc: 0.963420
+Mean Acc: 0.507020
+FreqW Acc: 0.928747
+Mean IoU: 0.488913
+Class IoU:
+	class 0: 0.963400
+	class 1: 0.014425
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:20,  1.80s/it]
+Epoch 68, Itrs 810/30000, Loss=0.009431
+Epoch 69, Itrs 820/30000, Loss=0.009423
+Epoch 70, Itrs 830/30000, Loss=0.009628
+Epoch 70, Itrs 840/30000, Loss=0.009439
+Epoch 71, Itrs 850/30000, Loss=0.009338
+Epoch 72, Itrs 860/30000, Loss=0.009649
+Epoch 73, Itrs 870/30000, Loss=0.009135
+Epoch 74, Itrs 880/30000, Loss=0.009692
+Epoch 75, Itrs 890/30000, Loss=0.008974
+Epoch 75, Itrs 900/30000, Loss=0.009417
+Epoch 76, Itrs 910/30000, Loss=0.009302
+Epoch 77, Itrs 920/30000, Loss=0.009095
+Epoch 78, Itrs 930/30000, Loss=0.008997
+Epoch 79, Itrs 940/30000, Loss=0.009801
+Epoch 80, Itrs 950/30000, Loss=0.009261
+Epoch 80, Itrs 960/30000, Loss=0.009460
+Epoch 81, Itrs 970/30000, Loss=0.009257
+Epoch 82, Itrs 980/30000, Loss=0.009193
+Epoch 83, Itrs 990/30000, Loss=0.009125
+Epoch 84, Itrs 1000/30000, Loss=0.009264
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.26it/s]
+Overall Acc: 0.963178
+Mean Acc: 0.534545
+FreqW Acc: 0.930351
+Mean IoU: 0.514923
+Class IoU:
+	class 0: 0.963081
+	class 1: 0.066766
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:26,  1.91s/it]
+Epoch 85, Itrs 1010/30000, Loss=0.009061
+Epoch 85, Itrs 1020/30000, Loss=0.009133
+Epoch 86, Itrs 1030/30000, Loss=0.009136
+Epoch 87, Itrs 1040/30000, Loss=0.009074
+Epoch 88, Itrs 1050/30000, Loss=0.008817
+Epoch 89, Itrs 1060/30000, Loss=0.009468
+Epoch 90, Itrs 1070/30000, Loss=0.009028
+Epoch 90, Itrs 1080/30000, Loss=0.008745
+Epoch 91, Itrs 1090/30000, Loss=0.009167
+Epoch 92, Itrs 1100/30000, Loss=0.008979
+Epoch 93, Itrs 1110/30000, Loss=0.008739
+Epoch 94, Itrs 1120/30000, Loss=0.009386
+Epoch 95, Itrs 1130/30000, Loss=0.009236
+Epoch 95, Itrs 1140/30000, Loss=0.008810
+Epoch 96, Itrs 1150/30000, Loss=0.009039
+Epoch 97, Itrs 1160/30000, Loss=0.009152
+Epoch 98, Itrs 1170/30000, Loss=0.008932
+Epoch 99, Itrs 1180/30000, Loss=0.009458
+Epoch 100, Itrs 1190/30000, Loss=0.008965
+Epoch 100, Itrs 1200/30000, Loss=0.008908
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.24it/s]
+Overall Acc: 0.963214
+Mean Acc: 0.550460
+FreqW Acc: 0.931357
+Mean IoU: 0.528808
+Class IoU:
+	class 0: 0.963073
+	class 1: 0.094544
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 101, Itrs 1210/30000, Loss=0.008979
+Epoch 102, Itrs 1220/30000, Loss=0.009335
+Epoch 103, Itrs 1230/30000, Loss=0.008777
+Epoch 104, Itrs 1240/30000, Loss=0.009640
+Epoch 105, Itrs 1250/30000, Loss=0.008904
+Epoch 105, Itrs 1260/30000, Loss=0.008762
+Epoch 106, Itrs 1270/30000, Loss=0.008877
+Epoch 107, Itrs 1280/30000, Loss=0.009410
+Epoch 108, Itrs 1290/30000, Loss=0.008894
+Epoch 109, Itrs 1300/30000, Loss=0.008558
+Epoch 110, Itrs 1310/30000, Loss=0.008739
+Epoch 110, Itrs 1320/30000, Loss=0.008654
+Epoch 111, Itrs 1330/30000, Loss=0.008943
+Epoch 112, Itrs 1340/30000, Loss=0.008768
+Epoch 113, Itrs 1350/30000, Loss=0.009417
+Epoch 114, Itrs 1360/30000, Loss=0.008389
+Epoch 115, Itrs 1370/30000, Loss=0.008953
+Epoch 115, Itrs 1380/30000, Loss=0.008915
+Epoch 116, Itrs 1390/30000, Loss=0.008863
+Epoch 117, Itrs 1400/30000, Loss=0.008927
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.98it/s]
+Overall Acc: 0.962895
+Mean Acc: 0.554303
+FreqW Acc: 0.931254
+Mean IoU: 0.531616
+Class IoU:
+	class 0: 0.962741
+	class 1: 0.100492
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 118, Itrs 1410/30000, Loss=0.008700
+Epoch 119, Itrs 1420/30000, Loss=0.008963
+Epoch 120, Itrs 1430/30000, Loss=0.008917
+Epoch 120, Itrs 1440/30000, Loss=0.008987
+Epoch 121, Itrs 1450/30000, Loss=0.008796
+Epoch 122, Itrs 1460/30000, Loss=0.008919
+Epoch 123, Itrs 1470/30000, Loss=0.008327
+Epoch 124, Itrs 1480/30000, Loss=0.009579
+Epoch 125, Itrs 1490/30000, Loss=0.009110
+Epoch 125, Itrs 1500/30000, Loss=0.008733
+Epoch 126, Itrs 1510/30000, Loss=0.008782
+Epoch 127, Itrs 1520/30000, Loss=0.008636
+Epoch 128, Itrs 1530/30000, Loss=0.008871
+Epoch 129, Itrs 1540/30000, Loss=0.008667
+Epoch 130, Itrs 1550/30000, Loss=0.008630
+Epoch 130, Itrs 1560/30000, Loss=0.008991
+Epoch 131, Itrs 1570/30000, Loss=0.008850
+Epoch 132, Itrs 1580/30000, Loss=0.009089
+Epoch 133, Itrs 1590/30000, Loss=0.008637
+Epoch 134, Itrs 1600/30000, Loss=0.008880
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.00it/s]
+Overall Acc: 0.962617
+Mean Acc: 0.566395
+FreqW Acc: 0.931646
+Mean IoU: 0.540970
+Class IoU:
+	class 0: 0.962426
+	class 1: 0.119513
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:27,  1.93s/it]
+Epoch 135, Itrs 1610/30000, Loss=0.009032
+Epoch 135, Itrs 1620/30000, Loss=0.008750
+Epoch 136, Itrs 1630/30000, Loss=0.008724
+Epoch 137, Itrs 1640/30000, Loss=0.008540
+Epoch 138, Itrs 1650/30000, Loss=0.008661
+Epoch 139, Itrs 1660/30000, Loss=0.008759
+Epoch 140, Itrs 1670/30000, Loss=0.008738
+Epoch 140, Itrs 1680/30000, Loss=0.008789
+Epoch 141, Itrs 1690/30000, Loss=0.008648
+Epoch 142, Itrs 1700/30000, Loss=0.008686
+Epoch 143, Itrs 1710/30000, Loss=0.008595
+Epoch 144, Itrs 1720/30000, Loss=0.008969
+Epoch 145, Itrs 1730/30000, Loss=0.008402
+Epoch 145, Itrs 1740/30000, Loss=0.008775
+Epoch 146, Itrs 1750/30000, Loss=0.008739
+Epoch 147, Itrs 1760/30000, Loss=0.008586
+Epoch 148, Itrs 1770/30000, Loss=0.008300
+Epoch 149, Itrs 1780/30000, Loss=0.008572
+Epoch 150, Itrs 1790/30000, Loss=0.008658
+Epoch 150, Itrs 1800/30000, Loss=0.008599
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.09it/s]
+Overall Acc: 0.963355
+Mean Acc: 0.557120
+FreqW Acc: 0.931891
+Mean IoU: 0.534555
+Class IoU:
+	class 0: 0.963196
+	class 1: 0.105915
+
+Updating Labels...
+
+45it [01:26,  1.93s/it]
+Epoch 151, Itrs 1810/30000, Loss=0.008676
+Epoch 152, Itrs 1820/30000, Loss=0.008481
+Epoch 153, Itrs 1830/30000, Loss=0.008594
+Epoch 154, Itrs 1840/30000, Loss=0.008529
+Epoch 155, Itrs 1850/30000, Loss=0.008717
+Epoch 155, Itrs 1860/30000, Loss=0.008538
+Epoch 156, Itrs 1870/30000, Loss=0.008699
+Epoch 157, Itrs 1880/30000, Loss=0.008244
+Epoch 158, Itrs 1890/30000, Loss=0.008833
+Epoch 159, Itrs 1900/30000, Loss=0.008469
+Epoch 160, Itrs 1910/30000, Loss=0.008631
+Epoch 160, Itrs 1920/30000, Loss=0.008936
+Epoch 161, Itrs 1930/30000, Loss=0.008493
+Epoch 162, Itrs 1940/30000, Loss=0.008585
+Epoch 163, Itrs 1950/30000, Loss=0.008914
+Epoch 164, Itrs 1960/30000, Loss=0.008125
+Epoch 165, Itrs 1970/30000, Loss=0.008661
+Epoch 165, Itrs 1980/30000, Loss=0.008349
+Epoch 166, Itrs 1990/30000, Loss=0.008747
+Epoch 167, Itrs 2000/30000, Loss=0.008332
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.02it/s]
+Overall Acc: 0.963386
+Mean Acc: 0.565507
+FreqW Acc: 0.932400
+Mean IoU: 0.541429
+Class IoU:
+	class 0: 0.963203
+	class 1: 0.119656
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 168, Itrs 2010/30000, Loss=0.008720
+Epoch 169, Itrs 2020/30000, Loss=0.008536
+Epoch 170, Itrs 2030/30000, Loss=0.008671
+Epoch 170, Itrs 2040/30000, Loss=0.008648
+Epoch 171, Itrs 2050/30000, Loss=0.008700
+Epoch 172, Itrs 2060/30000, Loss=0.008282
+Epoch 173, Itrs 2070/30000, Loss=0.008552
+Epoch 174, Itrs 2080/30000, Loss=0.008654
+Epoch 175, Itrs 2090/30000, Loss=0.008647
+Epoch 175, Itrs 2100/30000, Loss=0.008428
+Epoch 176, Itrs 2110/30000, Loss=0.008669
+Epoch 177, Itrs 2120/30000, Loss=0.008491
+Epoch 178, Itrs 2130/30000, Loss=0.008572
+Epoch 179, Itrs 2140/30000, Loss=0.008351
+Epoch 180, Itrs 2150/30000, Loss=0.008220
+Epoch 180, Itrs 2160/30000, Loss=0.008774
+Epoch 181, Itrs 2170/30000, Loss=0.008434
+Epoch 182, Itrs 2180/30000, Loss=0.008492
+Epoch 183, Itrs 2190/30000, Loss=0.008167
+Epoch 184, Itrs 2200/30000, Loss=0.008491
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.82it/s]
+Overall Acc: 0.964024
+Mean Acc: 0.560004
+FreqW Acc: 0.932750
+Mean IoU: 0.537888
+Class IoU:
+	class 0: 0.963860
+	class 1: 0.111915
+
+Updating Labels...
+
+45it [01:27,  1.95s/it]
+Epoch 185, Itrs 2210/30000, Loss=0.008763
+Epoch 185, Itrs 2220/30000, Loss=0.008340
+Epoch 186, Itrs 2230/30000, Loss=0.008530
+Epoch 187, Itrs 2240/30000, Loss=0.008365
+Epoch 188, Itrs 2250/30000, Loss=0.008571
+Epoch 189, Itrs 2260/30000, Loss=0.008416
+Epoch 190, Itrs 2270/30000, Loss=0.008776
+Epoch 190, Itrs 2280/30000, Loss=0.008389
+Epoch 191, Itrs 2290/30000, Loss=0.008402
+Epoch 192, Itrs 2300/30000, Loss=0.008532
+Epoch 193, Itrs 2310/30000, Loss=0.008204
+Epoch 194, Itrs 2320/30000, Loss=0.008461
+Epoch 195, Itrs 2330/30000, Loss=0.008659
+Epoch 195, Itrs 2340/30000, Loss=0.008485
+Epoch 196, Itrs 2350/30000, Loss=0.008427
+Epoch 197, Itrs 2360/30000, Loss=0.008320
+Epoch 198, Itrs 2370/30000, Loss=0.008631
+Epoch 199, Itrs 2380/30000, Loss=0.008181
+Epoch 200, Itrs 2390/30000, Loss=0.008488
+Epoch 200, Itrs 2400/30000, Loss=0.008606
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.07it/s]
+Overall Acc: 0.963800
+Mean Acc: 0.563311
+FreqW Acc: 0.932707
+Mean IoU: 0.540279
+Class IoU:
+	class 0: 0.963625
+	class 1: 0.116933
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 201, Itrs 2410/30000, Loss=0.008385
+Epoch 202, Itrs 2420/30000, Loss=0.008198
+Epoch 203, Itrs 2430/30000, Loss=0.008642
+Epoch 204, Itrs 2440/30000, Loss=0.008624
+Epoch 205, Itrs 2450/30000, Loss=0.008345
+Epoch 205, Itrs 2460/30000, Loss=0.007988
+Epoch 206, Itrs 2470/30000, Loss=0.008430
+Epoch 207, Itrs 2480/30000, Loss=0.007987
+Epoch 208, Itrs 2490/30000, Loss=0.008208
+Epoch 209, Itrs 2500/30000, Loss=0.008302
+Epoch 210, Itrs 2510/30000, Loss=0.008796
+Epoch 210, Itrs 2520/30000, Loss=0.008269
+Epoch 211, Itrs 2530/30000, Loss=0.008275
+Epoch 212, Itrs 2540/30000, Loss=0.008518
+Epoch 213, Itrs 2550/30000, Loss=0.008233
+Epoch 214, Itrs 2560/30000, Loss=0.008392
+Epoch 215, Itrs 2570/30000, Loss=0.008357
+Epoch 215, Itrs 2580/30000, Loss=0.008530
+Epoch 216, Itrs 2590/30000, Loss=0.008277
+Epoch 217, Itrs 2600/30000, Loss=0.008302
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.00it/s]
+Overall Acc: 0.963929
+Mean Acc: 0.564362
+FreqW Acc: 0.932902
+Mean IoU: 0.541332
+Class IoU:
+	class 0: 0.963752
+	class 1: 0.118912
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 218, Itrs 2610/30000, Loss=0.008341
+Epoch 219, Itrs 2620/30000, Loss=0.008391
+Epoch 220, Itrs 2630/30000, Loss=0.008319
+Epoch 220, Itrs 2640/30000, Loss=0.008492
+Epoch 221, Itrs 2650/30000, Loss=0.008226
+Epoch 222, Itrs 2660/30000, Loss=0.008365
+Epoch 223, Itrs 2670/30000, Loss=0.008290
+Epoch 224, Itrs 2680/30000, Loss=0.008275
+Epoch 225, Itrs 2690/30000, Loss=0.008565
+Epoch 225, Itrs 2700/30000, Loss=0.008228
+Epoch 226, Itrs 2710/30000, Loss=0.008205
+Epoch 227, Itrs 2720/30000, Loss=0.008406
+Epoch 228, Itrs 2730/30000, Loss=0.008184
+Epoch 229, Itrs 2740/30000, Loss=0.008418
+Epoch 230, Itrs 2750/30000, Loss=0.008595
+Epoch 230, Itrs 2760/30000, Loss=0.008319
+Epoch 231, Itrs 2770/30000, Loss=0.008253
+Epoch 232, Itrs 2780/30000, Loss=0.008439
+Epoch 233, Itrs 2790/30000, Loss=0.008076
+Epoch 234, Itrs 2800/30000, Loss=0.008001
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.90it/s]
+Overall Acc: 0.964179
+Mean Acc: 0.560578
+FreqW Acc: 0.932945
+Mean IoU: 0.538592
+Class IoU:
+	class 0: 0.964015
+	class 1: 0.113169
+
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 235, Itrs 2810/30000, Loss=0.008619
+Epoch 235, Itrs 2820/30000, Loss=0.008165
+Epoch 236, Itrs 2830/30000, Loss=0.008358
+Epoch 237, Itrs 2840/30000, Loss=0.008112
+Epoch 238, Itrs 2850/30000, Loss=0.008488
+Epoch 239, Itrs 2860/30000, Loss=0.008063
+Epoch 240, Itrs 2870/30000, Loss=0.008406
+Epoch 240, Itrs 2880/30000, Loss=0.008436
+Epoch 241, Itrs 2890/30000, Loss=0.008270
+Epoch 242, Itrs 2900/30000, Loss=0.008462
+Epoch 243, Itrs 2910/30000, Loss=0.007856
+Epoch 244, Itrs 2920/30000, Loss=0.008384
+Epoch 245, Itrs 2930/30000, Loss=0.008225
+Epoch 245, Itrs 2940/30000, Loss=0.008045
+Epoch 246, Itrs 2950/30000, Loss=0.008284
+Epoch 247, Itrs 2960/30000, Loss=0.008338
+Epoch 248, Itrs 2970/30000, Loss=0.008296
+Epoch 249, Itrs 2980/30000, Loss=0.008546
+Epoch 250, Itrs 2990/30000, Loss=0.008029
+Epoch 250, Itrs 3000/30000, Loss=0.008118
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.83it/s]
+Overall Acc: 0.964271
+Mean Acc: 0.563008
+FreqW Acc: 0.933182
+Mean IoU: 0.540744
+Class IoU:
+	class 0: 0.964101
+	class 1: 0.117387
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 251, Itrs 3010/30000, Loss=0.008154
+Epoch 252, Itrs 3020/30000, Loss=0.008119
+Epoch 253, Itrs 3030/30000, Loss=0.008594
+Epoch 254, Itrs 3040/30000, Loss=0.008011
+Epoch 255, Itrs 3050/30000, Loss=0.008238
+Epoch 255, Itrs 3060/30000, Loss=0.008380
+Epoch 256, Itrs 3070/30000, Loss=0.008083
+Epoch 257, Itrs 3080/30000, Loss=0.008225
+Epoch 258, Itrs 3090/30000, Loss=0.008379
+Epoch 259, Itrs 3100/30000, Loss=0.007929
+Epoch 260, Itrs 3110/30000, Loss=0.008229
+Epoch 260, Itrs 3120/30000, Loss=0.008606
+Epoch 261, Itrs 3130/30000, Loss=0.008149
+Epoch 262, Itrs 3140/30000, Loss=0.008125
+Epoch 263, Itrs 3150/30000, Loss=0.008337
+Epoch 264, Itrs 3160/30000, Loss=0.007888
+Epoch 265, Itrs 3170/30000, Loss=0.007953
+Epoch 265, Itrs 3180/30000, Loss=0.008516
+Epoch 266, Itrs 3190/30000, Loss=0.008103
+Epoch 267, Itrs 3200/30000, Loss=0.008257
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.13it/s]
+Overall Acc: 0.964242
+Mean Acc: 0.568054
+FreqW Acc: 0.933440
+Mean IoU: 0.544827
+Class IoU:
+	class 0: 0.964058
+	class 1: 0.125596
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.91s/it]
+Epoch 268, Itrs 3210/30000, Loss=0.007955
+Epoch 269, Itrs 3220/30000, Loss=0.008237
+Epoch 270, Itrs 3230/30000, Loss=0.008318
+Epoch 270, Itrs 3240/30000, Loss=0.008001
+Epoch 271, Itrs 3250/30000, Loss=0.008136
+Epoch 272, Itrs 3260/30000, Loss=0.008109
+Epoch 273, Itrs 3270/30000, Loss=0.007805
+Epoch 274, Itrs 3280/30000, Loss=0.008096
+Epoch 275, Itrs 3290/30000, Loss=0.008251
+Epoch 275, Itrs 3300/30000, Loss=0.008018
+Epoch 276, Itrs 3310/30000, Loss=0.008078
+Epoch 277, Itrs 3320/30000, Loss=0.008200
+Epoch 278, Itrs 3330/30000, Loss=0.008087
+Epoch 279, Itrs 3340/30000, Loss=0.008262
+Epoch 280, Itrs 3350/30000, Loss=0.008321
+Epoch 280, Itrs 3360/30000, Loss=0.008167
+Epoch 281, Itrs 3370/30000, Loss=0.008011
+Epoch 282, Itrs 3380/30000, Loss=0.008256
+Epoch 283, Itrs 3390/30000, Loss=0.008335
+Epoch 284, Itrs 3400/30000, Loss=0.007950
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.18it/s]
+Overall Acc: 0.964275
+Mean Acc: 0.565320
+FreqW Acc: 0.933318
+Mean IoU: 0.542651
+Class IoU:
+	class 0: 0.964098
+	class 1: 0.121205
+
+Updating Labels...
+
+45it [01:23,  1.85s/it]
+Epoch 285, Itrs 3410/30000, Loss=0.008149
+Epoch 285, Itrs 3420/30000, Loss=0.008311
+Epoch 286, Itrs 3430/30000, Loss=0.008142
+Epoch 287, Itrs 3440/30000, Loss=0.008092
+Epoch 288, Itrs 3450/30000, Loss=0.007708
+Epoch 289, Itrs 3460/30000, Loss=0.008258
+Epoch 290, Itrs 3470/30000, Loss=0.008205
+Epoch 290, Itrs 3480/30000, Loss=0.008108
+Epoch 291, Itrs 3490/30000, Loss=0.008064
+Epoch 292, Itrs 3500/30000, Loss=0.008185
+Epoch 293, Itrs 3510/30000, Loss=0.008296
+Epoch 294, Itrs 3520/30000, Loss=0.008041
+Epoch 295, Itrs 3530/30000, Loss=0.008327
+Epoch 295, Itrs 3540/30000, Loss=0.008303
+Epoch 296, Itrs 3550/30000, Loss=0.008122
+Epoch 297, Itrs 3560/30000, Loss=0.008292
+Epoch 298, Itrs 3570/30000, Loss=0.008131
+Epoch 299, Itrs 3580/30000, Loss=0.007992
+Epoch 300, Itrs 3590/30000, Loss=0.008050
+Epoch 300, Itrs 3600/30000, Loss=0.008032
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.14it/s]
+Overall Acc: 0.964268
+Mean Acc: 0.568161
+FreqW Acc: 0.933473
+Mean IoU: 0.544955
+Class IoU:
+	class 0: 0.964083
+	class 1: 0.125828
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 301, Itrs 3610/30000, Loss=0.007983
+Epoch 302, Itrs 3620/30000, Loss=0.007968
+Epoch 303, Itrs 3630/30000, Loss=0.007654
+Epoch 304, Itrs 3640/30000, Loss=0.008304
+Epoch 305, Itrs 3650/30000, Loss=0.008141
+Epoch 305, Itrs 3660/30000, Loss=0.008210
+Epoch 306, Itrs 3670/30000, Loss=0.007948
+Epoch 307, Itrs 3680/30000, Loss=0.008280
+Epoch 308, Itrs 3690/30000, Loss=0.007889
+Epoch 309, Itrs 3700/30000, Loss=0.008116
+Epoch 310, Itrs 3710/30000, Loss=0.007955
+Epoch 310, Itrs 3720/30000, Loss=0.008182
+Epoch 311, Itrs 3730/30000, Loss=0.008195
+Epoch 312, Itrs 3740/30000, Loss=0.008112
+Epoch 313, Itrs 3750/30000, Loss=0.007671
+Epoch 314, Itrs 3760/30000, Loss=0.007916
+Epoch 315, Itrs 3770/30000, Loss=0.008124
+Epoch 315, Itrs 3780/30000, Loss=0.007931
+Epoch 316, Itrs 3790/30000, Loss=0.007950
+Epoch 317, Itrs 3800/30000, Loss=0.008538
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.77it/s]
+Overall Acc: 0.964065
+Mean Acc: 0.571457
+FreqW Acc: 0.933444
+Mean IoU: 0.547270
+Class IoU:
+	class 0: 0.963870
+	class 1: 0.130670
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 318, Itrs 3810/30000, Loss=0.007570
+Epoch 319, Itrs 3820/30000, Loss=0.008328
+Epoch 320, Itrs 3830/30000, Loss=0.007717
+Epoch 320, Itrs 3840/30000, Loss=0.007999
+Epoch 321, Itrs 3850/30000, Loss=0.008117
+Epoch 322, Itrs 3860/30000, Loss=0.008024
+Epoch 323, Itrs 3870/30000, Loss=0.008101
+Epoch 324, Itrs 3880/30000, Loss=0.007979
+Epoch 325, Itrs 3890/30000, Loss=0.008229
+Epoch 325, Itrs 3900/30000, Loss=0.007694
+Epoch 326, Itrs 3910/30000, Loss=0.008001
+Epoch 327, Itrs 3920/30000, Loss=0.008119
+Epoch 328, Itrs 3930/30000, Loss=0.007915
+Epoch 329, Itrs 3940/30000, Loss=0.008000
+Epoch 330, Itrs 3950/30000, Loss=0.008026
+Epoch 330, Itrs 3960/30000, Loss=0.007920
+Epoch 331, Itrs 3970/30000, Loss=0.007949
+Epoch 332, Itrs 3980/30000, Loss=0.008178
+Epoch 333, Itrs 3990/30000, Loss=0.007874
+Epoch 334, Itrs 4000/30000, Loss=0.007572
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.24it/s]
+Overall Acc: 0.964307
+Mean Acc: 0.566470
+FreqW Acc: 0.933418
+Mean IoU: 0.543643
+Class IoU:
+	class 0: 0.964128
+	class 1: 0.123159
+
+Updating Labels...
+
+45it [01:24,  1.89s/it]
+Epoch 335, Itrs 4010/30000, Loss=0.008380
+Epoch 335, Itrs 4020/30000, Loss=0.007910
+Epoch 336, Itrs 4030/30000, Loss=0.008023
+Epoch 337, Itrs 4040/30000, Loss=0.008064
+Epoch 338, Itrs 4050/30000, Loss=0.007932
+Epoch 339, Itrs 4060/30000, Loss=0.008090
+Epoch 340, Itrs 4070/30000, Loss=0.007941
+Epoch 340, Itrs 4080/30000, Loss=0.007911
+Epoch 341, Itrs 4090/30000, Loss=0.007951
+Epoch 342, Itrs 4100/30000, Loss=0.007700
+Epoch 343, Itrs 4110/30000, Loss=0.008304
+Epoch 344, Itrs 4120/30000, Loss=0.008162
+Epoch 345, Itrs 4130/30000, Loss=0.007952
+Epoch 345, Itrs 4140/30000, Loss=0.007921
+Epoch 346, Itrs 4150/30000, Loss=0.008064
+Epoch 347, Itrs 4160/30000, Loss=0.008089
+Epoch 348, Itrs 4170/30000, Loss=0.007513
+Epoch 349, Itrs 4180/30000, Loss=0.008073
+Epoch 350, Itrs 4190/30000, Loss=0.008000
+Epoch 350, Itrs 4200/30000, Loss=0.007910
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.964476
+Mean Acc: 0.568385
+FreqW Acc: 0.933705
+Mean IoU: 0.545477
+Class IoU:
+	class 0: 0.964292
+	class 1: 0.126661
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 351, Itrs 4210/30000, Loss=0.007976
+Epoch 352, Itrs 4220/30000, Loss=0.007644
+Epoch 353, Itrs 4230/30000, Loss=0.008155
+Epoch 354, Itrs 4240/30000, Loss=0.007892
+Epoch 355, Itrs 4250/30000, Loss=0.008244
+Epoch 355, Itrs 4260/30000, Loss=0.008216
+Epoch 356, Itrs 4270/30000, Loss=0.008094
+Epoch 357, Itrs 4280/30000, Loss=0.007871
+Epoch 358, Itrs 4290/30000, Loss=0.008042
+Epoch 359, Itrs 4300/30000, Loss=0.007931
+Epoch 360, Itrs 4310/30000, Loss=0.007936
+Epoch 360, Itrs 4320/30000, Loss=0.008026
+Epoch 361, Itrs 4330/30000, Loss=0.007855
+Epoch 362, Itrs 4340/30000, Loss=0.007863
+Epoch 363, Itrs 4350/30000, Loss=0.007863
+Epoch 364, Itrs 4360/30000, Loss=0.008352
+Epoch 365, Itrs 4370/30000, Loss=0.007893
+Epoch 365, Itrs 4380/30000, Loss=0.007913
+Epoch 366, Itrs 4390/30000, Loss=0.007895
+Epoch 367, Itrs 4400/30000, Loss=0.008151
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.84it/s]
+Overall Acc: 0.964442
+Mean Acc: 0.568573
+FreqW Acc: 0.933680
+Mean IoU: 0.545574
+Class IoU:
+	class 0: 0.964258
+	class 1: 0.126890
+
+Updating Labels...
+
+45it [01:25,  1.89s/it]
+Epoch 368, Itrs 4410/30000, Loss=0.007648
+Epoch 369, Itrs 4420/30000, Loss=0.008070
+Epoch 370, Itrs 4430/30000, Loss=0.007621
+Epoch 370, Itrs 4440/30000, Loss=0.007884
+Epoch 371, Itrs 4450/30000, Loss=0.007868
+Epoch 372, Itrs 4460/30000, Loss=0.007890
+Epoch 373, Itrs 4470/30000, Loss=0.008100
+Epoch 374, Itrs 4480/30000, Loss=0.007884
+Epoch 375, Itrs 4490/30000, Loss=0.007851
+Epoch 375, Itrs 4500/30000, Loss=0.007851
+Epoch 376, Itrs 4510/30000, Loss=0.007949
+Epoch 377, Itrs 4520/30000, Loss=0.008035
+Epoch 378, Itrs 4530/30000, Loss=0.007582
+Epoch 379, Itrs 4540/30000, Loss=0.008167
+Epoch 380, Itrs 4550/30000, Loss=0.007982
+Epoch 380, Itrs 4560/30000, Loss=0.007904
+Epoch 381, Itrs 4570/30000, Loss=0.007995
+Epoch 382, Itrs 4580/30000, Loss=0.008069
+Epoch 383, Itrs 4590/30000, Loss=0.007974
+Epoch 384, Itrs 4600/30000, Loss=0.007705
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.93it/s]
+Overall Acc: 0.964396
+Mean Acc: 0.573092
+FreqW Acc: 0.933885
+Mean IoU: 0.549134
+Class IoU:
+	class 0: 0.964199
+	class 1: 0.134070
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:26,  1.93s/it]
+Epoch 385, Itrs 4610/30000, Loss=0.008077
+Epoch 385, Itrs 4620/30000, Loss=0.007805
+Epoch 386, Itrs 4630/30000, Loss=0.008000
+Epoch 387, Itrs 4640/30000, Loss=0.007726
+Epoch 388, Itrs 4650/30000, Loss=0.007994
+Epoch 389, Itrs 4660/30000, Loss=0.007878
+Epoch 390, Itrs 4670/30000, Loss=0.008181
+Epoch 390, Itrs 4680/30000, Loss=0.007772
+Epoch 391, Itrs 4690/30000, Loss=0.008077
+Epoch 392, Itrs 4700/30000, Loss=0.007770
+Epoch 393, Itrs 4710/30000, Loss=0.007711
+Epoch 394, Itrs 4720/30000, Loss=0.008288
+Epoch 395, Itrs 4730/30000, Loss=0.007975
+Epoch 395, Itrs 4740/30000, Loss=0.007738
+Epoch 396, Itrs 4750/30000, Loss=0.007795
+Epoch 397, Itrs 4760/30000, Loss=0.007990
+Epoch 398, Itrs 4770/30000, Loss=0.007782
+Epoch 399, Itrs 4780/30000, Loss=0.007668
+Epoch 400, Itrs 4790/30000, Loss=0.008174
+Epoch 400, Itrs 4800/30000, Loss=0.007940
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.24it/s]
+Overall Acc: 0.964673
+Mean Acc: 0.573275
+FreqW Acc: 0.934188
+Mean IoU: 0.549759
+Class IoU:
+	class 0: 0.964477
+	class 1: 0.135042
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:26,  1.93s/it]
+Epoch 401, Itrs 4810/30000, Loss=0.007861
+Epoch 402, Itrs 4820/30000, Loss=0.007899
+Epoch 403, Itrs 4830/30000, Loss=0.007764
+Epoch 404, Itrs 4840/30000, Loss=0.008273
+Epoch 405, Itrs 4850/30000, Loss=0.007696
+Epoch 405, Itrs 4860/30000, Loss=0.007920
+Epoch 406, Itrs 4870/30000, Loss=0.007907
+Epoch 407, Itrs 4880/30000, Loss=0.007678
+Epoch 408, Itrs 4890/30000, Loss=0.007804
+Epoch 409, Itrs 4900/30000, Loss=0.007958
+Epoch 410, Itrs 4910/30000, Loss=0.007949
+Epoch 410, Itrs 4920/30000, Loss=0.007832
+Epoch 411, Itrs 4930/30000, Loss=0.007769
+Epoch 412, Itrs 4940/30000, Loss=0.008020
+Epoch 413, Itrs 4950/30000, Loss=0.008093
+Epoch 414, Itrs 4960/30000, Loss=0.007712
+Epoch 415, Itrs 4970/30000, Loss=0.007700
+Epoch 415, Itrs 4980/30000, Loss=0.007835
+Epoch 416, Itrs 4990/30000, Loss=0.007820
+Epoch 417, Itrs 5000/30000, Loss=0.007751
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.90it/s]
+Overall Acc: 0.964525
+Mean Acc: 0.573691
+FreqW Acc: 0.934055
+Mean IoU: 0.549835
+Class IoU:
+	class 0: 0.964326
+	class 1: 0.135343
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.89s/it]
+Epoch 418, Itrs 5010/30000, Loss=0.007874
+Epoch 419, Itrs 5020/30000, Loss=0.007926
+Epoch 420, Itrs 5030/30000, Loss=0.008232
+Epoch 420, Itrs 5040/30000, Loss=0.007693
+Epoch 421, Itrs 5050/30000, Loss=0.007777
+Epoch 422, Itrs 5060/30000, Loss=0.007862
+Epoch 423, Itrs 5070/30000, Loss=0.007685
+Epoch 424, Itrs 5080/30000, Loss=0.007941
+Epoch 425, Itrs 5090/30000, Loss=0.007624
+Epoch 425, Itrs 5100/30000, Loss=0.008114
+Epoch 426, Itrs 5110/30000, Loss=0.007820
+Epoch 427, Itrs 5120/30000, Loss=0.008137
+Epoch 428, Itrs 5130/30000, Loss=0.007753
+Epoch 429, Itrs 5140/30000, Loss=0.007766
+Epoch 430, Itrs 5150/30000, Loss=0.007722
+Epoch 430, Itrs 5160/30000, Loss=0.008160
+Epoch 431, Itrs 5170/30000, Loss=0.007952
+Epoch 432, Itrs 5180/30000, Loss=0.007586
+Epoch 433, Itrs 5190/30000, Loss=0.007920
+Epoch 434, Itrs 5200/30000, Loss=0.007569
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.97it/s]
+Overall Acc: 0.964588
+Mean Acc: 0.576520
+FreqW Acc: 0.934279
+Mean IoU: 0.552195
+Class IoU:
+	class 0: 0.964383
+	class 1: 0.140007
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:27,  1.95s/it]
+Epoch 435, Itrs 5210/30000, Loss=0.007942
+Epoch 435, Itrs 5220/30000, Loss=0.007669
+Epoch 436, Itrs 5230/30000, Loss=0.007888
+Epoch 437, Itrs 5240/30000, Loss=0.007614
+Epoch 438, Itrs 5250/30000, Loss=0.007796
+Epoch 439, Itrs 5260/30000, Loss=0.007600
+Epoch 440, Itrs 5270/30000, Loss=0.008007
+Epoch 440, Itrs 5280/30000, Loss=0.007960
+Epoch 441, Itrs 5290/30000, Loss=0.007901
+Epoch 442, Itrs 5300/30000, Loss=0.007686
+Epoch 443, Itrs 5310/30000, Loss=0.007632
+Epoch 444, Itrs 5320/30000, Loss=0.007713
+Epoch 445, Itrs 5330/30000, Loss=0.007830
+Epoch 445, Itrs 5340/30000, Loss=0.007738
+Epoch 446, Itrs 5350/30000, Loss=0.007843
+Epoch 447, Itrs 5360/30000, Loss=0.007843
+Epoch 448, Itrs 5370/30000, Loss=0.007727
+Epoch 449, Itrs 5380/30000, Loss=0.007720
+Epoch 450, Itrs 5390/30000, Loss=0.007952
+Epoch 450, Itrs 5400/30000, Loss=0.007618
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.58it/s]
+Overall Acc: 0.964711
+Mean Acc: 0.582054
+FreqW Acc: 0.934713
+Mean IoU: 0.556762
+Class IoU:
+	class 0: 0.964491
+	class 1: 0.149034
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.91s/it]
+Epoch 451, Itrs 5410/30000, Loss=0.007793
+Epoch 452, Itrs 5420/30000, Loss=0.007802
+Epoch 453, Itrs 5430/30000, Loss=0.007589
+Epoch 454, Itrs 5440/30000, Loss=0.007833
+Epoch 455, Itrs 5450/30000, Loss=0.007608
+Epoch 455, Itrs 5460/30000, Loss=0.008013
+Epoch 456, Itrs 5470/30000, Loss=0.007685
+Epoch 457, Itrs 5480/30000, Loss=0.007882
+Epoch 458, Itrs 5490/30000, Loss=0.007889
+Epoch 459, Itrs 5500/30000, Loss=0.007945
+Epoch 460, Itrs 5510/30000, Loss=0.007838
+Epoch 460, Itrs 5520/30000, Loss=0.007880
+Epoch 461, Itrs 5530/30000, Loss=0.007799
+Epoch 462, Itrs 5540/30000, Loss=0.007731
+Epoch 463, Itrs 5550/30000, Loss=0.007572
+Epoch 464, Itrs 5560/30000, Loss=0.007752
+Epoch 465, Itrs 5570/30000, Loss=0.007847
+Epoch 465, Itrs 5580/30000, Loss=0.007994
+Epoch 466, Itrs 5590/30000, Loss=0.007677
+Epoch 467, Itrs 5600/30000, Loss=0.007983
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.75it/s]
+Overall Acc: 0.964550
+Mean Acc: 0.576888
+FreqW Acc: 0.934259
+Mean IoU: 0.552418
+Class IoU:
+	class 0: 0.964343
+	class 1: 0.140493
+
+Updating Labels...
+
+45it [01:28,  1.97s/it]
+Epoch 468, Itrs 5610/30000, Loss=0.007778
+Epoch 469, Itrs 5620/30000, Loss=0.007842
+Epoch 470, Itrs 5630/30000, Loss=0.007823
+Epoch 470, Itrs 5640/30000, Loss=0.008011
+Epoch 471, Itrs 5650/30000, Loss=0.007697
+Epoch 472, Itrs 5660/30000, Loss=0.007614
+Epoch 473, Itrs 5670/30000, Loss=0.007945
+Epoch 474, Itrs 5680/30000, Loss=0.008346
+Epoch 475, Itrs 5690/30000, Loss=0.007895
+Epoch 475, Itrs 5700/30000, Loss=0.007699
+Epoch 476, Itrs 5710/30000, Loss=0.007833
+Epoch 477, Itrs 5720/30000, Loss=0.007645
+Epoch 478, Itrs 5730/30000, Loss=0.008050
+Epoch 479, Itrs 5740/30000, Loss=0.007668
+Epoch 480, Itrs 5750/30000, Loss=0.007686
+Epoch 480, Itrs 5760/30000, Loss=0.007916
+Epoch 481, Itrs 5770/30000, Loss=0.007807
+Epoch 482, Itrs 5780/30000, Loss=0.007342
+Epoch 483, Itrs 5790/30000, Loss=0.008006
+Epoch 484, Itrs 5800/30000, Loss=0.007763
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.94it/s]
+Overall Acc: 0.964763
+Mean Acc: 0.581412
+FreqW Acc: 0.934735
+Mean IoU: 0.556363
+Class IoU:
+	class 0: 0.964546
+	class 1: 0.148179
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 485, Itrs 5810/30000, Loss=0.007887
+Epoch 485, Itrs 5820/30000, Loss=0.007648
+Epoch 486, Itrs 5830/30000, Loss=0.007816
+Epoch 487, Itrs 5840/30000, Loss=0.007423
+Epoch 488, Itrs 5850/30000, Loss=0.007718
+Epoch 489, Itrs 5860/30000, Loss=0.007795
+Epoch 490, Itrs 5870/30000, Loss=0.007838
+Epoch 490, Itrs 5880/30000, Loss=0.007632
+Epoch 491, Itrs 5890/30000, Loss=0.007840
+Epoch 492, Itrs 5900/30000, Loss=0.007669
+Epoch 493, Itrs 5910/30000, Loss=0.007456
+Epoch 494, Itrs 5920/30000, Loss=0.007744
+Epoch 495, Itrs 5930/30000, Loss=0.007435
+Epoch 495, Itrs 5940/30000, Loss=0.007878
+Epoch 496, Itrs 5950/30000, Loss=0.007696
+Epoch 497, Itrs 5960/30000, Loss=0.007927
+Epoch 498, Itrs 5970/30000, Loss=0.007323
+Epoch 499, Itrs 5980/30000, Loss=0.007951
+Epoch 500, Itrs 5990/30000, Loss=0.007694
+Epoch 500, Itrs 6000/30000, Loss=0.007719
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.64it/s]
+Overall Acc: 0.964761
+Mean Acc: 0.584798
+FreqW Acc: 0.934916
+Mean IoU: 0.558983
+Class IoU:
+	class 0: 0.964534
+	class 1: 0.153431
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.91s/it]
+Epoch 501, Itrs 6010/30000, Loss=0.007808
+Epoch 502, Itrs 6020/30000, Loss=0.007702
+Epoch 503, Itrs 6030/30000, Loss=0.007691
+Epoch 504, Itrs 6040/30000, Loss=0.007508
+Epoch 505, Itrs 6050/30000, Loss=0.007923
+Epoch 505, Itrs 6060/30000, Loss=0.008074
+Epoch 506, Itrs 6070/30000, Loss=0.007761
+Epoch 507, Itrs 6080/30000, Loss=0.008084
+Epoch 508, Itrs 6090/30000, Loss=0.007188
+Epoch 509, Itrs 6100/30000, Loss=0.007937
+Epoch 510, Itrs 6110/30000, Loss=0.007549
+Epoch 510, Itrs 6120/30000, Loss=0.007652
+Epoch 511, Itrs 6130/30000, Loss=0.007725
+Epoch 512, Itrs 6140/30000, Loss=0.007445
+Epoch 513, Itrs 6150/30000, Loss=0.007856
+Epoch 514, Itrs 6160/30000, Loss=0.007852
+Epoch 515, Itrs 6170/30000, Loss=0.007635
+Epoch 515, Itrs 6180/30000, Loss=0.007756
+Epoch 516, Itrs 6190/30000, Loss=0.007637
+Epoch 517, Itrs 6200/30000, Loss=0.007875
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.98it/s]
+Overall Acc: 0.964894
+Mean Acc: 0.581782
+FreqW Acc: 0.934896
+Mean IoU: 0.556900
+Class IoU:
+	class 0: 0.964677
+	class 1: 0.149122
+
+Updating Labels...
+
+45it [01:24,  1.89s/it]
+Epoch 518, Itrs 6210/30000, Loss=0.007973
+Epoch 519, Itrs 6220/30000, Loss=0.008080
+Epoch 520, Itrs 6230/30000, Loss=0.007550
+Epoch 520, Itrs 6240/30000, Loss=0.007833
+Epoch 521, Itrs 6250/30000, Loss=0.007652
+Epoch 522, Itrs 6260/30000, Loss=0.007617
+Epoch 523, Itrs 6270/30000, Loss=0.008193
+Epoch 524, Itrs 6280/30000, Loss=0.007467
+Epoch 525, Itrs 6290/30000, Loss=0.007600
+Epoch 525, Itrs 6300/30000, Loss=0.007583
+Epoch 526, Itrs 6310/30000, Loss=0.007617
+Epoch 527, Itrs 6320/30000, Loss=0.008163
+Epoch 528, Itrs 6330/30000, Loss=0.007678
+Epoch 529, Itrs 6340/30000, Loss=0.007668
+Epoch 530, Itrs 6350/30000, Loss=0.008044
+Epoch 530, Itrs 6360/30000, Loss=0.007629
+Epoch 531, Itrs 6370/30000, Loss=0.007699
+Epoch 532, Itrs 6380/30000, Loss=0.007790
+Epoch 533, Itrs 6390/30000, Loss=0.007600
+Epoch 534, Itrs 6400/30000, Loss=0.007791
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.75it/s]
+Overall Acc: 0.964727
+Mean Acc: 0.584324
+FreqW Acc: 0.934853
+Mean IoU: 0.558551
+Class IoU:
+	class 0: 0.964501
+	class 1: 0.152601
+
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 535, Itrs 6410/30000, Loss=0.007603
+Epoch 535, Itrs 6420/30000, Loss=0.007544
+Epoch 536, Itrs 6430/30000, Loss=0.007635
+Epoch 537, Itrs 6440/30000, Loss=0.007722
+Epoch 538, Itrs 6450/30000, Loss=0.007501
+Epoch 539, Itrs 6460/30000, Loss=0.007845
+Epoch 540, Itrs 6470/30000, Loss=0.007666
+Epoch 540, Itrs 6480/30000, Loss=0.007568
+Epoch 541, Itrs 6490/30000, Loss=0.007836
+Epoch 542, Itrs 6500/30000, Loss=0.007273
+Epoch 543, Itrs 6510/30000, Loss=0.007673
+Epoch 544, Itrs 6520/30000, Loss=0.007750
+Epoch 545, Itrs 6530/30000, Loss=0.007475
+Epoch 545, Itrs 6540/30000, Loss=0.007579
+Epoch 546, Itrs 6550/30000, Loss=0.007497
+Epoch 547, Itrs 6560/30000, Loss=0.008009
+Epoch 548, Itrs 6570/30000, Loss=0.007975
+Epoch 549, Itrs 6580/30000, Loss=0.007488
+Epoch 550, Itrs 6590/30000, Loss=0.007549
+Epoch 550, Itrs 6600/30000, Loss=0.007623
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.79it/s]
+Overall Acc: 0.964847
+Mean Acc: 0.583182
+FreqW Acc: 0.934921
+Mean IoU: 0.557899
+Class IoU:
+	class 0: 0.964625
+	class 1: 0.151173
+
+Updating Labels...
+
+45it [01:25,  1.89s/it]
+Epoch 551, Itrs 6610/30000, Loss=0.007660
+Epoch 552, Itrs 6620/30000, Loss=0.007693
+Epoch 553, Itrs 6630/30000, Loss=0.007543
+Epoch 554, Itrs 6640/30000, Loss=0.007470
+Epoch 555, Itrs 6650/30000, Loss=0.008197
+Epoch 555, Itrs 6660/30000, Loss=0.007601
+Epoch 556, Itrs 6670/30000, Loss=0.007645
+Epoch 557, Itrs 6680/30000, Loss=0.007639
+Epoch 558, Itrs 6690/30000, Loss=0.007309
+Epoch 559, Itrs 6700/30000, Loss=0.007789
+Epoch 560, Itrs 6710/30000, Loss=0.007783
+Epoch 560, Itrs 6720/30000, Loss=0.007590
+Epoch 561, Itrs 6730/30000, Loss=0.007676
+Epoch 562, Itrs 6740/30000, Loss=0.007637
+Epoch 563, Itrs 6750/30000, Loss=0.007677
+Epoch 564, Itrs 6760/30000, Loss=0.007580
+Epoch 565, Itrs 6770/30000, Loss=0.007514
+Epoch 565, Itrs 6780/30000, Loss=0.007877
+Epoch 566, Itrs 6790/30000, Loss=0.007651
+Epoch 567, Itrs 6800/30000, Loss=0.007587
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.51it/s]
+Overall Acc: 0.964530
+Mean Acc: 0.591165
+FreqW Acc: 0.935003
+Mean IoU: 0.563361
+Class IoU:
+	class 0: 0.964284
+	class 1: 0.162438
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 568, Itrs 6810/30000, Loss=0.007436
+Epoch 569, Itrs 6820/30000, Loss=0.007986
+Epoch 570, Itrs 6830/30000, Loss=0.007701
+Epoch 570, Itrs 6840/30000, Loss=0.007719
+Epoch 571, Itrs 6850/30000, Loss=0.007776
+Epoch 572, Itrs 6860/30000, Loss=0.007445
+Epoch 573, Itrs 6870/30000, Loss=0.007597
+Epoch 574, Itrs 6880/30000, Loss=0.007591
+Epoch 575, Itrs 6890/30000, Loss=0.007705
+Epoch 575, Itrs 6900/30000, Loss=0.007487
+Epoch 576, Itrs 6910/30000, Loss=0.007554
+Epoch 577, Itrs 6920/30000, Loss=0.007898
+Epoch 578, Itrs 6930/30000, Loss=0.007455
+Epoch 579, Itrs 6940/30000, Loss=0.007570
+Epoch 580, Itrs 6950/30000, Loss=0.007624
+Epoch 580, Itrs 6960/30000, Loss=0.007624
+Epoch 581, Itrs 6970/30000, Loss=0.007539
+Epoch 582, Itrs 6980/30000, Loss=0.007746
+Epoch 583, Itrs 6990/30000, Loss=0.007706
+Epoch 584, Itrs 7000/30000, Loss=0.007514
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.10it/s]
+Overall Acc: 0.964785
+Mean Acc: 0.588046
+FreqW Acc: 0.935115
+Mean IoU: 0.561519
+Class IoU:
+	class 0: 0.964550
+	class 1: 0.158488
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 585, Itrs 7010/30000, Loss=0.007741
+Epoch 585, Itrs 7020/30000, Loss=0.007622
+Epoch 586, Itrs 7030/30000, Loss=0.007564
+Epoch 587, Itrs 7040/30000, Loss=0.007810
+Epoch 588, Itrs 7050/30000, Loss=0.007716
+Epoch 589, Itrs 7060/30000, Loss=0.007438
+Epoch 590, Itrs 7070/30000, Loss=0.007860
+Epoch 590, Itrs 7080/30000, Loss=0.007510
+Epoch 591, Itrs 7090/30000, Loss=0.007576
+Epoch 592, Itrs 7100/30000, Loss=0.007764
+Epoch 593, Itrs 7110/30000, Loss=0.007498
+Epoch 594, Itrs 7120/30000, Loss=0.007368
+Epoch 595, Itrs 7130/30000, Loss=0.007757
+Epoch 595, Itrs 7140/30000, Loss=0.007645
+Epoch 596, Itrs 7150/30000, Loss=0.007397
+Epoch 597, Itrs 7160/30000, Loss=0.008245
+Epoch 598, Itrs 7170/30000, Loss=0.007575
+Epoch 599, Itrs 7180/30000, Loss=0.007792
+Epoch 600, Itrs 7190/30000, Loss=0.007537
+Epoch 600, Itrs 7200/30000, Loss=0.007692
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.02it/s]
+Overall Acc: 0.964775
+Mean Acc: 0.589893
+FreqW Acc: 0.935203
+Mean IoU: 0.562902
+Class IoU:
+	class 0: 0.964535
+	class 1: 0.161269
+
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 601, Itrs 7210/30000, Loss=0.007752
+Epoch 602, Itrs 7220/30000, Loss=0.007313
+Epoch 603, Itrs 7230/30000, Loss=0.007610
+Epoch 604, Itrs 7240/30000, Loss=0.008009
+Epoch 605, Itrs 7250/30000, Loss=0.007596
+Epoch 605, Itrs 7260/30000, Loss=0.007674
+Epoch 606, Itrs 7270/30000, Loss=0.007596
+Epoch 607, Itrs 7280/30000, Loss=0.007601
+Epoch 608, Itrs 7290/30000, Loss=0.007681
+Epoch 609, Itrs 7300/30000, Loss=0.007369
+Epoch 610, Itrs 7310/30000, Loss=0.007885
+Epoch 610, Itrs 7320/30000, Loss=0.007639
+Epoch 611, Itrs 7330/30000, Loss=0.007528
+Epoch 612, Itrs 7340/30000, Loss=0.007570
+Epoch 613, Itrs 7350/30000, Loss=0.007619
+Epoch 614, Itrs 7360/30000, Loss=0.007390
+Epoch 615, Itrs 7370/30000, Loss=0.007508
+Epoch 615, Itrs 7380/30000, Loss=0.007685
+Epoch 616, Itrs 7390/30000, Loss=0.007527
+Epoch 617, Itrs 7400/30000, Loss=0.007799
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.13it/s]
+Overall Acc: 0.964722
+Mean Acc: 0.596199
+FreqW Acc: 0.935473
+Mean IoU: 0.567506
+Class IoU:
+	class 0: 0.964464
+	class 1: 0.170548
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 618, Itrs 7410/30000, Loss=0.007837
+Epoch 619, Itrs 7420/30000, Loss=0.007577
+Epoch 620, Itrs 7430/30000, Loss=0.007381
+Epoch 620, Itrs 7440/30000, Loss=0.007700
+Epoch 621, Itrs 7450/30000, Loss=0.007595
+Epoch 622, Itrs 7460/30000, Loss=0.007370
+Epoch 623, Itrs 7470/30000, Loss=0.007819
+Epoch 624, Itrs 7480/30000, Loss=0.007538
+Epoch 625, Itrs 7490/30000, Loss=0.007248
+Epoch 625, Itrs 7500/30000, Loss=0.008092
+Epoch 626, Itrs 7510/30000, Loss=0.007626
+Epoch 627, Itrs 7520/30000, Loss=0.007813
+Epoch 628, Itrs 7530/30000, Loss=0.007546
+Epoch 629, Itrs 7540/30000, Loss=0.007365
+Epoch 630, Itrs 7550/30000, Loss=0.007687
+Epoch 630, Itrs 7560/30000, Loss=0.007865
+Epoch 631, Itrs 7570/30000, Loss=0.007618
+Epoch 632, Itrs 7580/30000, Loss=0.007468
+Epoch 633, Itrs 7590/30000, Loss=0.007837
+Epoch 634, Itrs 7600/30000, Loss=0.007284
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.22it/s]
+Overall Acc: 0.964757
+Mean Acc: 0.595062
+FreqW Acc: 0.935452
+Mean IoU: 0.566738
+Class IoU:
+	class 0: 0.964503
+	class 1: 0.168973
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 635, Itrs 7610/30000, Loss=0.007436
+Epoch 635, Itrs 7620/30000, Loss=0.007751
+Epoch 636, Itrs 7630/30000, Loss=0.007596
+Epoch 637, Itrs 7640/30000, Loss=0.007510
+Epoch 638, Itrs 7650/30000, Loss=0.007695
+Epoch 639, Itrs 7660/30000, Loss=0.007723
+Epoch 640, Itrs 7670/30000, Loss=0.007546
+Epoch 640, Itrs 7680/30000, Loss=0.007481
+Epoch 641, Itrs 7690/30000, Loss=0.007450
+Epoch 642, Itrs 7700/30000, Loss=0.007866
+Epoch 643, Itrs 7710/30000, Loss=0.007610
+Epoch 644, Itrs 7720/30000, Loss=0.007563
+Epoch 645, Itrs 7730/30000, Loss=0.007547
+Epoch 645, Itrs 7740/30000, Loss=0.007470
+Epoch 646, Itrs 7750/30000, Loss=0.007630
+Epoch 647, Itrs 7760/30000, Loss=0.007285
+Epoch 648, Itrs 7770/30000, Loss=0.007743
+Epoch 649, Itrs 7780/30000, Loss=0.007674
+Epoch 650, Itrs 7790/30000, Loss=0.007496
+Epoch 650, Itrs 7800/30000, Loss=0.007526
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.73it/s]
+Overall Acc: 0.964731
+Mean Acc: 0.593047
+FreqW Acc: 0.935320
+Mean IoU: 0.565183
+Class IoU:
+	class 0: 0.964482
+	class 1: 0.165883
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 651, Itrs 7810/30000, Loss=0.007639
+Epoch 652, Itrs 7820/30000, Loss=0.007668
+Epoch 653, Itrs 7830/30000, Loss=0.007337
+Epoch 654, Itrs 7840/30000, Loss=0.007318
+Epoch 655, Itrs 7850/30000, Loss=0.007660
+Epoch 655, Itrs 7860/30000, Loss=0.007487
+Epoch 656, Itrs 7870/30000, Loss=0.007510
+Epoch 657, Itrs 7880/30000, Loss=0.007636
+Epoch 658, Itrs 7890/30000, Loss=0.007539
+Epoch 659, Itrs 7900/30000, Loss=0.006991
+Epoch 660, Itrs 7910/30000, Loss=0.007671
+Epoch 660, Itrs 7920/30000, Loss=0.007273
+Epoch 661, Itrs 7930/30000, Loss=0.007569
+Epoch 662, Itrs 7940/30000, Loss=0.007591
+Epoch 663, Itrs 7950/30000, Loss=0.007547
+Epoch 664, Itrs 7960/30000, Loss=0.007675
+Epoch 665, Itrs 7970/30000, Loss=0.007403
+Epoch 665, Itrs 7980/30000, Loss=0.007623
+Epoch 666, Itrs 7990/30000, Loss=0.007566
+Epoch 667, Itrs 8000/30000, Loss=0.007576
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.96it/s]
+Overall Acc: 0.964144
+Mean Acc: 0.601431
+FreqW Acc: 0.935107
+Mean IoU: 0.570076
+Class IoU:
+	class 0: 0.963867
+	class 1: 0.176285
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 668, Itrs 8010/30000, Loss=0.008013
+Epoch 669, Itrs 8020/30000, Loss=0.007629
+Epoch 670, Itrs 8030/30000, Loss=0.007723
+Epoch 670, Itrs 8040/30000, Loss=0.007373
+Epoch 671, Itrs 8050/30000, Loss=0.007467
+Epoch 672, Itrs 8060/30000, Loss=0.007594
+Epoch 673, Itrs 8070/30000, Loss=0.007917
+Epoch 674, Itrs 8080/30000, Loss=0.007303
+Epoch 675, Itrs 8090/30000, Loss=0.007787
+Epoch 675, Itrs 8100/30000, Loss=0.007367
+Epoch 676, Itrs 8110/30000, Loss=0.007363
+Epoch 677, Itrs 8120/30000, Loss=0.007870
+Epoch 678, Itrs 8130/30000, Loss=0.007487
+Epoch 679, Itrs 8140/30000, Loss=0.007567
+Epoch 680, Itrs 8150/30000, Loss=0.007448
+Epoch 680, Itrs 8160/30000, Loss=0.007637
+Epoch 681, Itrs 8170/30000, Loss=0.007510
+Epoch 682, Itrs 8180/30000, Loss=0.007408
+Epoch 683, Itrs 8190/30000, Loss=0.007552
+Epoch 684, Itrs 8200/30000, Loss=0.007305
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.27it/s]
+Overall Acc: 0.964572
+Mean Acc: 0.600910
+FreqW Acc: 0.935549
+Mean IoU: 0.570628
+Class IoU:
+	class 0: 0.964300
+	class 1: 0.176957
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 685, Itrs 8210/30000, Loss=0.007720
+Epoch 685, Itrs 8220/30000, Loss=0.007599
+Epoch 686, Itrs 8230/30000, Loss=0.007470
+Epoch 687, Itrs 8240/30000, Loss=0.007365
+Epoch 688, Itrs 8250/30000, Loss=0.007461
+Epoch 689, Itrs 8260/30000, Loss=0.008077
+Epoch 690, Itrs 8270/30000, Loss=0.007154
+Epoch 690, Itrs 8280/30000, Loss=0.007489
+Epoch 691, Itrs 8290/30000, Loss=0.007503
+Epoch 692, Itrs 8300/30000, Loss=0.007530
+Epoch 693, Itrs 8310/30000, Loss=0.007641
+Epoch 694, Itrs 8320/30000, Loss=0.007665
+Epoch 695, Itrs 8330/30000, Loss=0.007624
+Epoch 695, Itrs 8340/30000, Loss=0.007665
+Epoch 696, Itrs 8350/30000, Loss=0.007450
+Epoch 697, Itrs 8360/30000, Loss=0.007335
+Epoch 698, Itrs 8370/30000, Loss=0.007439
+Epoch 699, Itrs 8380/30000, Loss=0.007666
+Epoch 700, Itrs 8390/30000, Loss=0.007422
+Epoch 700, Itrs 8400/30000, Loss=0.007486
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.13it/s]
+Overall Acc: 0.964123
+Mean Acc: 0.604957
+FreqW Acc: 0.935258
+Mean IoU: 0.572541
+Class IoU:
+	class 0: 0.963836
+	class 1: 0.181247
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 701, Itrs 8410/30000, Loss=0.007458
+Epoch 702, Itrs 8420/30000, Loss=0.008013
+Epoch 703, Itrs 8430/30000, Loss=0.007580
+Epoch 704, Itrs 8440/30000, Loss=0.007671
+Epoch 705, Itrs 8450/30000, Loss=0.007542
+Epoch 705, Itrs 8460/30000, Loss=0.007432
+Epoch 706, Itrs 8470/30000, Loss=0.007592
+Epoch 707, Itrs 8480/30000, Loss=0.007376
+Epoch 708, Itrs 8490/30000, Loss=0.007525
+Epoch 709, Itrs 8500/30000, Loss=0.007776
+Epoch 710, Itrs 8510/30000, Loss=0.007412
+Epoch 710, Itrs 8520/30000, Loss=0.007310
+Epoch 711, Itrs 8530/30000, Loss=0.007554
+Epoch 712, Itrs 8540/30000, Loss=0.007466
+Epoch 713, Itrs 8550/30000, Loss=0.007731
+Epoch 714, Itrs 8560/30000, Loss=0.007795
+Epoch 715, Itrs 8570/30000, Loss=0.007397
+Epoch 715, Itrs 8580/30000, Loss=0.007524
+Epoch 716, Itrs 8590/30000, Loss=0.007408
+Epoch 717, Itrs 8600/30000, Loss=0.007427
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.12it/s]
+Overall Acc: 0.964119
+Mean Acc: 0.605889
+FreqW Acc: 0.935300
+Mean IoU: 0.573192
+Class IoU:
+	class 0: 0.963829
+	class 1: 0.182554
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.89s/it]
+Epoch 718, Itrs 8610/30000, Loss=0.007635
+Epoch 719, Itrs 8620/30000, Loss=0.007654
+Epoch 720, Itrs 8630/30000, Loss=0.007195
+Epoch 720, Itrs 8640/30000, Loss=0.007460
+Epoch 721, Itrs 8650/30000, Loss=0.007449
+Epoch 722, Itrs 8660/30000, Loss=0.007475
+Epoch 723, Itrs 8670/30000, Loss=0.007562
+Epoch 724, Itrs 8680/30000, Loss=0.007169
+Epoch 725, Itrs 8690/30000, Loss=0.007427
+Epoch 725, Itrs 8700/30000, Loss=0.007593
+Epoch 726, Itrs 8710/30000, Loss=0.007588
+Epoch 727, Itrs 8720/30000, Loss=0.007377
+Epoch 728, Itrs 8730/30000, Loss=0.007464
+Epoch 729, Itrs 8740/30000, Loss=0.007187
+Epoch 730, Itrs 8750/30000, Loss=0.007720
+Epoch 730, Itrs 8760/30000, Loss=0.007660
+Epoch 731, Itrs 8770/30000, Loss=0.007456
+Epoch 732, Itrs 8780/30000, Loss=0.007556
+Epoch 733, Itrs 8790/30000, Loss=0.007373
+Epoch 734, Itrs 8800/30000, Loss=0.007221
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.11it/s]
+Overall Acc: 0.964458
+Mean Acc: 0.608292
+FreqW Acc: 0.935790
+Mean IoU: 0.575648
+Class IoU:
+	class 0: 0.964165
+	class 1: 0.187131
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 735, Itrs 8810/30000, Loss=0.007361
+Epoch 735, Itrs 8820/30000, Loss=0.007629
+Epoch 736, Itrs 8830/30000, Loss=0.007481
+Epoch 737, Itrs 8840/30000, Loss=0.007430
+Epoch 738, Itrs 8850/30000, Loss=0.007354
+Epoch 739, Itrs 8860/30000, Loss=0.007593
+Epoch 740, Itrs 8870/30000, Loss=0.007274
+Epoch 740, Itrs 8880/30000, Loss=0.007409
+Epoch 741, Itrs 8890/30000, Loss=0.007447
+Epoch 742, Itrs 8900/30000, Loss=0.007134
+Epoch 743, Itrs 8910/30000, Loss=0.007892
+Epoch 744, Itrs 8920/30000, Loss=0.007528
+Epoch 745, Itrs 8930/30000, Loss=0.007354
+Epoch 745, Itrs 8940/30000, Loss=0.007517
+Epoch 746, Itrs 8950/30000, Loss=0.007389
+Epoch 747, Itrs 8960/30000, Loss=0.007444
+Epoch 748, Itrs 8970/30000, Loss=0.007483
+Epoch 749, Itrs 8980/30000, Loss=0.007207
+Epoch 750, Itrs 8990/30000, Loss=0.007836
+Epoch 750, Itrs 9000/30000, Loss=0.007374
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.81it/s]
+Overall Acc: 0.963734
+Mean Acc: 0.609966
+FreqW Acc: 0.935073
+Mean IoU: 0.575178
+Class IoU:
+	class 0: 0.963429
+	class 1: 0.186927
+
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 751, Itrs 9010/30000, Loss=0.007483
+Epoch 752, Itrs 9020/30000, Loss=0.007195
+Epoch 753, Itrs 9030/30000, Loss=0.007782
+Epoch 754, Itrs 9040/30000, Loss=0.007445
+Epoch 755, Itrs 9050/30000, Loss=0.007369
+Epoch 755, Itrs 9060/30000, Loss=0.007412
+Epoch 756, Itrs 9070/30000, Loss=0.007424
+Epoch 757, Itrs 9080/30000, Loss=0.007433
+Epoch 758, Itrs 9090/30000, Loss=0.007254
+Epoch 759, Itrs 9100/30000, Loss=0.007577
+Epoch 760, Itrs 9110/30000, Loss=0.007772
+Epoch 760, Itrs 9120/30000, Loss=0.007281
+Epoch 761, Itrs 9130/30000, Loss=0.007606
+Epoch 762, Itrs 9140/30000, Loss=0.007298
+Epoch 763, Itrs 9150/30000, Loss=0.007206
+Epoch 764, Itrs 9160/30000, Loss=0.007818
+Epoch 765, Itrs 9170/30000, Loss=0.007336
+Epoch 765, Itrs 9180/30000, Loss=0.007317
+Epoch 766, Itrs 9190/30000, Loss=0.007376
+Epoch 767, Itrs 9200/30000, Loss=0.007351
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.05it/s]
+Overall Acc: 0.964036
+Mean Acc: 0.609053
+FreqW Acc: 0.935362
+Mean IoU: 0.575224
+Class IoU:
+	class 0: 0.963736
+	class 1: 0.186711
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 768, Itrs 9210/30000, Loss=0.007694
+Epoch 769, Itrs 9220/30000, Loss=0.007390
+Epoch 770, Itrs 9230/30000, Loss=0.007463
+Epoch 770, Itrs 9240/30000, Loss=0.007209
+Epoch 771, Itrs 9250/30000, Loss=0.007496
+Epoch 772, Itrs 9260/30000, Loss=0.007235
+Epoch 773, Itrs 9270/30000, Loss=0.007549
+Epoch 774, Itrs 9280/30000, Loss=0.007315
+Epoch 775, Itrs 9290/30000, Loss=0.007466
+Epoch 775, Itrs 9300/30000, Loss=0.007326
+Epoch 776, Itrs 9310/30000, Loss=0.007453
+Epoch 777, Itrs 9320/30000, Loss=0.007586
+Epoch 778, Itrs 9330/30000, Loss=0.007497
+Epoch 779, Itrs 9340/30000, Loss=0.007337
+Epoch 780, Itrs 9350/30000, Loss=0.007550
+Epoch 780, Itrs 9360/30000, Loss=0.007383
+Epoch 781, Itrs 9370/30000, Loss=0.007475
+Epoch 782, Itrs 9380/30000, Loss=0.007334
+Epoch 783, Itrs 9390/30000, Loss=0.007468
+Epoch 784, Itrs 9400/30000, Loss=0.007624
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.22it/s]
+Overall Acc: 0.964070
+Mean Acc: 0.615315
+FreqW Acc: 0.935698
+Mean IoU: 0.579618
+Class IoU:
+	class 0: 0.963753
+	class 1: 0.195484
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 785, Itrs 9410/30000, Loss=0.007245
+Epoch 785, Itrs 9420/30000, Loss=0.007284
+Epoch 786, Itrs 9430/30000, Loss=0.007478
+Epoch 787, Itrs 9440/30000, Loss=0.007248
+Epoch 788, Itrs 9450/30000, Loss=0.007459
+Epoch 789, Itrs 9460/30000, Loss=0.007370
+Epoch 790, Itrs 9470/30000, Loss=0.007479
+Epoch 790, Itrs 9480/30000, Loss=0.007299
+Epoch 791, Itrs 9490/30000, Loss=0.007349
+Epoch 792, Itrs 9500/30000, Loss=0.007350
+Epoch 793, Itrs 9510/30000, Loss=0.007566
+Epoch 794, Itrs 9520/30000, Loss=0.007202
+Epoch 795, Itrs 9530/30000, Loss=0.007550
+Epoch 795, Itrs 9540/30000, Loss=0.007613
+Epoch 796, Itrs 9550/30000, Loss=0.007185
+Epoch 797, Itrs 9560/30000, Loss=0.007750
+Epoch 798, Itrs 9570/30000, Loss=0.007253
+Epoch 799, Itrs 9580/30000, Loss=0.007757
+Epoch 800, Itrs 9590/30000, Loss=0.007440
+Epoch 800, Itrs 9600/30000, Loss=0.007636
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.23it/s]
+Overall Acc: 0.963540
+Mean Acc: 0.620682
+FreqW Acc: 0.935362
+Mean IoU: 0.581986
+Class IoU:
+	class 0: 0.963203
+	class 1: 0.200769
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:26,  1.91s/it]
+Epoch 801, Itrs 9610/30000, Loss=0.007352
+Epoch 802, Itrs 9620/30000, Loss=0.007535
+Epoch 803, Itrs 9630/30000, Loss=0.007511
+Epoch 804, Itrs 9640/30000, Loss=0.007132
+Epoch 805, Itrs 9650/30000, Loss=0.007556
+Epoch 805, Itrs 9660/30000, Loss=0.007332
+Epoch 806, Itrs 9670/30000, Loss=0.007410
+Epoch 807, Itrs 9680/30000, Loss=0.007177
+Epoch 808, Itrs 9690/30000, Loss=0.007816
+Epoch 809, Itrs 9700/30000, Loss=0.007051
+Epoch 810, Itrs 9710/30000, Loss=0.007371
+Epoch 810, Itrs 9720/30000, Loss=0.007613
+Epoch 811, Itrs 9730/30000, Loss=0.007190
+Epoch 812, Itrs 9740/30000, Loss=0.007589
+Epoch 813, Itrs 9750/30000, Loss=0.007330
+Epoch 814, Itrs 9760/30000, Loss=0.007283
+Epoch 815, Itrs 9770/30000, Loss=0.007366
+Epoch 815, Itrs 9780/30000, Loss=0.007335
+Epoch 816, Itrs 9790/30000, Loss=0.007295
+Epoch 817, Itrs 9800/30000, Loss=0.007441
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.90it/s]
+Overall Acc: 0.962726
+Mean Acc: 0.620082
+FreqW Acc: 0.934433
+Mean IoU: 0.579698
+Class IoU:
+	class 0: 0.962382
+	class 1: 0.197014
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 818, Itrs 9810/30000, Loss=0.007334
+Epoch 819, Itrs 9820/30000, Loss=0.007317
+Epoch 820, Itrs 9830/30000, Loss=0.007428
+Epoch 820, Itrs 9840/30000, Loss=0.007225
+Epoch 821, Itrs 9850/30000, Loss=0.007375
+Epoch 822, Itrs 9860/30000, Loss=0.007364
+Epoch 823, Itrs 9870/30000, Loss=0.007209
+Epoch 824, Itrs 9880/30000, Loss=0.007275
+Epoch 825, Itrs 9890/30000, Loss=0.007619
+Epoch 825, Itrs 9900/30000, Loss=0.007452
+Epoch 826, Itrs 9910/30000, Loss=0.007319
+Epoch 827, Itrs 9920/30000, Loss=0.007448
+Epoch 828, Itrs 9930/30000, Loss=0.007321
+Epoch 829, Itrs 9940/30000, Loss=0.007174
+Epoch 830, Itrs 9950/30000, Loss=0.007652
+Epoch 830, Itrs 9960/30000, Loss=0.007444
+Epoch 831, Itrs 9970/30000, Loss=0.007204
+Epoch 832, Itrs 9980/30000, Loss=0.007579
+Epoch 833, Itrs 9990/30000, Loss=0.007255
+Epoch 834, Itrs 10000/30000, Loss=0.007248
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.962893
+Mean Acc: 0.625720
+FreqW Acc: 0.934871
+Mean IoU: 0.583752
+Class IoU:
+	class 0: 0.962534
+	class 1: 0.204969
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 835, Itrs 10010/30000, Loss=0.007418
+Epoch 835, Itrs 10020/30000, Loss=0.007460
+Epoch 836, Itrs 10030/30000, Loss=0.007431
+Epoch 837, Itrs 10040/30000, Loss=0.007232
+Epoch 838, Itrs 10050/30000, Loss=0.007493
+Epoch 839, Itrs 10060/30000, Loss=0.007309
+Epoch 840, Itrs 10070/30000, Loss=0.007277
+Epoch 840, Itrs 10080/30000, Loss=0.007321
+Epoch 841, Itrs 10090/30000, Loss=0.007438
+Epoch 842, Itrs 10100/30000, Loss=0.007115
+Epoch 843, Itrs 10110/30000, Loss=0.007473
+Epoch 844, Itrs 10120/30000, Loss=0.006854
+Epoch 845, Itrs 10130/30000, Loss=0.007583
+Epoch 845, Itrs 10140/30000, Loss=0.007297
+Epoch 846, Itrs 10150/30000, Loss=0.007263
+Epoch 847, Itrs 10160/30000, Loss=0.007535
+Epoch 848, Itrs 10170/30000, Loss=0.007428
+Epoch 849, Itrs 10180/30000, Loss=0.007301
+Epoch 850, Itrs 10190/30000, Loss=0.007402
+Epoch 850, Itrs 10200/30000, Loss=0.007278
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.10it/s]
+Overall Acc: 0.963445
+Mean Acc: 0.625203
+FreqW Acc: 0.935461
+Mean IoU: 0.584733
+Class IoU:
+	class 0: 0.963094
+	class 1: 0.206372
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.91s/it]
+Epoch 851, Itrs 10210/30000, Loss=0.007335
+Epoch 852, Itrs 10220/30000, Loss=0.007516
+Epoch 853, Itrs 10230/30000, Loss=0.007463
+Epoch 854, Itrs 10240/30000, Loss=0.007042
+Epoch 855, Itrs 10250/30000, Loss=0.007285
+Epoch 855, Itrs 10260/30000, Loss=0.007160
+Epoch 856, Itrs 10270/30000, Loss=0.007428
+Epoch 857, Itrs 10280/30000, Loss=0.007221
+Epoch 858, Itrs 10290/30000, Loss=0.007402
+Epoch 859, Itrs 10300/30000, Loss=0.007473
+Epoch 860, Itrs 10310/30000, Loss=0.007263
+Epoch 860, Itrs 10320/30000, Loss=0.007552
+Epoch 861, Itrs 10330/30000, Loss=0.007348
+Epoch 862, Itrs 10340/30000, Loss=0.007371
+Epoch 863, Itrs 10350/30000, Loss=0.007421
+Epoch 864, Itrs 10360/30000, Loss=0.007130
+Epoch 865, Itrs 10370/30000, Loss=0.007402
+Epoch 865, Itrs 10380/30000, Loss=0.007424
+Epoch 866, Itrs 10390/30000, Loss=0.007313
+Epoch 867, Itrs 10400/30000, Loss=0.007336
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.14it/s]
+Overall Acc: 0.963128
+Mean Acc: 0.629178
+FreqW Acc: 0.935286
+Mean IoU: 0.586539
+Class IoU:
+	class 0: 0.962763
+	class 1: 0.210315
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 868, Itrs 10410/30000, Loss=0.007708
+Epoch 869, Itrs 10420/30000, Loss=0.006980
+Epoch 870, Itrs 10430/30000, Loss=0.007468
+Epoch 870, Itrs 10440/30000, Loss=0.007306
+Epoch 871, Itrs 10450/30000, Loss=0.007330
+Epoch 872, Itrs 10460/30000, Loss=0.007339
+Epoch 873, Itrs 10470/30000, Loss=0.007413
+Epoch 874, Itrs 10480/30000, Loss=0.007185
+Epoch 875, Itrs 10490/30000, Loss=0.007479
+Epoch 875, Itrs 10500/30000, Loss=0.007417
+Epoch 876, Itrs 10510/30000, Loss=0.007272
+Epoch 877, Itrs 10520/30000, Loss=0.007608
+Epoch 878, Itrs 10530/30000, Loss=0.007339
+Epoch 879, Itrs 10540/30000, Loss=0.007039
+Epoch 880, Itrs 10550/30000, Loss=0.007328
+Epoch 880, Itrs 10560/30000, Loss=0.007544
+Epoch 881, Itrs 10570/30000, Loss=0.007332
+Epoch 882, Itrs 10580/30000, Loss=0.007315
+Epoch 883, Itrs 10590/30000, Loss=0.007481
+Epoch 884, Itrs 10600/30000, Loss=0.007338
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.98it/s]
+Overall Acc: 0.962972
+Mean Acc: 0.631975
+FreqW Acc: 0.935235
+Mean IoU: 0.587940
+Class IoU:
+	class 0: 0.962597
+	class 1: 0.213283
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 885, Itrs 10610/30000, Loss=0.006869
+Epoch 885, Itrs 10620/30000, Loss=0.007477
+Epoch 886, Itrs 10630/30000, Loss=0.007321
+Epoch 887, Itrs 10640/30000, Loss=0.007179
+Epoch 888, Itrs 10650/30000, Loss=0.007376
+Epoch 889, Itrs 10660/30000, Loss=0.007327
+Epoch 890, Itrs 10670/30000, Loss=0.007108
+Epoch 890, Itrs 10680/30000, Loss=0.007256
+Epoch 891, Itrs 10690/30000, Loss=0.007288
+Epoch 892, Itrs 10700/30000, Loss=0.007217
+Epoch 893, Itrs 10710/30000, Loss=0.007446
+Epoch 894, Itrs 10720/30000, Loss=0.007098
+Epoch 895, Itrs 10730/30000, Loss=0.007418
+Epoch 895, Itrs 10740/30000, Loss=0.007127
+Epoch 896, Itrs 10750/30000, Loss=0.007390
+Epoch 897, Itrs 10760/30000, Loss=0.007088
+Epoch 898, Itrs 10770/30000, Loss=0.007513
+Epoch 899, Itrs 10780/30000, Loss=0.007443
+Epoch 900, Itrs 10790/30000, Loss=0.007522
+Epoch 900, Itrs 10800/30000, Loss=0.007159
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.75it/s]
+Overall Acc: 0.962372
+Mean Acc: 0.634821
+FreqW Acc: 0.934687
+Mean IoU: 0.588263
+Class IoU:
+	class 0: 0.961981
+	class 1: 0.214545
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 901, Itrs 10810/30000, Loss=0.007323
+Epoch 902, Itrs 10820/30000, Loss=0.007142
+Epoch 903, Itrs 10830/30000, Loss=0.007405
+Epoch 904, Itrs 10840/30000, Loss=0.007160
+Epoch 905, Itrs 10850/30000, Loss=0.007095
+Epoch 905, Itrs 10860/30000, Loss=0.007321
+Epoch 906, Itrs 10870/30000, Loss=0.007301
+Epoch 907, Itrs 10880/30000, Loss=0.007301
+Epoch 908, Itrs 10890/30000, Loss=0.006957
+Epoch 909, Itrs 10900/30000, Loss=0.007663
+Epoch 910, Itrs 10910/30000, Loss=0.007143
+Epoch 910, Itrs 10920/30000, Loss=0.007326
+Epoch 911, Itrs 10930/30000, Loss=0.007337
+Epoch 912, Itrs 10940/30000, Loss=0.007450
+Epoch 913, Itrs 10950/30000, Loss=0.006958
+Epoch 914, Itrs 10960/30000, Loss=0.007553
+Epoch 915, Itrs 10970/30000, Loss=0.007227
+Epoch 915, Itrs 10980/30000, Loss=0.007260
+Epoch 916, Itrs 10990/30000, Loss=0.007246
+Epoch 917, Itrs 11000/30000, Loss=0.007351
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.04it/s]
+Overall Acc: 0.962527
+Mean Acc: 0.634701
+FreqW Acc: 0.934855
+Mean IoU: 0.588565
+Class IoU:
+	class 0: 0.962138
+	class 1: 0.214992
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.89s/it]
+Epoch 918, Itrs 11010/30000, Loss=0.007439
+Epoch 919, Itrs 11020/30000, Loss=0.007477
+Epoch 920, Itrs 11030/30000, Loss=0.007179
+Epoch 920, Itrs 11040/30000, Loss=0.007408
+Epoch 921, Itrs 11050/30000, Loss=0.007174
+Epoch 922, Itrs 11060/30000, Loss=0.007397
+Epoch 923, Itrs 11070/30000, Loss=0.007403
+Epoch 924, Itrs 11080/30000, Loss=0.007375
+Epoch 925, Itrs 11090/30000, Loss=0.007196
+Epoch 925, Itrs 11100/30000, Loss=0.007264
+Epoch 926, Itrs 11110/30000, Loss=0.007300
+Epoch 927, Itrs 11120/30000, Loss=0.007292
+Epoch 928, Itrs 11130/30000, Loss=0.007167
+Epoch 929, Itrs 11140/30000, Loss=0.007138
+Epoch 930, Itrs 11150/30000, Loss=0.007290
+Epoch 930, Itrs 11160/30000, Loss=0.007547
+Epoch 931, Itrs 11170/30000, Loss=0.007388
+Epoch 932, Itrs 11180/30000, Loss=0.007009
+Epoch 933, Itrs 11190/30000, Loss=0.007485
+Epoch 934, Itrs 11200/30000, Loss=0.007181
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.83it/s]
+Overall Acc: 0.962211
+Mean Acc: 0.636424
+FreqW Acc: 0.934576
+Mean IoU: 0.588865
+Class IoU:
+	class 0: 0.961814
+	class 1: 0.215916
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.91s/it]
+Epoch 935, Itrs 11210/30000, Loss=0.007390
+Epoch 935, Itrs 11220/30000, Loss=0.007382
+Epoch 936, Itrs 11230/30000, Loss=0.007281
+Epoch 937, Itrs 11240/30000, Loss=0.007272
+Epoch 938, Itrs 11250/30000, Loss=0.007148
+Epoch 939, Itrs 11260/30000, Loss=0.007301
+Epoch 940, Itrs 11270/30000, Loss=0.007318
+Epoch 940, Itrs 11280/30000, Loss=0.007465
+Epoch 941, Itrs 11290/30000, Loss=0.007428
+Epoch 942, Itrs 11300/30000, Loss=0.007254
+Epoch 943, Itrs 11310/30000, Loss=0.007316
+Epoch 944, Itrs 11320/30000, Loss=0.006986
+Epoch 945, Itrs 11330/30000, Loss=0.007428
+Epoch 945, Itrs 11340/30000, Loss=0.007326
+Epoch 946, Itrs 11350/30000, Loss=0.007241
+Epoch 947, Itrs 11360/30000, Loss=0.007139
+Epoch 948, Itrs 11370/30000, Loss=0.007326
+Epoch 949, Itrs 11380/30000, Loss=0.007836
+Epoch 950, Itrs 11390/30000, Loss=0.007222
+Epoch 950, Itrs 11400/30000, Loss=0.007263
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.09it/s]
+Overall Acc: 0.962065
+Mean Acc: 0.642115
+FreqW Acc: 0.934651
+Mean IoU: 0.591978
+Class IoU:
+	class 0: 0.961649
+	class 1: 0.222307
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 951, Itrs 11410/30000, Loss=0.007258
+Epoch 952, Itrs 11420/30000, Loss=0.007312
+Epoch 953, Itrs 11430/30000, Loss=0.007349
+Epoch 954, Itrs 11440/30000, Loss=0.007241
+Epoch 955, Itrs 11450/30000, Loss=0.007361
+Epoch 955, Itrs 11460/30000, Loss=0.007220
+Epoch 956, Itrs 11470/30000, Loss=0.007255
+Epoch 957, Itrs 11480/30000, Loss=0.007064
+Epoch 958, Itrs 11490/30000, Loss=0.007208
+Epoch 959, Itrs 11500/30000, Loss=0.007011
+Epoch 960, Itrs 11510/30000, Loss=0.007436
+Epoch 960, Itrs 11520/30000, Loss=0.007235
+Epoch 961, Itrs 11530/30000, Loss=0.007145
+Epoch 962, Itrs 11540/30000, Loss=0.007510
+Epoch 963, Itrs 11550/30000, Loss=0.006990
+Epoch 964, Itrs 11560/30000, Loss=0.007414
+Epoch 965, Itrs 11570/30000, Loss=0.007356
+Epoch 965, Itrs 11580/30000, Loss=0.007334
+Epoch 966, Itrs 11590/30000, Loss=0.007347
+Epoch 967, Itrs 11600/30000, Loss=0.007229
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.07it/s]
+Overall Acc: 0.961263
+Mean Acc: 0.642962
+FreqW Acc: 0.933789
+Mean IoU: 0.590526
+Class IoU:
+	class 0: 0.960834
+	class 1: 0.220218
+
+Updating Labels...
+
+45it [01:23,  1.85s/it]
+Epoch 968, Itrs 11610/30000, Loss=0.007114
+Epoch 969, Itrs 11620/30000, Loss=0.007517
+Epoch 970, Itrs 11630/30000, Loss=0.007170
+Epoch 970, Itrs 11640/30000, Loss=0.007333
+Epoch 971, Itrs 11650/30000, Loss=0.007188
+Epoch 972, Itrs 11660/30000, Loss=0.007239
+Epoch 973, Itrs 11670/30000, Loss=0.007630
+Epoch 974, Itrs 11680/30000, Loss=0.007289
+Epoch 975, Itrs 11690/30000, Loss=0.007330
+Epoch 975, Itrs 11700/30000, Loss=0.006959
+Epoch 976, Itrs 11710/30000, Loss=0.007174
+Epoch 977, Itrs 11720/30000, Loss=0.007392
+Epoch 978, Itrs 11730/30000, Loss=0.007307
+Epoch 979, Itrs 11740/30000, Loss=0.007194
+Epoch 980, Itrs 11750/30000, Loss=0.007201
+Epoch 980, Itrs 11760/30000, Loss=0.007401
+Epoch 981, Itrs 11770/30000, Loss=0.007190
+Epoch 982, Itrs 11780/30000, Loss=0.007320
+Epoch 983, Itrs 11790/30000, Loss=0.007246
+Epoch 984, Itrs 11800/30000, Loss=0.007133
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.10it/s]
+Overall Acc: 0.961107
+Mean Acc: 0.645894
+FreqW Acc: 0.933734
+Mean IoU: 0.591881
+Class IoU:
+	class 0: 0.960668
+	class 1: 0.223095
+
+Updating Labels...
+
+45it [01:22,  1.83s/it]
+Epoch 985, Itrs 11810/30000, Loss=0.007552
+Epoch 985, Itrs 11820/30000, Loss=0.007369
+Epoch 986, Itrs 11830/30000, Loss=0.007191
+Epoch 987, Itrs 11840/30000, Loss=0.007373
+Epoch 988, Itrs 11850/30000, Loss=0.007357
+Epoch 989, Itrs 11860/30000, Loss=0.007449
+Epoch 990, Itrs 11870/30000, Loss=0.007282
+Epoch 990, Itrs 11880/30000, Loss=0.007302
+Epoch 991, Itrs 11890/30000, Loss=0.007116
+Epoch 992, Itrs 11900/30000, Loss=0.007275
+Epoch 993, Itrs 11910/30000, Loss=0.007230
+Epoch 994, Itrs 11920/30000, Loss=0.007187
+Epoch 995, Itrs 11930/30000, Loss=0.007122
+Epoch 995, Itrs 11940/30000, Loss=0.007352
+Epoch 996, Itrs 11950/30000, Loss=0.007249
+Epoch 997, Itrs 11960/30000, Loss=0.007035
+Epoch 998, Itrs 11970/30000, Loss=0.007152
+Epoch 999, Itrs 11980/30000, Loss=0.007330
+Epoch 1000, Itrs 11990/30000, Loss=0.007145
+Epoch 1000, Itrs 12000/30000, Loss=0.007401
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.12it/s]
+Overall Acc: 0.961403
+Mean Acc: 0.646280
+FreqW Acc: 0.934080
+Mean IoU: 0.592832
+Class IoU:
+	class 0: 0.960966
+	class 1: 0.224697
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1001, Itrs 12010/30000, Loss=0.007244
+Epoch 1002, Itrs 12020/30000, Loss=0.007262
+Epoch 1003, Itrs 12030/30000, Loss=0.007031
+Epoch 1004, Itrs 12040/30000, Loss=0.007410
+Epoch 1005, Itrs 12050/30000, Loss=0.007178
+Epoch 1005, Itrs 12060/30000, Loss=0.007287
+Epoch 1006, Itrs 12070/30000, Loss=0.007127
+Epoch 1007, Itrs 12080/30000, Loss=0.007404
+Epoch 1008, Itrs 12090/30000, Loss=0.007341
+Epoch 1009, Itrs 12100/30000, Loss=0.007374
+Epoch 1010, Itrs 12110/30000, Loss=0.007088
+Epoch 1010, Itrs 12120/30000, Loss=0.007331
+Epoch 1011, Itrs 12130/30000, Loss=0.007339
+Epoch 1012, Itrs 12140/30000, Loss=0.007185
+Epoch 1013, Itrs 12150/30000, Loss=0.007216
+Epoch 1014, Itrs 12160/30000, Loss=0.007087
+Epoch 1015, Itrs 12170/30000, Loss=0.007220
+Epoch 1015, Itrs 12180/30000, Loss=0.007455
+Epoch 1016, Itrs 12190/30000, Loss=0.007291
+Epoch 1017, Itrs 12200/30000, Loss=0.006942
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.56it/s]
+Overall Acc: 0.961104
+Mean Acc: 0.648575
+FreqW Acc: 0.933837
+Mean IoU: 0.593442
+Class IoU:
+	class 0: 0.960656
+	class 1: 0.226228
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:22,  1.83s/it]
+Epoch 1018, Itrs 12210/30000, Loss=0.007429
+Epoch 1019, Itrs 12220/30000, Loss=0.007274
+Epoch 1020, Itrs 12230/30000, Loss=0.007733
+Epoch 1020, Itrs 12240/30000, Loss=0.007111
+Epoch 1021, Itrs 12250/30000, Loss=0.007371
+Epoch 1022, Itrs 12260/30000, Loss=0.006906
+Epoch 1023, Itrs 12270/30000, Loss=0.007281
+Epoch 1024, Itrs 12280/30000, Loss=0.007406
+Epoch 1025, Itrs 12290/30000, Loss=0.006932
+Epoch 1025, Itrs 12300/30000, Loss=0.007274
+Epoch 1026, Itrs 12310/30000, Loss=0.007158
+Epoch 1027, Itrs 12320/30000, Loss=0.007354
+Epoch 1028, Itrs 12330/30000, Loss=0.007321
+Epoch 1029, Itrs 12340/30000, Loss=0.006815
+Epoch 1030, Itrs 12350/30000, Loss=0.007238
+Epoch 1030, Itrs 12360/30000, Loss=0.007164
+Epoch 1031, Itrs 12370/30000, Loss=0.007255
+Epoch 1032, Itrs 12380/30000, Loss=0.007014
+Epoch 1033, Itrs 12390/30000, Loss=0.007046
+Epoch 1034, Itrs 12400/30000, Loss=0.007595
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.90it/s]
+Overall Acc: 0.960199
+Mean Acc: 0.651113
+FreqW Acc: 0.932927
+Mean IoU: 0.592708
+Class IoU:
+	class 0: 0.959732
+	class 1: 0.225683
+
+Updating Labels...
+
+45it [01:21,  1.82s/it]
+Epoch 1035, Itrs 12410/30000, Loss=0.006898
+Epoch 1035, Itrs 12420/30000, Loss=0.007277
+Epoch 1036, Itrs 12430/30000, Loss=0.007316
+Epoch 1037, Itrs 12440/30000, Loss=0.007116
+Epoch 1038, Itrs 12450/30000, Loss=0.007158
+Epoch 1039, Itrs 12460/30000, Loss=0.007600
+Epoch 1040, Itrs 12470/30000, Loss=0.007054
+Epoch 1040, Itrs 12480/30000, Loss=0.007092
+Epoch 1041, Itrs 12490/30000, Loss=0.007192
+Epoch 1042, Itrs 12500/30000, Loss=0.007156
+Epoch 1043, Itrs 12510/30000, Loss=0.007335
+Epoch 1044, Itrs 12520/30000, Loss=0.007399
+Epoch 1045, Itrs 12530/30000, Loss=0.006922
+Epoch 1045, Itrs 12540/30000, Loss=0.007485
+Epoch 1046, Itrs 12550/30000, Loss=0.007112
+Epoch 1047, Itrs 12560/30000, Loss=0.007368
+Epoch 1048, Itrs 12570/30000, Loss=0.006828
+Epoch 1049, Itrs 12580/30000, Loss=0.007156
+Epoch 1050, Itrs 12590/30000, Loss=0.007783
+Epoch 1050, Itrs 12600/30000, Loss=0.007471
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.92it/s]
+Overall Acc: 0.960149
+Mean Acc: 0.653411
+FreqW Acc: 0.932960
+Mean IoU: 0.593893
+Class IoU:
+	class 0: 0.959674
+	class 1: 0.228111
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:25,  1.89s/it]
+Epoch 1051, Itrs 12610/30000, Loss=0.007177
+Epoch 1052, Itrs 12620/30000, Loss=0.007195
+Epoch 1053, Itrs 12630/30000, Loss=0.007330
+Epoch 1054, Itrs 12640/30000, Loss=0.007382
+Epoch 1055, Itrs 12650/30000, Loss=0.007311
+Epoch 1055, Itrs 12660/30000, Loss=0.007421
+Epoch 1056, Itrs 12670/30000, Loss=0.007215
+Epoch 1057, Itrs 12680/30000, Loss=0.007183
+Epoch 1058, Itrs 12690/30000, Loss=0.007222
+Epoch 1059, Itrs 12700/30000, Loss=0.007351
+Epoch 1060, Itrs 12710/30000, Loss=0.007301
+Epoch 1060, Itrs 12720/30000, Loss=0.007127
+Epoch 1061, Itrs 12730/30000, Loss=0.007276
+Epoch 1062, Itrs 12740/30000, Loss=0.006793
+Epoch 1063, Itrs 12750/30000, Loss=0.007323
+Epoch 1064, Itrs 12760/30000, Loss=0.006954
+Epoch 1065, Itrs 12770/30000, Loss=0.007238
+Epoch 1065, Itrs 12780/30000, Loss=0.007234
+Epoch 1066, Itrs 12790/30000, Loss=0.007072
+Epoch 1067, Itrs 12800/30000, Loss=0.007734
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.01it/s]
+Overall Acc: 0.959961
+Mean Acc: 0.656146
+FreqW Acc: 0.932855
+Mean IoU: 0.594976
+Class IoU:
+	class 0: 0.959475
+	class 1: 0.230476
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1068, Itrs 12810/30000, Loss=0.007036
+Epoch 1069, Itrs 12820/30000, Loss=0.007079
+Epoch 1070, Itrs 12830/30000, Loss=0.007368
+Epoch 1070, Itrs 12840/30000, Loss=0.007273
+Epoch 1071, Itrs 12850/30000, Loss=0.007242
+Epoch 1072, Itrs 12860/30000, Loss=0.007279
+Epoch 1073, Itrs 12870/30000, Loss=0.007234
+Epoch 1074, Itrs 12880/30000, Loss=0.007353
+Epoch 1075, Itrs 12890/30000, Loss=0.007234
+Epoch 1075, Itrs 12900/30000, Loss=0.007207
+Epoch 1076, Itrs 12910/30000, Loss=0.007142
+Epoch 1077, Itrs 12920/30000, Loss=0.007293
+Epoch 1078, Itrs 12930/30000, Loss=0.007323
+Epoch 1079, Itrs 12940/30000, Loss=0.007162
+Epoch 1080, Itrs 12950/30000, Loss=0.007003
+Epoch 1080, Itrs 12960/30000, Loss=0.007242
+Epoch 1081, Itrs 12970/30000, Loss=0.007141
+Epoch 1082, Itrs 12980/30000, Loss=0.007474
+Epoch 1083, Itrs 12990/30000, Loss=0.006979
+Epoch 1084, Itrs 13000/30000, Loss=0.007364
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.35it/s]
+Overall Acc: 0.960193
+Mean Acc: 0.655709
+FreqW Acc: 0.933097
+Mean IoU: 0.595295
+Class IoU:
+	class 0: 0.959711
+	class 1: 0.230878
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 1085, Itrs 13010/30000, Loss=0.007089
+Epoch 1085, Itrs 13020/30000, Loss=0.007220
+Epoch 1086, Itrs 13030/30000, Loss=0.007225
+Epoch 1087, Itrs 13040/30000, Loss=0.007314
+Epoch 1088, Itrs 13050/30000, Loss=0.006947
+Epoch 1089, Itrs 13060/30000, Loss=0.007096
+Epoch 1090, Itrs 13070/30000, Loss=0.007284
+Epoch 1090, Itrs 13080/30000, Loss=0.007079
+Epoch 1091, Itrs 13090/30000, Loss=0.007117
+Epoch 1092, Itrs 13100/30000, Loss=0.007367
+Epoch 1093, Itrs 13110/30000, Loss=0.007138
+Epoch 1094, Itrs 13120/30000, Loss=0.006985
+Epoch 1095, Itrs 13130/30000, Loss=0.007270
+Epoch 1095, Itrs 13140/30000, Loss=0.007254
+Epoch 1096, Itrs 13150/30000, Loss=0.007108
+Epoch 1097, Itrs 13160/30000, Loss=0.007483
+Epoch 1098, Itrs 13170/30000, Loss=0.007214
+Epoch 1099, Itrs 13180/30000, Loss=0.006989
+Epoch 1100, Itrs 13190/30000, Loss=0.007157
+Epoch 1100, Itrs 13200/30000, Loss=0.007329
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.99it/s]
+Overall Acc: 0.958726
+Mean Acc: 0.659169
+FreqW Acc: 0.931590
+Mean IoU: 0.593684
+Class IoU:
+	class 0: 0.958213
+	class 1: 0.229155
+
+Updating Labels...
+
+45it [01:22,  1.83s/it]
+Epoch 1101, Itrs 13210/30000, Loss=0.007305
+Epoch 1102, Itrs 13220/30000, Loss=0.006841
+Epoch 1103, Itrs 13230/30000, Loss=0.007517
+Epoch 1104, Itrs 13240/30000, Loss=0.007330
+Epoch 1105, Itrs 13250/30000, Loss=0.007389
+Epoch 1105, Itrs 13260/30000, Loss=0.006969
+Epoch 1106, Itrs 13270/30000, Loss=0.007150
+Epoch 1107, Itrs 13280/30000, Loss=0.007112
+Epoch 1108, Itrs 13290/30000, Loss=0.007513
+Epoch 1109, Itrs 13300/30000, Loss=0.007026
+Epoch 1110, Itrs 13310/30000, Loss=0.006926
+Epoch 1110, Itrs 13320/30000, Loss=0.007573
+Epoch 1111, Itrs 13330/30000, Loss=0.007216
+Epoch 1112, Itrs 13340/30000, Loss=0.007166
+Epoch 1113, Itrs 13350/30000, Loss=0.006896
+Epoch 1114, Itrs 13360/30000, Loss=0.007497
+Epoch 1115, Itrs 13370/30000, Loss=0.007085
+Epoch 1115, Itrs 13380/30000, Loss=0.007117
+Epoch 1116, Itrs 13390/30000, Loss=0.007037
+Epoch 1117, Itrs 13400/30000, Loss=0.007540
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.03it/s]
+Overall Acc: 0.957949
+Mean Acc: 0.665386
+FreqW Acc: 0.930951
+Mean IoU: 0.595190
+Class IoU:
+	class 0: 0.957405
+	class 1: 0.232975
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1118, Itrs 13410/30000, Loss=0.007054
+Epoch 1119, Itrs 13420/30000, Loss=0.007309
+Epoch 1120, Itrs 13430/30000, Loss=0.007119
+Epoch 1120, Itrs 13440/30000, Loss=0.007302
+Epoch 1121, Itrs 13450/30000, Loss=0.007263
+Epoch 1122, Itrs 13460/30000, Loss=0.007033
+Epoch 1123, Itrs 13470/30000, Loss=0.007217
+Epoch 1124, Itrs 13480/30000, Loss=0.007370
+Epoch 1125, Itrs 13490/30000, Loss=0.007629
+Epoch 1125, Itrs 13500/30000, Loss=0.007183
+Epoch 1126, Itrs 13510/30000, Loss=0.007122
+Epoch 1127, Itrs 13520/30000, Loss=0.007445
+Epoch 1128, Itrs 13530/30000, Loss=0.007206
+Epoch 1129, Itrs 13540/30000, Loss=0.007170
+Epoch 1130, Itrs 13550/30000, Loss=0.007331
+Epoch 1130, Itrs 13560/30000, Loss=0.007029
+Epoch 1131, Itrs 13570/30000, Loss=0.007275
+Epoch 1132, Itrs 13580/30000, Loss=0.007101
+Epoch 1133, Itrs 13590/30000, Loss=0.007100
+Epoch 1134, Itrs 13600/30000, Loss=0.007265
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.84it/s]
+Overall Acc: 0.958149
+Mean Acc: 0.662789
+FreqW Acc: 0.931080
+Mean IoU: 0.594278
+Class IoU:
+	class 0: 0.957616
+	class 1: 0.230940
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 1135, Itrs 13610/30000, Loss=0.007199
+Epoch 1135, Itrs 13620/30000, Loss=0.007129
+Epoch 1136, Itrs 13630/30000, Loss=0.007147
+Epoch 1137, Itrs 13640/30000, Loss=0.007211
+Epoch 1138, Itrs 13650/30000, Loss=0.007310
+Epoch 1139, Itrs 13660/30000, Loss=0.007061
+Epoch 1140, Itrs 13670/30000, Loss=0.007325
+Epoch 1140, Itrs 13680/30000, Loss=0.007245
+Epoch 1141, Itrs 13690/30000, Loss=0.007084
+Epoch 1142, Itrs 13700/30000, Loss=0.007297
+Epoch 1143, Itrs 13710/30000, Loss=0.007241
+Epoch 1144, Itrs 13720/30000, Loss=0.007045
+Epoch 1145, Itrs 13730/30000, Loss=0.007322
+Epoch 1145, Itrs 13740/30000, Loss=0.007244
+Epoch 1146, Itrs 13750/30000, Loss=0.007236
+Epoch 1147, Itrs 13760/30000, Loss=0.007024
+Epoch 1148, Itrs 13770/30000, Loss=0.007579
+Epoch 1149, Itrs 13780/30000, Loss=0.007265
+Epoch 1150, Itrs 13790/30000, Loss=0.007221
+Epoch 1150, Itrs 13800/30000, Loss=0.007295
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.99it/s]
+Overall Acc: 0.957778
+Mean Acc: 0.667135
+FreqW Acc: 0.930823
+Mean IoU: 0.595709
+Class IoU:
+	class 0: 0.957226
+	class 1: 0.234193
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 1151, Itrs 13810/30000, Loss=0.007193
+Epoch 1152, Itrs 13820/30000, Loss=0.007188
+Epoch 1153, Itrs 13830/30000, Loss=0.007024
+Epoch 1154, Itrs 13840/30000, Loss=0.007344
+Epoch 1155, Itrs 13850/30000, Loss=0.006858
+Epoch 1155, Itrs 13860/30000, Loss=0.007405
+Epoch 1156, Itrs 13870/30000, Loss=0.007373
+Epoch 1157, Itrs 13880/30000, Loss=0.006992
+Epoch 1158, Itrs 13890/30000, Loss=0.007177
+Epoch 1159, Itrs 13900/30000, Loss=0.007005
+Epoch 1160, Itrs 13910/30000, Loss=0.007118
+Epoch 1160, Itrs 13920/30000, Loss=0.007163
+Epoch 1161, Itrs 13930/30000, Loss=0.007241
+Epoch 1162, Itrs 13940/30000, Loss=0.007092
+Epoch 1163, Itrs 13950/30000, Loss=0.007367
+Epoch 1164, Itrs 13960/30000, Loss=0.007164
+Epoch 1165, Itrs 13970/30000, Loss=0.007159
+Epoch 1165, Itrs 13980/30000, Loss=0.007201
+Epoch 1166, Itrs 13990/30000, Loss=0.007170
+Epoch 1167, Itrs 14000/30000, Loss=0.007236
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.15it/s]
+Overall Acc: 0.957215
+Mean Acc: 0.668568
+FreqW Acc: 0.930248
+Mean IoU: 0.595139
+Class IoU:
+	class 0: 0.956650
+	class 1: 0.233629
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1168, Itrs 14010/30000, Loss=0.007358
+Epoch 1169, Itrs 14020/30000, Loss=0.007312
+Epoch 1170, Itrs 14030/30000, Loss=0.007302
+Epoch 1170, Itrs 14040/30000, Loss=0.007256
+Epoch 1171, Itrs 14050/30000, Loss=0.007141
+Epoch 1172, Itrs 14060/30000, Loss=0.007205
+Epoch 1173, Itrs 14070/30000, Loss=0.007464
+Epoch 1174, Itrs 14080/30000, Loss=0.007115
+Epoch 1175, Itrs 14090/30000, Loss=0.007005
+Epoch 1175, Itrs 14100/30000, Loss=0.007220
+Epoch 1176, Itrs 14110/30000, Loss=0.007125
+Epoch 1177, Itrs 14120/30000, Loss=0.007526
+Epoch 1178, Itrs 14130/30000, Loss=0.007415
+Epoch 1179, Itrs 14140/30000, Loss=0.007261
+Epoch 1180, Itrs 14150/30000, Loss=0.006998
+Epoch 1180, Itrs 14160/30000, Loss=0.007374
+Epoch 1181, Itrs 14170/30000, Loss=0.007186
+Epoch 1182, Itrs 14180/30000, Loss=0.006929
+Epoch 1183, Itrs 14190/30000, Loss=0.007432
+Epoch 1184, Itrs 14200/30000, Loss=0.007102
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.21it/s]
+Overall Acc: 0.957490
+Mean Acc: 0.669998
+FreqW Acc: 0.930603
+Mean IoU: 0.596527
+Class IoU:
+	class 0: 0.956924
+	class 1: 0.236129
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1185, Itrs 14210/30000, Loss=0.007295
+Epoch 1185, Itrs 14220/30000, Loss=0.007327
+Epoch 1186, Itrs 14230/30000, Loss=0.007255
+Epoch 1187, Itrs 14240/30000, Loss=0.007203
+Epoch 1188, Itrs 14250/30000, Loss=0.007126
+Epoch 1189, Itrs 14260/30000, Loss=0.007392
+Epoch 1190, Itrs 14270/30000, Loss=0.006902
+Epoch 1190, Itrs 14280/30000, Loss=0.007350
+Epoch 1191, Itrs 14290/30000, Loss=0.007271
+Epoch 1192, Itrs 14300/30000, Loss=0.007074
+Epoch 1193, Itrs 14310/30000, Loss=0.007136
+Epoch 1194, Itrs 14320/30000, Loss=0.007045
+Epoch 1195, Itrs 14330/30000, Loss=0.007225
+Epoch 1195, Itrs 14340/30000, Loss=0.007053
+Epoch 1196, Itrs 14350/30000, Loss=0.007222
+Epoch 1197, Itrs 14360/30000, Loss=0.007411
+Epoch 1198, Itrs 14370/30000, Loss=0.006739
+Epoch 1199, Itrs 14380/30000, Loss=0.007314
+Epoch 1200, Itrs 14390/30000, Loss=0.007109
+Epoch 1200, Itrs 14400/30000, Loss=0.007265
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.15it/s]
+Overall Acc: 0.957279
+Mean Acc: 0.671886
+FreqW Acc: 0.930433
+Mean IoU: 0.597004
+Class IoU:
+	class 0: 0.956703
+	class 1: 0.237305
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1201, Itrs 14410/30000, Loss=0.007214
+Epoch 1202, Itrs 14420/30000, Loss=0.007006
+Epoch 1203, Itrs 14430/30000, Loss=0.007234
+Epoch 1204, Itrs 14440/30000, Loss=0.007388
+Epoch 1205, Itrs 14450/30000, Loss=0.007101
+Epoch 1205, Itrs 14460/30000, Loss=0.007397
+Epoch 1206, Itrs 14470/30000, Loss=0.007193
+Epoch 1207, Itrs 14480/30000, Loss=0.007447
+Epoch 1208, Itrs 14490/30000, Loss=0.007184
+Epoch 1209, Itrs 14500/30000, Loss=0.007314
+Epoch 1210, Itrs 14510/30000, Loss=0.007220
+Epoch 1210, Itrs 14520/30000, Loss=0.007367
+Epoch 1211, Itrs 14530/30000, Loss=0.007122
+Epoch 1212, Itrs 14540/30000, Loss=0.007362
+Epoch 1213, Itrs 14550/30000, Loss=0.007275
+Epoch 1214, Itrs 14560/30000, Loss=0.007339
+Epoch 1215, Itrs 14570/30000, Loss=0.006917
+Epoch 1215, Itrs 14580/30000, Loss=0.007294
+Epoch 1216, Itrs 14590/30000, Loss=0.007262
+Epoch 1217, Itrs 14600/30000, Loss=0.007249
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.28it/s]
+Overall Acc: 0.956762
+Mean Acc: 0.674229
+FreqW Acc: 0.929939
+Mean IoU: 0.596990
+Class IoU:
+	class 0: 0.956171
+	class 1: 0.237809
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 1218, Itrs 14610/30000, Loss=0.007347
+Epoch 1219, Itrs 14620/30000, Loss=0.007294
+Epoch 1220, Itrs 14630/30000, Loss=0.007381
+Epoch 1220, Itrs 14640/30000, Loss=0.007156
+Epoch 1221, Itrs 14650/30000, Loss=0.007156
+Epoch 1222, Itrs 14660/30000, Loss=0.007454
+Epoch 1223, Itrs 14670/30000, Loss=0.006992
+Epoch 1224, Itrs 14680/30000, Loss=0.007533
+Epoch 1225, Itrs 14690/30000, Loss=0.007059
+Epoch 1225, Itrs 14700/30000, Loss=0.007238
+Epoch 1226, Itrs 14710/30000, Loss=0.007311
+Epoch 1227, Itrs 14720/30000, Loss=0.007016
+Epoch 1228, Itrs 14730/30000, Loss=0.007328
+Epoch 1229, Itrs 14740/30000, Loss=0.007018
+Epoch 1230, Itrs 14750/30000, Loss=0.007274
+Epoch 1230, Itrs 14760/30000, Loss=0.007582
+Epoch 1231, Itrs 14770/30000, Loss=0.007132
+Epoch 1232, Itrs 14780/30000, Loss=0.007167
+Epoch 1233, Itrs 14790/30000, Loss=0.007219
+Epoch 1234, Itrs 14800/30000, Loss=0.007056
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.01it/s]
+Overall Acc: 0.956175
+Mean Acc: 0.675801
+FreqW Acc: 0.929339
+Mean IoU: 0.596419
+Class IoU:
+	class 0: 0.955569
+	class 1: 0.237269
+
+Updating Labels...
+
+45it [01:20,  1.79s/it]
+Epoch 1235, Itrs 14810/30000, Loss=0.007084
+Epoch 1235, Itrs 14820/30000, Loss=0.007330
+Epoch 1236, Itrs 14830/30000, Loss=0.007114
+Epoch 1237, Itrs 14840/30000, Loss=0.007858
+Epoch 1238, Itrs 14850/30000, Loss=0.007623
+Epoch 1239, Itrs 14860/30000, Loss=0.007058
+Epoch 1240, Itrs 14870/30000, Loss=0.007300
+Epoch 1240, Itrs 14880/30000, Loss=0.007026
+Epoch 1241, Itrs 14890/30000, Loss=0.007154
+Epoch 1242, Itrs 14900/30000, Loss=0.007416
+Epoch 1243, Itrs 14910/30000, Loss=0.007275
+Epoch 1244, Itrs 14920/30000, Loss=0.007063
+Epoch 1245, Itrs 14930/30000, Loss=0.007504
+Epoch 1245, Itrs 14940/30000, Loss=0.007465
+Epoch 1246, Itrs 14950/30000, Loss=0.007172
+Epoch 1247, Itrs 14960/30000, Loss=0.007150
+Epoch 1248, Itrs 14970/30000, Loss=0.007260
+Epoch 1249, Itrs 14980/30000, Loss=0.007478
+Epoch 1250, Itrs 14990/30000, Loss=0.006945
+Epoch 1250, Itrs 15000/30000, Loss=0.007332
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.03it/s]
+Overall Acc: 0.956030
+Mean Acc: 0.677445
+FreqW Acc: 0.929233
+Mean IoU: 0.596906
+Class IoU:
+	class 0: 0.955416
+	class 1: 0.238395
+
+Updating Labels...
+
+45it [01:25,  1.90s/it]
+Epoch 1251, Itrs 15010/30000, Loss=0.007236
+Epoch 1252, Itrs 15020/30000, Loss=0.007103
+Epoch 1253, Itrs 15030/30000, Loss=0.007478
+Epoch 1254, Itrs 15040/30000, Loss=0.007069
+Epoch 1255, Itrs 15050/30000, Loss=0.007121
+Epoch 1255, Itrs 15060/30000, Loss=0.007312
+Epoch 1256, Itrs 15070/30000, Loss=0.007160
+Epoch 1257, Itrs 15080/30000, Loss=0.007331
+Epoch 1258, Itrs 15090/30000, Loss=0.007694
+Epoch 1259, Itrs 15100/30000, Loss=0.006915
+Epoch 1260, Itrs 15110/30000, Loss=0.007530
+Epoch 1260, Itrs 15120/30000, Loss=0.007159
+Epoch 1261, Itrs 15130/30000, Loss=0.007211
+Epoch 1262, Itrs 15140/30000, Loss=0.007121
+Epoch 1263, Itrs 15150/30000, Loss=0.007394
+Epoch 1264, Itrs 15160/30000, Loss=0.006978
+Epoch 1265, Itrs 15170/30000, Loss=0.007630
+Epoch 1265, Itrs 15180/30000, Loss=0.007046
+Epoch 1266, Itrs 15190/30000, Loss=0.007390
+Epoch 1267, Itrs 15200/30000, Loss=0.006869
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.954750
+Mean Acc: 0.680492
+FreqW Acc: 0.927915
+Mean IoU: 0.595488
+Class IoU:
+	class 0: 0.954106
+	class 1: 0.236871
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1268, Itrs 15210/30000, Loss=0.007386
+Epoch 1269, Itrs 15220/30000, Loss=0.007436
+Epoch 1270, Itrs 15230/30000, Loss=0.007260
+Epoch 1270, Itrs 15240/30000, Loss=0.007498
+Epoch 1271, Itrs 15250/30000, Loss=0.007353
+Epoch 1272, Itrs 15260/30000, Loss=0.007010
+Epoch 1273, Itrs 15270/30000, Loss=0.007391
+Epoch 1274, Itrs 15280/30000, Loss=0.006978
+Epoch 1275, Itrs 15290/30000, Loss=0.007288
+Epoch 1275, Itrs 15300/30000, Loss=0.007152
+Epoch 1276, Itrs 15310/30000, Loss=0.007213
+Epoch 1277, Itrs 15320/30000, Loss=0.007448
+Epoch 1278, Itrs 15330/30000, Loss=0.007268
+Epoch 1279, Itrs 15340/30000, Loss=0.007347
+Epoch 1280, Itrs 15350/30000, Loss=0.007022
+Epoch 1280, Itrs 15360/30000, Loss=0.007237
+Epoch 1281, Itrs 15370/30000, Loss=0.007160
+Epoch 1282, Itrs 15380/30000, Loss=0.007218
+Epoch 1283, Itrs 15390/30000, Loss=0.007150
+Epoch 1284, Itrs 15400/30000, Loss=0.007365
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.24it/s]
+Overall Acc: 0.955703
+Mean Acc: 0.679404
+FreqW Acc: 0.928935
+Mean IoU: 0.597126
+Class IoU:
+	class 0: 0.955078
+	class 1: 0.239173
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+Updating Labels...
+
+45it [01:24,  1.88s/it]
+Epoch 1285, Itrs 15410/30000, Loss=0.007198
+Epoch 1285, Itrs 15420/30000, Loss=0.007082
+Epoch 1286, Itrs 15430/30000, Loss=0.007135
+Epoch 1287, Itrs 15440/30000, Loss=0.007358
+Epoch 1288, Itrs 15450/30000, Loss=0.007163
+Epoch 1289, Itrs 15460/30000, Loss=0.007392
+Epoch 1290, Itrs 15470/30000, Loss=0.007003
+Epoch 1290, Itrs 15480/30000, Loss=0.007071
+Epoch 1291, Itrs 15490/30000, Loss=0.007339
+Epoch 1292, Itrs 15500/30000, Loss=0.007292
+Epoch 1293, Itrs 15510/30000, Loss=0.007387
+Epoch 1294, Itrs 15520/30000, Loss=0.007478
+Epoch 1295, Itrs 15530/30000, Loss=0.006866
+Epoch 1295, Itrs 15540/30000, Loss=0.007122
+Epoch 1296, Itrs 15550/30000, Loss=0.007183
+Epoch 1297, Itrs 15560/30000, Loss=0.007371
+Epoch 1298, Itrs 15570/30000, Loss=0.007336
+Epoch 1299, Itrs 15580/30000, Loss=0.007299
+Epoch 1300, Itrs 15590/30000, Loss=0.007172
+Epoch 1300, Itrs 15600/30000, Loss=0.007292
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.34it/s]
+Overall Acc: 0.953236
+Mean Acc: 0.686626
+FreqW Acc: 0.926435
+Mean IoU: 0.595050
+Class IoU:
+	class 0: 0.952544
+	class 1: 0.237556
+
+Updating Labels...
+
+45it [01:21,  1.82s/it]
+Epoch 1301, Itrs 15610/30000, Loss=0.007260
+Epoch 1302, Itrs 15620/30000, Loss=0.007243
+Epoch 1303, Itrs 15630/30000, Loss=0.007575
+Epoch 1304, Itrs 15640/30000, Loss=0.007454
+Epoch 1305, Itrs 15650/30000, Loss=0.007546
+Epoch 1305, Itrs 15660/30000, Loss=0.007307
+Epoch 1306, Itrs 15670/30000, Loss=0.007257
+Epoch 1307, Itrs 15680/30000, Loss=0.007070
+Epoch 1308, Itrs 15690/30000, Loss=0.007469
+Epoch 1309, Itrs 15700/30000, Loss=0.006955
+Epoch 1310, Itrs 15710/30000, Loss=0.007361
+Epoch 1310, Itrs 15720/30000, Loss=0.007133
+Epoch 1311, Itrs 15730/30000, Loss=0.007313
+Epoch 1312, Itrs 15740/30000, Loss=0.006982
+Epoch 1313, Itrs 15750/30000, Loss=0.007401
+Epoch 1314, Itrs 15760/30000, Loss=0.006980
+Epoch 1315, Itrs 15770/30000, Loss=0.007357
+Epoch 1315, Itrs 15780/30000, Loss=0.007305
+Epoch 1316, Itrs 15790/30000, Loss=0.007317
+Epoch 1317, Itrs 15800/30000, Loss=0.007039
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.40it/s]
+Overall Acc: 0.954115
+Mean Acc: 0.684328
+FreqW Acc: 0.927335
+Mean IoU: 0.595912
+Class IoU:
+	class 0: 0.953447
+	class 1: 0.238378
+
+Updating Labels...
+
+45it [01:21,  1.81s/it]
+Epoch 1318, Itrs 15810/30000, Loss=0.007187
+Epoch 1319, Itrs 15820/30000, Loss=0.007335
+Epoch 1320, Itrs 15830/30000, Loss=0.007265
+Epoch 1320, Itrs 15840/30000, Loss=0.007388
+Epoch 1321, Itrs 15850/30000, Loss=0.007159
+Epoch 1322, Itrs 15860/30000, Loss=0.007540
+Epoch 1323, Itrs 15870/30000, Loss=0.006892
+Epoch 1324, Itrs 15880/30000, Loss=0.007413
+Epoch 1325, Itrs 15890/30000, Loss=0.007107
+Epoch 1325, Itrs 15900/30000, Loss=0.007462
+Epoch 1326, Itrs 15910/30000, Loss=0.007163
+Epoch 1327, Itrs 15920/30000, Loss=0.007496
+Epoch 1328, Itrs 15930/30000, Loss=0.007138
+Epoch 1329, Itrs 15940/30000, Loss=0.007174
+Epoch 1330, Itrs 15950/30000, Loss=0.007052
+Epoch 1330, Itrs 15960/30000, Loss=0.007254
+Epoch 1331, Itrs 15970/30000, Loss=0.007285
+Epoch 1332, Itrs 15980/30000, Loss=0.007255
+Epoch 1333, Itrs 15990/30000, Loss=0.007185
+Epoch 1334, Itrs 16000/30000, Loss=0.007065
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.09it/s]
+Overall Acc: 0.953736
+Mean Acc: 0.685058
+FreqW Acc: 0.926939
+Mean IoU: 0.595416
+Class IoU:
+	class 0: 0.953059
+	class 1: 0.237773
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1335, Itrs 16010/30000, Loss=0.007726
+Epoch 1335, Itrs 16020/30000, Loss=0.007180
+Epoch 1336, Itrs 16030/30000, Loss=0.007201
+Epoch 1337, Itrs 16040/30000, Loss=0.007694
+Epoch 1338, Itrs 16050/30000, Loss=0.007134
+Epoch 1339, Itrs 16060/30000, Loss=0.007286
+Epoch 1340, Itrs 16070/30000, Loss=0.007437
+Epoch 1340, Itrs 16080/30000, Loss=0.007298
+Epoch 1341, Itrs 16090/30000, Loss=0.007316
+Epoch 1342, Itrs 16100/30000, Loss=0.007253
+Epoch 1343, Itrs 16110/30000, Loss=0.007580
+Epoch 1344, Itrs 16120/30000, Loss=0.007108
+Epoch 1345, Itrs 16130/30000, Loss=0.007230
+Epoch 1345, Itrs 16140/30000, Loss=0.007169
+Epoch 1346, Itrs 16150/30000, Loss=0.007288
+Epoch 1347, Itrs 16160/30000, Loss=0.007402
+Epoch 1348, Itrs 16170/30000, Loss=0.007159
+Epoch 1349, Itrs 16180/30000, Loss=0.007362
+Epoch 1350, Itrs 16190/30000, Loss=0.007103
+Epoch 1350, Itrs 16200/30000, Loss=0.007231
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.30it/s]
+Overall Acc: 0.953921
+Mean Acc: 0.684788
+FreqW Acc: 0.927135
+Mean IoU: 0.595698
+Class IoU:
+	class 0: 0.953247
+	class 1: 0.238149
+
+Updating Labels...
+
+45it [01:21,  1.82s/it]
+Epoch 1351, Itrs 16210/30000, Loss=0.007330
+Epoch 1352, Itrs 16220/30000, Loss=0.006993
+Epoch 1353, Itrs 16230/30000, Loss=0.007332
+Epoch 1354, Itrs 16240/30000, Loss=0.007187
+Epoch 1355, Itrs 16250/30000, Loss=0.007472
+Epoch 1355, Itrs 16260/30000, Loss=0.007181
+Epoch 1356, Itrs 16270/30000, Loss=0.007171
+Epoch 1357, Itrs 16280/30000, Loss=0.007047
+Epoch 1358, Itrs 16290/30000, Loss=0.007547
+Epoch 1359, Itrs 16300/30000, Loss=0.007458
+Epoch 1360, Itrs 16310/30000, Loss=0.007003
+Epoch 1360, Itrs 16320/30000, Loss=0.007500
+Epoch 1361, Itrs 16330/30000, Loss=0.007405
+Epoch 1362, Itrs 16340/30000, Loss=0.007388
+Epoch 1363, Itrs 16350/30000, Loss=0.007306
+Epoch 1364, Itrs 16360/30000, Loss=0.007295
+Epoch 1365, Itrs 16370/30000, Loss=0.007370
+Epoch 1365, Itrs 16380/30000, Loss=0.007333
+Epoch 1366, Itrs 16390/30000, Loss=0.007353
+Epoch 1367, Itrs 16400/30000, Loss=0.006999
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.14it/s]
+Overall Acc: 0.954422
+Mean Acc: 0.683661
+FreqW Acc: 0.927653
+Mean IoU: 0.596282
+Class IoU:
+	class 0: 0.953761
+	class 1: 0.238802
+
+Updating Labels...
+
+45it [01:21,  1.80s/it]
+Epoch 1368, Itrs 16410/30000, Loss=0.007254
+Epoch 1369, Itrs 16420/30000, Loss=0.007369
+Epoch 1370, Itrs 16430/30000, Loss=0.007117
+Epoch 1370, Itrs 16440/30000, Loss=0.007474
+Epoch 1371, Itrs 16450/30000, Loss=0.007266
+Epoch 1372, Itrs 16460/30000, Loss=0.007525
+Epoch 1373, Itrs 16470/30000, Loss=0.007353
+Epoch 1374, Itrs 16480/30000, Loss=0.007276
+Epoch 1375, Itrs 16490/30000, Loss=0.007131
+Epoch 1375, Itrs 16500/30000, Loss=0.007261
+Epoch 1376, Itrs 16510/30000, Loss=0.007292
+Epoch 1377, Itrs 16520/30000, Loss=0.007173
+Epoch 1378, Itrs 16530/30000, Loss=0.007313
+Epoch 1379, Itrs 16540/30000, Loss=0.007191
+Epoch 1380, Itrs 16550/30000, Loss=0.007235
+Epoch 1380, Itrs 16560/30000, Loss=0.007322
+Epoch 1381, Itrs 16570/30000, Loss=0.007269
+Epoch 1382, Itrs 16580/30000, Loss=0.007136
+Epoch 1383, Itrs 16590/30000, Loss=0.007059
+Epoch 1384, Itrs 16600/30000, Loss=0.007268
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.16it/s]
+Overall Acc: 0.953008
+Mean Acc: 0.688124
+FreqW Acc: 0.926230
+Mean IoU: 0.595251
+Class IoU:
+	class 0: 0.952307
+	class 1: 0.238195
+
+Updating Labels...
+
+45it [01:20,  1.80s/it]
+Epoch 1385, Itrs 16610/30000, Loss=0.007406
+Epoch 1385, Itrs 16620/30000, Loss=0.007224
+Epoch 1386, Itrs 16630/30000, Loss=0.007306
+Epoch 1387, Itrs 16640/30000, Loss=0.007236
+Epoch 1388, Itrs 16650/30000, Loss=0.007363
+Epoch 1389, Itrs 16660/30000, Loss=0.007038
+Epoch 1390, Itrs 16670/30000, Loss=0.007270
+Epoch 1390, Itrs 16680/30000, Loss=0.007314
+Epoch 1391, Itrs 16690/30000, Loss=0.007228
+Epoch 1392, Itrs 16700/30000, Loss=0.007321
+Epoch 1393, Itrs 16710/30000, Loss=0.007547
+Epoch 1394, Itrs 16720/30000, Loss=0.007274
+Epoch 1395, Itrs 16730/30000, Loss=0.007506
+Epoch 1395, Itrs 16740/30000, Loss=0.007198
+Epoch 1396, Itrs 16750/30000, Loss=0.007401
+Epoch 1397, Itrs 16760/30000, Loss=0.007029
+Epoch 1398, Itrs 16770/30000, Loss=0.007367
+Epoch 1399, Itrs 16780/30000, Loss=0.007298
+Epoch 1400, Itrs 16790/30000, Loss=0.007074
+Epoch 1400, Itrs 16800/30000, Loss=0.007552
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.15it/s]
+Overall Acc: 0.952889
+Mean Acc: 0.688927
+FreqW Acc: 0.926123
+Mean IoU: 0.595364
+Class IoU:
+	class 0: 0.952183
+	class 1: 0.238546
+
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1401, Itrs 16810/30000, Loss=0.007244
+Epoch 1402, Itrs 16820/30000, Loss=0.007475
+Epoch 1403, Itrs 16830/30000, Loss=0.007096
+Epoch 1404, Itrs 16840/30000, Loss=0.007554
+Epoch 1405, Itrs 16850/30000, Loss=0.007114
+Epoch 1405, Itrs 16860/30000, Loss=0.007347
+Epoch 1406, Itrs 16870/30000, Loss=0.007252
+Epoch 1407, Itrs 16880/30000, Loss=0.007466
+Epoch 1408, Itrs 16890/30000, Loss=0.007022
+Epoch 1409, Itrs 16900/30000, Loss=0.007392
+Epoch 1410, Itrs 16910/30000, Loss=0.007448
+Epoch 1410, Itrs 16920/30000, Loss=0.007279
+Epoch 1411, Itrs 16930/30000, Loss=0.007263
+Epoch 1412, Itrs 16940/30000, Loss=0.007412
+Epoch 1413, Itrs 16950/30000, Loss=0.007151
+Epoch 1414, Itrs 16960/30000, Loss=0.006976
+Epoch 1415, Itrs 16970/30000, Loss=0.007563
+Epoch 1415, Itrs 16980/30000, Loss=0.007270
+Epoch 1416, Itrs 16990/30000, Loss=0.007254
+Epoch 1417, Itrs 17000/30000, Loss=0.007248
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.05it/s]
+Overall Acc: 0.953270
+Mean Acc: 0.688018
+FreqW Acc: 0.926516
+Mean IoU: 0.595780
+Class IoU:
+	class 0: 0.952574
+	class 1: 0.238985
+
+Updating Labels...
+
+45it [01:21,  1.80s/it]
+Epoch 1418, Itrs 17010/30000, Loss=0.007081
+Epoch 1419, Itrs 17020/30000, Loss=0.007430
+Epoch 1420, Itrs 17030/30000, Loss=0.007320
+Epoch 1420, Itrs 17040/30000, Loss=0.007316
+Epoch 1421, Itrs 17050/30000, Loss=0.007250
+Epoch 1422, Itrs 17060/30000, Loss=0.007206
+Epoch 1423, Itrs 17070/30000, Loss=0.007309
+Epoch 1424, Itrs 17080/30000, Loss=0.007620
+Epoch 1425, Itrs 17090/30000, Loss=0.007248
+Epoch 1425, Itrs 17100/30000, Loss=0.007253
+Epoch 1426, Itrs 17110/30000, Loss=0.007180
+Epoch 1427, Itrs 17120/30000, Loss=0.007640
+Epoch 1428, Itrs 17130/30000, Loss=0.007212
+Epoch 1429, Itrs 17140/30000, Loss=0.007142
+Epoch 1430, Itrs 17150/30000, Loss=0.007270
+Epoch 1430, Itrs 17160/30000, Loss=0.007235
+Epoch 1431, Itrs 17170/30000, Loss=0.007135
+Epoch 1432, Itrs 17180/30000, Loss=0.007721
+Epoch 1433, Itrs 17190/30000, Loss=0.007211
+Epoch 1434, Itrs 17200/30000, Loss=0.007046
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.04it/s]
+Overall Acc: 0.951717
+Mean Acc: 0.694001
+FreqW Acc: 0.924985
+Mean IoU: 0.595145
+Class IoU:
+	class 0: 0.950973
+	class 1: 0.239318
+
+Updating Labels...
+
+45it [01:21,  1.81s/it]
+Epoch 1435, Itrs 17210/30000, Loss=0.007341
+Epoch 1435, Itrs 17220/30000, Loss=0.007385
+Epoch 1436, Itrs 17230/30000, Loss=0.007272
+Epoch 1437, Itrs 17240/30000, Loss=0.007356
+Epoch 1438, Itrs 17250/30000, Loss=0.007230
+Epoch 1439, Itrs 17260/30000, Loss=0.007378
+Epoch 1440, Itrs 17270/30000, Loss=0.007398
+Epoch 1440, Itrs 17280/30000, Loss=0.007281
+Epoch 1441, Itrs 17290/30000, Loss=0.007282
+Epoch 1442, Itrs 17300/30000, Loss=0.007268
+Epoch 1443, Itrs 17310/30000, Loss=0.007310
+Epoch 1444, Itrs 17320/30000, Loss=0.007402
+Epoch 1445, Itrs 17330/30000, Loss=0.007174
+Epoch 1445, Itrs 17340/30000, Loss=0.007284
+Epoch 1446, Itrs 17350/30000, Loss=0.007214
+Epoch 1447, Itrs 17360/30000, Loss=0.007780
+Epoch 1448, Itrs 17370/30000, Loss=0.007180
+Epoch 1449, Itrs 17380/30000, Loss=0.007228
+Epoch 1450, Itrs 17390/30000, Loss=0.007388
+Epoch 1450, Itrs 17400/30000, Loss=0.007394
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.950596
+Mean Acc: 0.694409
+FreqW Acc: 0.923765
+Mean IoU: 0.592941
+Class IoU:
+	class 0: 0.949830
+	class 1: 0.236052
+
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1451, Itrs 17410/30000, Loss=0.007191
+Epoch 1452, Itrs 17420/30000, Loss=0.007447
+Epoch 1453, Itrs 17430/30000, Loss=0.007212
+Epoch 1454, Itrs 17440/30000, Loss=0.007232
+Epoch 1455, Itrs 17450/30000, Loss=0.007258
+Epoch 1455, Itrs 17460/30000, Loss=0.007403
+Epoch 1456, Itrs 17470/30000, Loss=0.007426
+Epoch 1457, Itrs 17480/30000, Loss=0.007293
+Epoch 1458, Itrs 17490/30000, Loss=0.007243
+Epoch 1459, Itrs 17500/30000, Loss=0.007073
+Epoch 1460, Itrs 17510/30000, Loss=0.007168
+Epoch 1460, Itrs 17520/30000, Loss=0.007318
+Epoch 1461, Itrs 17530/30000, Loss=0.007369
+Epoch 1462, Itrs 17540/30000, Loss=0.007186
+Epoch 1463, Itrs 17550/30000, Loss=0.007477
+Epoch 1464, Itrs 17560/30000, Loss=0.007029
+Epoch 1465, Itrs 17570/30000, Loss=0.007698
+Epoch 1465, Itrs 17580/30000, Loss=0.007209
+Epoch 1466, Itrs 17590/30000, Loss=0.007308
+Epoch 1467, Itrs 17600/30000, Loss=0.007177
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.30it/s]
+Overall Acc: 0.951467
+Mean Acc: 0.693894
+FreqW Acc: 0.924707
+Mean IoU: 0.594558
+Class IoU:
+	class 0: 0.950718
+	class 1: 0.238399
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1468, Itrs 17610/30000, Loss=0.007515
+Epoch 1469, Itrs 17620/30000, Loss=0.007231
+Epoch 1470, Itrs 17630/30000, Loss=0.007236
+Epoch 1470, Itrs 17640/30000, Loss=0.007433
+Epoch 1471, Itrs 17650/30000, Loss=0.007253
+Epoch 1472, Itrs 17660/30000, Loss=0.007428
+Epoch 1473, Itrs 17670/30000, Loss=0.007266
+Epoch 1474, Itrs 17680/30000, Loss=0.007482
+Epoch 1475, Itrs 17690/30000, Loss=0.007215
+Epoch 1475, Itrs 17700/30000, Loss=0.007666
+Epoch 1476, Itrs 17710/30000, Loss=0.007301
+Epoch 1477, Itrs 17720/30000, Loss=0.007251
+Epoch 1478, Itrs 17730/30000, Loss=0.007090
+Epoch 1479, Itrs 17740/30000, Loss=0.007525
+Epoch 1480, Itrs 17750/30000, Loss=0.007356
+Epoch 1480, Itrs 17760/30000, Loss=0.007445
+Epoch 1481, Itrs 17770/30000, Loss=0.007312
+Epoch 1482, Itrs 17780/30000, Loss=0.007137
+Epoch 1483, Itrs 17790/30000, Loss=0.007284
+Epoch 1484, Itrs 17800/30000, Loss=0.007438
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.950694
+Mean Acc: 0.696340
+FreqW Acc: 0.923929
+Mean IoU: 0.594009
+Class IoU:
+	class 0: 0.949923
+	class 1: 0.238096
+
+Updating Labels...
+
+45it [01:22,  1.84s/it]
+Epoch 1485, Itrs 17810/30000, Loss=0.007046
+Epoch 1485, Itrs 17820/30000, Loss=0.007503
+Epoch 1486, Itrs 17830/30000, Loss=0.007343
+Epoch 1487, Itrs 17840/30000, Loss=0.007406
+Epoch 1488, Itrs 17850/30000, Loss=0.007253
+Epoch 1489, Itrs 17860/30000, Loss=0.007264
+Epoch 1490, Itrs 17870/30000, Loss=0.007475
+Epoch 1490, Itrs 17880/30000, Loss=0.007327
+Epoch 1491, Itrs 17890/30000, Loss=0.007602
+Epoch 1492, Itrs 17900/30000, Loss=0.007154
+Epoch 1493, Itrs 17910/30000, Loss=0.007000
+Epoch 1494, Itrs 17920/30000, Loss=0.007701
+Epoch 1495, Itrs 17930/30000, Loss=0.007056
+Epoch 1495, Itrs 17940/30000, Loss=0.007290
+Epoch 1496, Itrs 17950/30000, Loss=0.007086
+Epoch 1497, Itrs 17960/30000, Loss=0.007641
+Epoch 1498, Itrs 17970/30000, Loss=0.007401
+Epoch 1499, Itrs 17980/30000, Loss=0.007053
+Epoch 1500, Itrs 17990/30000, Loss=0.007337
+Epoch 1500, Itrs 18000/30000, Loss=0.007210
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.31it/s]
+Overall Acc: 0.950770
+Mean Acc: 0.695413
+FreqW Acc: 0.923985
+Mean IoU: 0.593755
+Class IoU:
+	class 0: 0.950003
+	class 1: 0.237508
+
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1501, Itrs 18010/30000, Loss=0.007364
+Epoch 1502, Itrs 18020/30000, Loss=0.007411
+Epoch 1503, Itrs 18030/30000, Loss=0.007341
+Epoch 1504, Itrs 18040/30000, Loss=0.007542
+Epoch 1505, Itrs 18050/30000, Loss=0.007414
+Epoch 1505, Itrs 18060/30000, Loss=0.007326
+Epoch 1506, Itrs 18070/30000, Loss=0.007220
+Epoch 1507, Itrs 18080/30000, Loss=0.007384
+Epoch 1508, Itrs 18090/30000, Loss=0.007445
+Epoch 1509, Itrs 18100/30000, Loss=0.007516
+Epoch 1510, Itrs 18110/30000, Loss=0.007406
+Epoch 1510, Itrs 18120/30000, Loss=0.007435
+Epoch 1511, Itrs 18130/30000, Loss=0.007318
+Epoch 1512, Itrs 18140/30000, Loss=0.007278
+Epoch 1513, Itrs 18150/30000, Loss=0.007582
+Epoch 1514, Itrs 18160/30000, Loss=0.007365
+Epoch 1515, Itrs 18170/30000, Loss=0.007389
+Epoch 1515, Itrs 18180/30000, Loss=0.007347
+Epoch 1516, Itrs 18190/30000, Loss=0.007242
+Epoch 1517, Itrs 18200/30000, Loss=0.007775
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.94it/s]
+Overall Acc: 0.949332
+Mean Acc: 0.699508
+FreqW Acc: 0.922526
+Mean IoU: 0.592554
+Class IoU:
+	class 0: 0.948524
+	class 1: 0.236585
+
+Updating Labels...
+
+45it [01:23,  1.86s/it]
+Epoch 1518, Itrs 18210/30000, Loss=0.007258
+Epoch 1519, Itrs 18220/30000, Loss=0.007332
+Epoch 1520, Itrs 18230/30000, Loss=0.007231
+Epoch 1520, Itrs 18240/30000, Loss=0.007430
+Epoch 1521, Itrs 18250/30000, Loss=0.007356
+Epoch 1522, Itrs 18260/30000, Loss=0.007258
+Epoch 1523, Itrs 18270/30000, Loss=0.007052
+Epoch 1524, Itrs 18280/30000, Loss=0.007165
+Epoch 1525, Itrs 18290/30000, Loss=0.007438
+Epoch 1525, Itrs 18300/30000, Loss=0.008084
+Epoch 1526, Itrs 18310/30000, Loss=0.007282
+Epoch 1527, Itrs 18320/30000, Loss=0.007532
+Epoch 1528, Itrs 18330/30000, Loss=0.007064
+Epoch 1529, Itrs 18340/30000, Loss=0.007662
+Epoch 1530, Itrs 18350/30000, Loss=0.007397
+Epoch 1530, Itrs 18360/30000, Loss=0.007361
+Epoch 1531, Itrs 18370/30000, Loss=0.007259
+Epoch 1532, Itrs 18380/30000, Loss=0.007165
+Epoch 1533, Itrs 18390/30000, Loss=0.007400
+Epoch 1534, Itrs 18400/30000, Loss=0.007401
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.19it/s]
+Overall Acc: 0.949372
+Mean Acc: 0.698310
+FreqW Acc: 0.922536
+Mean IoU: 0.592115
+Class IoU:
+	class 0: 0.948569
+	class 1: 0.235661
+
+Updating Labels...
+
+45it [01:23,  1.85s/it]
+Epoch 1535, Itrs 18410/30000, Loss=0.007387
+Epoch 1535, Itrs 18420/30000, Loss=0.007238
+Epoch 1536, Itrs 18430/30000, Loss=0.007579
+Epoch 1537, Itrs 18440/30000, Loss=0.007339
+Epoch 1538, Itrs 18450/30000, Loss=0.007507
+Epoch 1539, Itrs 18460/30000, Loss=0.007621
+Epoch 1540, Itrs 18470/30000, Loss=0.007026
+Epoch 1540, Itrs 18480/30000, Loss=0.007489
+Epoch 1541, Itrs 18490/30000, Loss=0.007246
+Epoch 1542, Itrs 18500/30000, Loss=0.008061
+Epoch 1543, Itrs 18510/30000, Loss=0.007381
+Epoch 1544, Itrs 18520/30000, Loss=0.007239
+Epoch 1545, Itrs 18530/30000, Loss=0.007307
+Epoch 1545, Itrs 18540/30000, Loss=0.007313
+Epoch 1546, Itrs 18550/30000, Loss=0.007360
+Epoch 1547, Itrs 18560/30000, Loss=0.007475
+Epoch 1548, Itrs 18570/30000, Loss=0.007196
+Epoch 1549, Itrs 18580/30000, Loss=0.008107
+Epoch 1550, Itrs 18590/30000, Loss=0.006940
+Epoch 1550, Itrs 18600/30000, Loss=0.007318
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.06it/s]
+Overall Acc: 0.948869
+Mean Acc: 0.700378
+FreqW Acc: 0.922044
+Mean IoU: 0.591978
+Class IoU:
+	class 0: 0.948048
+	class 1: 0.235908
+
+Updating Labels...
+
+45it [01:20,  1.79s/it]
+Epoch 1551, Itrs 18610/30000, Loss=0.007208
+Epoch 1552, Itrs 18620/30000, Loss=0.007611
+Epoch 1553, Itrs 18630/30000, Loss=0.007182
+Epoch 1554, Itrs 18640/30000, Loss=0.007314
+Epoch 1555, Itrs 18650/30000, Loss=0.007557
+Epoch 1555, Itrs 18660/30000, Loss=0.007467
+Epoch 1556, Itrs 18670/30000, Loss=0.007422
+Epoch 1557, Itrs 18680/30000, Loss=0.007498
+Epoch 1558, Itrs 18690/30000, Loss=0.007084
+Epoch 1559, Itrs 18700/30000, Loss=0.007417
+Epoch 1560, Itrs 18710/30000, Loss=0.007358
+Epoch 1560, Itrs 18720/30000, Loss=0.007551
+Epoch 1561, Itrs 18730/30000, Loss=0.007474
+Epoch 1562, Itrs 18740/30000, Loss=0.007177
+Epoch 1563, Itrs 18750/30000, Loss=0.007682
+Epoch 1564, Itrs 18760/30000, Loss=0.007164
+Epoch 1565, Itrs 18770/30000, Loss=0.007766
+Epoch 1565, Itrs 18780/30000, Loss=0.007364
+Epoch 1566, Itrs 18790/30000, Loss=0.007424
+Epoch 1567, Itrs 18800/30000, Loss=0.007581
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.16it/s]
+Overall Acc: 0.949877
+Mean Acc: 0.698671
+FreqW Acc: 0.923099
+Mean IoU: 0.593320
+Class IoU:
+	class 0: 0.949081
+	class 1: 0.237558
+
+Updating Labels...
+
+45it [01:21,  1.81s/it]
+Epoch 1568, Itrs 18810/30000, Loss=0.007338
+Epoch 1569, Itrs 18820/30000, Loss=0.007373
+Epoch 1570, Itrs 18830/30000, Loss=0.007582
+Epoch 1570, Itrs 18840/30000, Loss=0.007442
+Epoch 1571, Itrs 18850/30000, Loss=0.007415
+Epoch 1572, Itrs 18860/30000, Loss=0.007659
+Epoch 1573, Itrs 18870/30000, Loss=0.007864
+Epoch 1574, Itrs 18880/30000, Loss=0.007493
+Epoch 1575, Itrs 18890/30000, Loss=0.007104
+Epoch 1575, Itrs 18900/30000, Loss=0.007671
+Epoch 1576, Itrs 18910/30000, Loss=0.007436
+Epoch 1577, Itrs 18920/30000, Loss=0.007082
+Epoch 1578, Itrs 18930/30000, Loss=0.007523
+Epoch 1579, Itrs 18940/30000, Loss=0.007528
+Epoch 1580, Itrs 18950/30000, Loss=0.007314
+Epoch 1580, Itrs 18960/30000, Loss=0.007387
+Epoch 1581, Itrs 18970/30000, Loss=0.007291
+Epoch 1582, Itrs 18980/30000, Loss=0.007444
+Epoch 1583, Itrs 18990/30000, Loss=0.007386
+Epoch 1584, Itrs 19000/30000, Loss=0.007652
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.16it/s]
+Overall Acc: 0.950906
+Mean Acc: 0.694592
+FreqW Acc: 0.924111
+Mean IoU: 0.593677
+Class IoU:
+	class 0: 0.950145
+	class 1: 0.237209
+
+Updating Labels...
+
+45it [01:24,  1.89s/it]
+Epoch 1585, Itrs 19010/30000, Loss=0.007440
+Epoch 1585, Itrs 19020/30000, Loss=0.007405
+Epoch 1586, Itrs 19030/30000, Loss=0.007310
+Epoch 1587, Itrs 19040/30000, Loss=0.007191
+Epoch 1588, Itrs 19050/30000, Loss=0.007578
+Epoch 1589, Itrs 19060/30000, Loss=0.007220
+Epoch 1590, Itrs 19070/30000, Loss=0.007563
+Epoch 1590, Itrs 19080/30000, Loss=0.007455
+Epoch 1591, Itrs 19090/30000, Loss=0.007413
+Epoch 1592, Itrs 19100/30000, Loss=0.007458
+Epoch 1593, Itrs 19110/30000, Loss=0.007349
+Epoch 1594, Itrs 19120/30000, Loss=0.007669
+Epoch 1595, Itrs 19130/30000, Loss=0.007387
+Epoch 1595, Itrs 19140/30000, Loss=0.007466
+Epoch 1596, Itrs 19150/30000, Loss=0.007111
+Epoch 1597, Itrs 19160/30000, Loss=0.008142
+Epoch 1598, Itrs 19170/30000, Loss=0.007432
+Epoch 1599, Itrs 19180/30000, Loss=0.007696
+Epoch 1600, Itrs 19190/30000, Loss=0.007365
+Epoch 1600, Itrs 19200/30000, Loss=0.007415
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.99it/s]
+Overall Acc: 0.949960
+Mean Acc: 0.698007
+FreqW Acc: 0.923171
+Mean IoU: 0.593202
+Class IoU:
+	class 0: 0.949169
+	class 1: 0.237235
+
+Updating Labels...
+
+45it [01:21,  1.82s/it]
+Epoch 1601, Itrs 19210/30000, Loss=0.007512
+Epoch 1602, Itrs 19220/30000, Loss=0.006961
+Epoch 1603, Itrs 19230/30000, Loss=0.007589
+Epoch 1604, Itrs 19240/30000, Loss=0.007455
+Epoch 1605, Itrs 19250/30000, Loss=0.007802
+Epoch 1605, Itrs 19260/30000, Loss=0.007232
+Epoch 1606, Itrs 19270/30000, Loss=0.007292
+Epoch 1607, Itrs 19280/30000, Loss=0.009404
+Epoch 1608, Itrs 19290/30000, Loss=0.007439
+Epoch 1609, Itrs 19300/30000, Loss=0.007429
+Epoch 1610, Itrs 19310/30000, Loss=0.007733
+Epoch 1610, Itrs 19320/30000, Loss=0.007308
+Epoch 1611, Itrs 19330/30000, Loss=0.007519
+Epoch 1612, Itrs 19340/30000, Loss=0.007187
+Epoch 1613, Itrs 19350/30000, Loss=0.007394
+Epoch 1614, Itrs 19360/30000, Loss=0.007544
+Epoch 1615, Itrs 19370/30000, Loss=0.007285
+Epoch 1615, Itrs 19380/30000, Loss=0.007449
+Epoch 1616, Itrs 19390/30000, Loss=0.007311
+Epoch 1617, Itrs 19400/30000, Loss=0.007437
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.14it/s]
+Overall Acc: 0.948376
+Mean Acc: 0.703520
+FreqW Acc: 0.921591
+Mean IoU: 0.592318
+Class IoU:
+	class 0: 0.947534
+	class 1: 0.237103
+
+Updating Labels...
+
+45it [01:22,  1.83s/it]
+Epoch 1618, Itrs 19410/30000, Loss=0.007424
+Epoch 1619, Itrs 19420/30000, Loss=0.007631
+Epoch 1620, Itrs 19430/30000, Loss=0.007454
+Epoch 1620, Itrs 19440/30000, Loss=0.007411
+Epoch 1621, Itrs 19450/30000, Loss=0.007196
+Epoch 1622, Itrs 19460/30000, Loss=0.007429
+Epoch 1623, Itrs 19470/30000, Loss=0.007773
+Epoch 1624, Itrs 19480/30000, Loss=0.007361
+Epoch 1625, Itrs 19490/30000, Loss=0.007275
+Epoch 1625, Itrs 19500/30000, Loss=0.007566
+Epoch 1626, Itrs 19510/30000, Loss=0.007383
+Epoch 1627, Itrs 19520/30000, Loss=0.007561
+Epoch 1628, Itrs 19530/30000, Loss=0.007329
+Epoch 1629, Itrs 19540/30000, Loss=0.007263
+Epoch 1630, Itrs 19550/30000, Loss=0.007827
+Epoch 1630, Itrs 19560/30000, Loss=0.007380
+Epoch 1631, Itrs 19570/30000, Loss=0.007484
+Epoch 1632, Itrs 19580/30000, Loss=0.007382
+Epoch 1633, Itrs 19590/30000, Loss=0.007284
+Epoch 1634, Itrs 19600/30000, Loss=0.007666
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.43it/s]
+Overall Acc: 0.949202
+Mean Acc: 0.698562
+FreqW Acc: 0.922358
+Mean IoU: 0.591876
+Class IoU:
+	class 0: 0.948395
+	class 1: 0.235357
+
+Updating Labels...
+
+45it [01:24,  1.87s/it]
+Epoch 1635, Itrs 19610/30000, Loss=0.007470
+Epoch 1635, Itrs 19620/30000, Loss=0.007505
+Epoch 1636, Itrs 19630/30000, Loss=0.007515
+Epoch 1637, Itrs 19640/30000, Loss=0.007614
+Epoch 1638, Itrs 19650/30000, Loss=0.007171
+Epoch 1639, Itrs 19660/30000, Loss=0.007302
+Epoch 1640, Itrs 19670/30000, Loss=0.007479
+Epoch 1640, Itrs 19680/30000, Loss=0.007332
+Epoch 1641, Itrs 19690/30000, Loss=0.007365
+Epoch 1642, Itrs 19700/30000, Loss=0.007485
+Epoch 1643, Itrs 19710/30000, Loss=0.007724
+Epoch 1644, Itrs 19720/30000, Loss=0.007378
+Epoch 1645, Itrs 19730/30000, Loss=0.007455
+Epoch 1645, Itrs 19740/30000, Loss=0.007289
+Epoch 1646, Itrs 19750/30000, Loss=0.007543
+Epoch 1647, Itrs 19760/30000, Loss=0.007398
+Epoch 1648, Itrs 19770/30000, Loss=0.007209
+Epoch 1649, Itrs 19780/30000, Loss=0.007518
+Epoch 1650, Itrs 19790/30000, Loss=0.007475
+Epoch 1650, Itrs 19800/30000, Loss=0.007269
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  8.09it/s]
+Overall Acc: 0.947815
+Mean Acc: 0.703315
+FreqW Acc: 0.920974
+Mean IoU: 0.591095
+Class IoU:
+	class 0: 0.946964
+	class 1: 0.235227
+
+Updating Labels...
+
+45it [01:21,  1.82s/it]
+Epoch 1651, Itrs 19810/30000, Loss=0.007517
+Epoch 1652, Itrs 19820/30000, Loss=0.007776
+Epoch 1653, Itrs 19830/30000, Loss=0.007857
+Epoch 1654, Itrs 19840/30000, Loss=0.007210
+Epoch 1655, Itrs 19850/30000, Loss=0.007653
+Epoch 1655, Itrs 19860/30000, Loss=0.007226
+Epoch 1656, Itrs 19870/30000, Loss=0.007271
+Epoch 1657, Itrs 19880/30000, Loss=0.007307
+Epoch 1658, Itrs 19890/30000, Loss=0.007661
+Epoch 1659, Itrs 19900/30000, Loss=0.007797
+Epoch 1660, Itrs 19910/30000, Loss=0.007135
+Epoch 1660, Itrs 19920/30000, Loss=0.007445
+Epoch 1661, Itrs 19930/30000, Loss=0.007299
+Epoch 1662, Itrs 19940/30000, Loss=0.007603
+Epoch 1663, Itrs 19950/30000, Loss=0.007629
+Epoch 1664, Itrs 19960/30000, Loss=0.007384
+Epoch 1665, Itrs 19970/30000, Loss=0.007317
+Epoch 1665, Itrs 19980/30000, Loss=0.007671
+Epoch 1666, Itrs 19990/30000, Loss=0.007350
+Epoch 1667, Itrs 20000/30000, Loss=0.007486
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_R_RGB_True_os16.pth
+validation...
+5it [00:00,  7.89it/s]
+Overall Acc: 0.947049
+Mean Acc: 0.704565
+FreqW Acc: 0.920173
+Mean IoU: 0.590092
+Class IoU:
+	class 0: 0.946179
+	class 1: 0.234005
+
+Updating Labels...
+

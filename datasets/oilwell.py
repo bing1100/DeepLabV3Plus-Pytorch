@@ -42,7 +42,7 @@ class Oilwell(data.Dataset):
         indrange_train = []
         indrange_validation = []
         for x in r:
-            if x % 10 < 8 :
+            if x % 10 <= 8 :
                 indrange_train.append(x)
 
             if x % 10 == 9:
@@ -51,9 +51,11 @@ class Oilwell(data.Dataset):
         if image_set == 'train':
             self.images = [self.root + "/region_" + str(i) + imgExt for i in indrange_train]
             self.masks = [self.root + targetLoc + str(i) + "_"+type+"_gt.png" for i in indrange_train]
+            self.omasks = [self.root + "/region_" + str(i) + "_"+type+"_gt.png" for i in indrange_train]
         elif image_set == 'val':
             self.images = [self.root + "/region_" + str(i) + imgExt for i in indrange_validation]
             self.masks = [self.root + targetLoc + str(i) + "_"+type+"_gt.png" for i in indrange_validation]
+            self.omasks = [self.root + "/region_" + str(i) + "_"+type+"_gt.png" for i in indrange_validation]
             
         assert (len(self.images) == len(self.masks))
 
@@ -66,12 +68,14 @@ class Oilwell(data.Dataset):
         """
         imgname = self.images[index]
         tarname = self.masks[index]
+        otarname = self.omasks[index]
         img = Image.open(imgname).convert('RGB')
         target = Image.open(tarname)
+        otarget = Image.open(otarname)
         if self.transform is not None:
-            img, target = self.transform(img, target)
+            img, target, otarget = self.transform(img, target, otarget)
 
-        return img, target, imgname, tarname
+        return img, target, otarget, imgname, tarname
     
     @classmethod
     def decode_target(cls, target):
