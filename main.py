@@ -43,7 +43,7 @@ def get_argparser():
     parser.add_argument("--test_only", action='store_true', default=False)
     parser.add_argument("--save_val_results", action='store_true', default=False,
                         help="save segmentation results to \"./results\"")
-    parser.add_argument("--total_itrs", type=int, default=35e3,
+    parser.add_argument("--total_itrs", type=int, default=15e3,
                         help="epoch number (default: 60k)")
     parser.add_argument("--lr", type=float, default=0.01,
                         help="learning rate (default: 0.01)")
@@ -72,7 +72,7 @@ def get_argparser():
                         help="random seed (default: 1)")
     parser.add_argument("--print_interval", type=int, default=10,
                         help="print interval of loss (default: 10)")
-    parser.add_argument("--val_interval", type=int, default=100,
+    parser.add_argument("--val_interval", type=int, default=200,
                         help="epoch interval for eval (default: 100)")
     parser.add_argument("--download", action='store_true', default=False,
                         help="download datasets")
@@ -89,10 +89,12 @@ def get_argparser():
     parser.add_argument("--update", dest='update_labels', action='store_true',
                         help='Make updates to labels')
     parser.set_defaults(update_labels=False)
-    parser.add_argument("--update_interval", type=int, default=100,
+    parser.add_argument("--update_interval", type=int, default=200,
                         help="update interval for discovery (default: 1000)")
-    parser.add_argument("--update_min_interval", type=int, default=200,
+    parser.add_argument("--update_min_interval", type=int, default=3000,
                         help="update interval for discovery (default: 1000)")
+    parser.add_argument("--oilwell_tests", type=str, default='a', choices=['a', 'b', 'c', 'd'],
+                        help='Whether to train using farm areas, rural areas, or both')
     
     # PASCAL VOC Options
     parser.add_argument("--year", type=str, default='2012',
@@ -128,16 +130,31 @@ def updateLabels(opts, model, loader, device, best):
     
     denorm = utils.Denormalize(mean=mean,
                                 std=std)
+    
+    a = 5
+    b = 3
+    if opts.oilwell_tests == 'b':
+        a = 7
+        b = 5
+    elif opts.oilwell_tests == 'c':
+        a = 4
+        b = 0
+    elif opts.oilwell_tests == 'd':
+        a = 5
+        b = 0
+     
 
     with torch.no_grad():
-        for i, (images, labels, imgnames, tarnames) in tqdm(enumerate(loader)):
+        for i, (images, labels, olabels, imgnames, tarnames) in tqdm(enumerate(loader)):
             
             images = images.to(device, dtype=torch.float32)
             labels = labels.to(device, dtype=torch.long)
+            olabels = olabels.to(device, dtype=torch.long)
 
             outputs = model(images)
             preds = outputs.detach().max(dim=1)[1].cpu().numpy()
             targets = labels.cpu().numpy()
+            otargets = labels.cpu().numpy()
 
             confusion_matrix = np.zeros((opts.num_classes, opts.num_classes))
             for lt, lp in zip(targets, preds):
@@ -146,15 +163,14 @@ def updateLabels(opts, model, loader, device, best):
             hist = confusion_matrix
             iu = np.diag(hist) / (hist.sum(axis=1) + hist.sum(axis=0) - np.diag(hist))
             cls_iu = dict(zip(range(opts.num_classes), iu))
-            cutoff0 = cls_iu[0]
             cutoff1 = cls_iu[1]
 
             for i in range(len(images)):
-                image = images[i].detach().cpu().numpy()
+                otarget = otargets[i]
                 target = targets[i]
                 pred = preds[i]
 
-                image = (denorm(image) * 255).transpose(1, 2, 0).astype(np.uint8)
+                otarget = loader.dataset.decode_target(otarget).astype(np.uint8)
                 target = loader.dataset.decode_target(target).astype(np.uint8)
                 pred = loader.dataset.decode_target(pred).astype(np.uint8)
                 
@@ -164,27 +180,30 @@ def updateLabels(opts, model, loader, device, best):
                 
                 for x in range(xaxis):
                     for y in range(yaxis):
+                        otarVal = otarget[x][y]
                         predVal = pred[x][y]
                         tarVal = target[x][y]
                         
                         if predVal[0] != tarVal[0]:
-                            if predVal[0] != 0:
-                                if random.randint(0,100*100) < (cls_iu[1]**2 * 100*100):
+                            if predVal[0] != 0: # only add
+                                if random.randint(0,100*100) < (cutoff1**(a - b*cutoff1) * 100*100):
                                     save = True
                                     target[x][y] = predVal
-                            # else:
-                            #     if random.randint(0,100) < (cls_iu[1]**2 * 50):
+                            
+                            # can add and remove
+                            # if otarVal[0] == 0:
+                            #     if random.randint(0,100*100) < (cutoff1**5 * 100*100):
                             #         save = True
                             #         target[x][y] = predVal
                 
-                #if save:
-                img = Image.fromarray(target)
-                gray = img.convert('L')
-                bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
-                bw.save(tarnames[i])
-                
-                if best:
-                    bw.save(tarnames[i] + "_best.png")
+                if save:
+                    img = Image.fromarray(target)
+                    gray = img.convert('L')
+                    bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
+                    bw.save(tarnames[i])
+                    
+                    if best:
+                        bw.save(tarnames[i] + "_best.png")
 
 def get_dataset(opts):
     """ Dataset And Augmentation
@@ -320,7 +339,7 @@ def validate(opts, model, loader, device, metrics, ret_samples_ids=None):
         img_id = 0
 
     with torch.no_grad():
-        for i, (images, labels, imgnames, tarnames) in tqdm(enumerate(loader)):
+        for i, (images, labels, olabels, imgnames, tarnames) in tqdm(enumerate(loader)):
             
             images = images.to(device, dtype=torch.float32)
             labels = labels.to(device, dtype=torch.long)
@@ -365,6 +384,7 @@ def validate(opts, model, loader, device, metrics, ret_samples_ids=None):
 
 def main():
     opts = get_argparser().parse_args()
+    print(opts)
     if opts.dataset.lower() == 'voc':
         opts.num_classes = 21
     elif opts.dataset.lower() == 'cityscapes':
@@ -406,11 +426,11 @@ def main():
     
     train_dst, val_dst, update_dst = get_dataset(opts)
     train_loader = data.DataLoader(
-        train_dst, batch_size=opts.batch_size, shuffle=True, num_workers=16)
+        train_dst, batch_size=opts.batch_size, shuffle=True, num_workers=24)
     val_loader = data.DataLoader(
-        val_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=16)
+        val_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=24)
     update_loader = data.DataLoader(
-        update_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=16)
+        update_dst, batch_size=opts.val_batch_size, shuffle=True, num_workers=24)
     print("Dataset: %s, Train set: %d, Val set: %d" %
           (opts.dataset, len(train_dst), len(val_dst)))
 
@@ -505,7 +525,7 @@ def main():
         # =====  Train  =====
         model.train()
         cur_epochs += 1
-        for (images, labels, imgnames, tarnames) in train_loader:
+        for (images, labels, olabels, imgnames, tarnames) in train_loader:
             cur_itrs += 1
 
             images = images.to(device, dtype=torch.float32)
@@ -554,7 +574,7 @@ def main():
                            opts.update_labels,
                            opts.output_stride))
                 
-                if opts.update_labels and (cur_itrs) % opts.update_interval == 0:
+                if opts.update_labels and (cur_itrs) % opts.update_interval == 0 and cur_itrs > opts.update_min_interval:
                     print("Updating Labels...")
                     save = False
                     if val_score['Mean IoU'] == best_score:

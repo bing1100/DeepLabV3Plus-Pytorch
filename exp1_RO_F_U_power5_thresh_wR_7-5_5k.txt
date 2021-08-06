@@ -1,0 +1,6 @@
+Setting up a new session...
+Namespace(batch_size=32, ckpt=None, continue_training=False, crop_size=500, crop_val=False, data_root='./datasets/data', dataset='oilwell', download=False, enable_vis=True, gpu_id='0', loss_type='focal_loss', lr=0.01, lr_policy='poly', model='deeplabv3plus_mobilenet', num_classes=None, oilwell_color='RGB', oilwell_splits='F', oilwell_tests='b', oilwell_type='RO', output_stride=16, print_interval=10, random_seed=1, save_val_results=False, separable_conv=False, step_size=10000, test_only=False, total_itrs=15000.0, update_interval=200, update_labels=True, update_min_interval=5000, val_batch_size=8, val_interval=200, vis_env='main', vis_num_samples=8, vis_port='28333', weight_decay=0.0001, year='2012')
+11.1
+Device: cuda
+Dataset: oilwell, Train set: 180, Val set: 20
+[!] Retrain

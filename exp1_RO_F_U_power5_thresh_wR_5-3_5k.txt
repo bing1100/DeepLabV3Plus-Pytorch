@@ -1,0 +1,110 @@
+Setting up a new session...
+Namespace(batch_size=32, ckpt=None, continue_training=False, crop_size=500, crop_val=False, data_root='./datasets/data', dataset='oilwell', download=False, enable_vis=True, gpu_id='0', loss_type='focal_loss', lr=0.01, lr_policy='poly', model='deeplabv3plus_mobilenet', num_classes=None, oilwell_color='RGB', oilwell_splits='F', oilwell_tests='a', oilwell_type='RO', output_stride=16, print_interval=10, random_seed=1, save_val_results=False, separable_conv=False, step_size=10000, test_only=False, total_itrs=15000.0, update_interval=200, update_labels=True, update_min_interval=5000, val_batch_size=8, val_interval=200, vis_env='main', vis_num_samples=8, vis_port='28333', weight_decay=0.0001, year='2012')
+11.1
+Device: cuda
+Dataset: oilwell, Train set: 180, Val set: 20
+[!] Retrain
+Epoch 2, Itrs 10/15000, Loss=0.052295
+Epoch 4, Itrs 20/15000, Loss=0.025236
+Epoch 5, Itrs 30/15000, Loss=0.017382
+Epoch 7, Itrs 40/15000, Loss=0.013286
+Epoch 9, Itrs 50/15000, Loss=0.011628
+Epoch 10, Itrs 60/15000, Loss=0.010542
+Epoch 12, Itrs 70/15000, Loss=0.010172
+Epoch 14, Itrs 80/15000, Loss=0.009846
+Epoch 15, Itrs 90/15000, Loss=0.009180
+Epoch 17, Itrs 100/15000, Loss=0.008945
+Epoch 19, Itrs 110/15000, Loss=0.008897
+Epoch 20, Itrs 120/15000, Loss=0.008560
+Epoch 22, Itrs 130/15000, Loss=0.008426
+Epoch 24, Itrs 140/15000, Loss=0.008336
+Epoch 25, Itrs 150/15000, Loss=0.007977
+Epoch 27, Itrs 160/15000, Loss=0.008025
+Epoch 29, Itrs 170/15000, Loss=0.007931
+Epoch 30, Itrs 180/15000, Loss=0.007768
+Epoch 32, Itrs 190/15000, Loss=0.007612
+Epoch 34, Itrs 200/15000, Loss=0.007617
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_F_RGB_True_os16.pth
+validation...
+0it [00:00, ?it/s]1it [00:00,  5.13it/s]3it [00:00, 11.40it/s]3it [00:00,  7.15it/s]
+Overall Acc: 0.968754
+Mean Acc: 0.500000
+FreqW Acc: 0.938485
+Mean IoU: 0.484377
+Class IoU:
+	class 0: 0.968754
+	class 1: 0.000000
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_F_RGB_True_os16.pth
+Updating Labels...
+
+0it [00:00, ?it/s]1it [00:02,  2.87s/it]2it [00:05,  2.64s/it]3it [00:07,  2.54s/it]4it [00:10,  2.49s/it]5it [00:12,  2.49s/it]6it [00:15,  2.49s/it]7it [00:17,  2.46s/it]8it [00:19,  2.43s/it]9it [00:22,  2.41s/it]10it [00:24,  2.39s/it]11it [00:27,  2.39s/it]12it [00:29,  2.40s/it]13it [00:31,  2.41s/it]14it [00:34,  2.40s/it]15it [00:36,  2.41s/it]16it [00:39,  2.41s/it]17it [00:41,  2.39s/it]18it [00:43,  2.37s/it]19it [00:46,  2.38s/it]20it [00:48,  2.39s/it]21it [00:50,  2.38s/it]22it [00:53,  2.37s/it]23it [00:54,  2.02s/it]23it [00:54,  2.37s/it]
+Epoch 35, Itrs 210/15000, Loss=0.007575
+Epoch 37, Itrs 220/15000, Loss=0.007427
+Epoch 39, Itrs 230/15000, Loss=0.007339
+Epoch 40, Itrs 240/15000, Loss=0.007344
+Epoch 42, Itrs 250/15000, Loss=0.007236
+Epoch 44, Itrs 260/15000, Loss=0.007230
+Epoch 45, Itrs 270/15000, Loss=0.007105
+Epoch 47, Itrs 280/15000, Loss=0.007226
+Epoch 49, Itrs 290/15000, Loss=0.007093
+Epoch 50, Itrs 300/15000, Loss=0.007001
+Epoch 52, Itrs 310/15000, Loss=0.007080
+Epoch 54, Itrs 320/15000, Loss=0.006909
+Epoch 55, Itrs 330/15000, Loss=0.006827
+Epoch 57, Itrs 340/15000, Loss=0.006759
+Epoch 59, Itrs 350/15000, Loss=0.007042
+Epoch 60, Itrs 360/15000, Loss=0.006742
+Epoch 62, Itrs 370/15000, Loss=0.006733
+Epoch 64, Itrs 380/15000, Loss=0.006588
+Epoch 65, Itrs 390/15000, Loss=0.006654
+Epoch 67, Itrs 400/15000, Loss=0.006609
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_F_RGB_True_os16.pth
+validation...
+0it [00:00, ?it/s]1it [00:00,  4.71it/s]3it [00:00, 10.42it/s]3it [00:00,  6.70it/s]
+Overall Acc: 0.968061
+Mean Acc: 0.499642
+FreqW Acc: 0.937813
+Mean IoU: 0.484031
+Class IoU:
+	class 0: 0.968061
+	class 1: 0.000000
+
+Updating Labels...
+
+0it [00:00, ?it/s]1it [00:02,  2.91s/it]2it [00:05,  2.64s/it]3it [00:07,  2.54s/it]4it [00:10,  2.48s/it]5it [00:12,  2.47s/it]6it [00:15,  2.44s/it]7it [00:17,  2.47s/it]8it [00:19,  2.46s/it]9it [00:22,  2.49s/it]10it [00:24,  2.48s/it]11it [00:27,  2.48s/it]12it [00:29,  2.46s/it]13it [00:32,  2.46s/it]14it [00:34,  2.43s/it]15it [00:37,  2.45s/it]16it [00:39,  2.46s/it]17it [00:42,  2.46s/it]18it [00:44,  2.49s/it]19it [00:47,  2.48s/it]20it [00:49,  2.48s/it]21it [00:52,  2.48s/it]22it [00:54,  2.49s/it]23it [00:55,  2.12s/it]23it [00:55,  2.43s/it]
+Epoch 69, Itrs 410/15000, Loss=0.006697
+Epoch 70, Itrs 420/15000, Loss=0.006557
+Epoch 72, Itrs 430/15000, Loss=0.006580
+Epoch 74, Itrs 440/15000, Loss=0.006589
+Epoch 75, Itrs 450/15000, Loss=0.006583
+Epoch 77, Itrs 460/15000, Loss=0.006583
+Epoch 79, Itrs 470/15000, Loss=0.006495
+Epoch 80, Itrs 480/15000, Loss=0.006479
+Epoch 82, Itrs 490/15000, Loss=0.006501
+Epoch 84, Itrs 500/15000, Loss=0.006435
+Epoch 85, Itrs 510/15000, Loss=0.006483
+Epoch 87, Itrs 520/15000, Loss=0.006347
+Epoch 89, Itrs 530/15000, Loss=0.006510
+Epoch 90, Itrs 540/15000, Loss=0.006292
+Epoch 92, Itrs 550/15000, Loss=0.006353
+Epoch 94, Itrs 560/15000, Loss=0.006345
+Epoch 95, Itrs 570/15000, Loss=0.006295
+Epoch 97, Itrs 580/15000, Loss=0.006303
+Epoch 99, Itrs 590/15000, Loss=0.006226
+Epoch 100, Itrs 600/15000, Loss=0.006330
+Model saved as checkpoints/latest_deeplabv3plus_mobilenet_oilwell_RO_F_RGB_True_os16.pth
+validation...
+0it [00:00, ?it/s]1it [00:00,  4.79it/s]3it [00:00, 10.47it/s]3it [00:00,  6.54it/s]
+Overall Acc: 0.968735
+Mean Acc: 0.505640
+FreqW Acc: 0.938816
+Mean IoU: 0.490129
+Class IoU:
+	class 0: 0.968724
+	class 1: 0.011534
+
+Model saved as checkpoints/best_deeplabv3plus_mobilenet_oilwell_RO_F_RGB_True_os16.pth
+Updating Labels...
+
+0it [00:00, ?it/s]1it [00:02,  2.84s/it]2it [00:05,  2.59s/it]3it [00:07,  2.48s/it]4it [00:09,  2.44s/it]5it [00:12,  2.46s/it]6it [00:15,  2.49s/it]7it [00:17,  2.49s/it]8it [00:20,  2.50s/it]9it [00:22,  2.51s/it]10it [00:25,  2.51s/it]11it [00:27,  2.51s/it]12it [00:30,  2.54s/it]13it [00:32,  2.52s/it]14it [00:35,  2.54s/it]15it [00:37,  2.54s/it]16it [00:40,  2.52s/it]17it [00:42,  2.51s/it]18it [00:45,  2.48s/it]19it [00:47,  2.47s/it]20it [00:50,  2.47s/it]21it [00:52,  2.45s/it]22it [00:54,  2.45s/it]23it [00:56,  2.08s/it]23it [00:56,  2.45s/it]
